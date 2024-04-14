@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ExplorerSkeleton]==========-->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>Mashed_Ashlands_KwamaExplorerSkeleton</defName>
+		<label>explorer skeleton</label>
+		<description>The desiccated skeleton of an explorer. Either they were woefully under-prepared, or they have been stripped of almost anything reasonably useful. Though there does seem to be something in their pack.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Natural/Mashed_Ashlands_KwamaExplorerSkeleton</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<size>(1,1)</size>
+		<fillPercent>0.5</fillPercent>
+		<filthLeaving>Mashed_Ashlands_Filth_Ash</filthLeaving>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<claimable>false</claimable>
+		</building>
+		<comps>
+			<li Class="Mashed_Ashlands.CompProperties_DropOnDestroy">
+				<guaranteedDrops>
+					<li>
+						<thingDef>Mashed_Ashlands_KwamaNestJournal</thingDef>
+						<amountRange>1</amountRange>
+					</li>
+				</guaranteedDrops>
+				<potentialDrops>
+					<li>
+						<!-- Null drop -->
+						<weight>1</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_RawAshFungus</thingDef>
+						<amountRange>5~10</amountRange>
+						<weight>1</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_KwamaEgg</thingDef>
+						<amountRange>1~3</amountRange>
+						<weight>1</weight>
+					</li>
+					<li>
+						<thingDef>Mashed_Ashlands_BugMusk</thingDef>
+						<amountRange>1</amountRange>
+						<weight>0.1</weight>
+					</li>
+				</potentialDrops>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

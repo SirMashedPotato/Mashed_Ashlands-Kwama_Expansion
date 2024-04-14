@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Kwama_EggFurniture]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
+		<defName>Mashed_Ashlands_Kwama_EggFurniture</defName>
+		<label>kwama egg furniture</label>
+		<description>Learn how to craft furniture... using kwama eggs?</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->kwama egg torches</li>
+				<li>subject->kwama egg sculptures</li>
+				<li>subject_story->how to properly hollow out a kwama egg</li>
+				<li>subject_story->what happens when don't properly hollow out a kwama egg</li>
+				<li>subject_story->how to clean up after you improperly hollowed out a kwama egg</li>
+				<li>subject_story->how to get the smell of rotten kwama eggs out of your shoes in fewer than 10 days</li>
+				<li>subject_gerund->hollowing out kwama eggs</li>
+				<li>subject_gerund->preserving kwama eggs</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_Kwama_EggPacking]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
+		<defName>Mashed_Ashlands_Kwama_EggPacking</defName>
+		<label>kwama egg packing</label>
+		<description>Learn how to properly pack kwama eggs into a crate, greatly enhancing their shelf life, and making them easier to store. Perfect for if you intend to trade them with other factions.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->packing kwama eggs</li>
+				<li>subject_story->how to properly pack kwama eggs into a crate</li>
+				<li>subject_story->what happens when don't properly pack kwama eggs into a crate</li>
+				<li>subject_story->how to clean up after you improperly packed kwama eggs</li>
+				<li>subject_story->how to get the smell of rotten kwama eggs out of your shoes in fewer than 10 days</li>
+				<li>subject_gerund->packing kwama eggs</li>
+				<li>subject_gerund->handling kwama egg crates</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+</Defs>

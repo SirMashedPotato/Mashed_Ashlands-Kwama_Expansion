@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaNestJournal]==========-->
+	<ThingDef ParentName="BookBase">
+		<defName>Mashed_Ashlands_KwamaNestJournal</defName>
+		<label>kwama nest journal</label>
+		<description>A damp and musty book obtained from inside a kwama nest. It seems to detail someones study of the ashlands, and may contain information relating to kwama. It's seen better days, but reading it should be able to help unlock new technologies.</description>
+		<graphicData>
+			<texPath>Things/Item/Book/Mashed_Ashlands_KwamaNestJournal/Mashed_Ashlands_KwamaNestJournal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/Mashed_Ashlands_KwamaNestJournal/Mashed_Ashlands_KwamaNestJournal</uiIconPath>
+		<statBases>
+			<MarketValue>180</MarketValue>
+		</statBases>
+		<thingSetMakerTags inherit="False"/>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>Mashed_Ashlands_Namer_KwamaNestJournal</nameMaker>
+				<descriptionMaker>Mashed_Ashlands_Description_KwamaNestJournal</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/Mashed_Ashlands_KwamaNestJournal/Mashed_Ashlands_KwamaNestJournal_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/Mashed_Ashlands_KwamaNestJournal/Mashed_Ashlands_KwamaNestJournal_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="BookOutcomeProperties_GainResearch">
+						<include>
+							<Mashed_Ashlands_Kwama_EggFurniture/>
+							<Mashed_Ashlands_Kwama_EggPacking/>
+						</include>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_AshlandJournal"]/comps/li[@Class="CompProperties_Book"]/doers/li[@Class="BookOutcomeProperties_GainResearch"]/exclude</xpath>
+		<value>
+			<Mashed_Ashlands_Kwama_EggFurniture/>
+			<Mashed_Ashlands_Kwama_EggPacking/>
+		</value>
+	</Operation>
+</Patch>

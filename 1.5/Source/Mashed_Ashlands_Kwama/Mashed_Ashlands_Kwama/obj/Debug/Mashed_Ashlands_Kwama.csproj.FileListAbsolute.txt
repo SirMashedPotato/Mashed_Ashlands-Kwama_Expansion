@@ -1,0 +1,4 @@
+J:\Modding\Github\Mashed_Ashlands-Kwama_Expansion\1.5\Assemblies\Mashed_Ashlands_Kwama.dll
+J:\Modding\Github\Mashed_Ashlands-Kwama_Expansion\1.5\Source\Mashed_Ashlands_Kwama\Mashed_Ashlands_Kwama\obj\Debug\Mashed_Ashlands_Kwama.csproj.AssemblyReference.cache
+J:\Modding\Github\Mashed_Ashlands-Kwama_Expansion\1.5\Source\Mashed_Ashlands_Kwama\Mashed_Ashlands_Kwama\obj\Debug\Mashed_Ashlands_Kwama.csproj.CoreCompileInputs.cache
+J:\Modding\Github\Mashed_Ashlands-Kwama_Expansion\1.5\Source\Mashed_Ashlands_Kwama\Mashed_Ashlands_Kwama\obj\Debug\Mashed_Ashlands_Kwama.dll

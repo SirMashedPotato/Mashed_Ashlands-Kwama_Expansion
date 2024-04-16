@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaNestEntrance]==========-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>Mashed_Ashlands_KwamaNestEntrance</defName>
+		<label>kwama nest entrance</label>
+		<description>The entrance to an underground kwama nest. It's possible to travel down into the nest and 'mine' the kwama eggs.</description>
+		<size>(3,3)</size>
+		<useHitPoints>false</useHitPoints>
+		<thingClass>Mashed_Ashlands_Kwama.KwamaNestEntrance</thingClass>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/KwamaNest/Mashed_Ashlands_KwamaNestEntrance</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<holdsRoof>true</holdsRoof>
+		<destroyable>false</destroyable>
+		<building>
+			<isEdifice>true</isEdifice>
+			<deconstructible>false</deconstructible>
+			<isTargetable>false</isTargetable>
+			<isInert>true</isInert>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<inspectorTabs>
+			<li>ITab_ContentsMapPortal</li>
+		</inspectorTabs>
+		<comps>
+			<!--
+			<li Class="CompProperties_LeaveFilthOnDestroyed">
+				<filthDef>Filth_LooseGround</filthDef>
+				<thickness>5</thickness>
+			</li>
+			-->
+		</comps>
+	</ThingDef>
+</Defs>

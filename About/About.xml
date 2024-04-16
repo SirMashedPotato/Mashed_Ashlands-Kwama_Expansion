@@ -10,6 +10,10 @@
 	<description>Kwama yo.\n\n- Very much inspired by the Elder Scrolls series by Bethesda Studios, with a heavy focus on Morrowind</description>
 	<modDependencies>
 		<li>
+			<packageId>Ludeon.RimWorld.Anomaly</packageId>
+			<displayName>Anomaly</displayName>
+		</li>
+		<li>
 			<packageId>SirMashedPotato.Ashlands</packageId>
 			<displayName>Mashed's Ashlands</displayName>
 			<steamWorkshopUrl>steam://url/CommunityFilePage/3109835541</steamWorkshopUrl>
@@ -17,6 +21,7 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
+		<li>Ludeon.RimWorld.Anomaly</li>
 		<li>SirMashedPotato.Ashlands</li>
 	</loadAfter>
 </ModMetaData>

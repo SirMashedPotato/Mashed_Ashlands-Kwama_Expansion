@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<MapGeneratorDef Name="Undercave">
+		<defName>Mashed_Ashlands_KwamaNest</defName>
+		<label>kwama nest</label>
+		<isUnderground>true</isUnderground>
+		<forceCaves>true</forceCaves>
+		<ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+		<disableCallAid>true</disableCallAid>
+		<!--
+		<customMapComponents>
+			<li>UndercaveMapComponent</li>
+		</customMapComponents>
+		-->
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_KwamaNest</biome>
+			<temperature>15</temperature>
+		</pocketMapProperties>
+		<genSteps>
+			<li>ElevationFertility</li>
+			<li>Undercave_RocksFromGrid</li>
+			<li>Undercave_Caves</li>
+			<li>Terrain</li>
+			<li>CavesTerrain</li>
+			<li>RockChunks</li>
+			<li>FindPitGateExit</li>
+			<li>UndercaveInterest</li>
+			<li>Plants</li>
+			<li>Animals</li>
+			<li>Fog</li>
+		</genSteps>
+	</MapGeneratorDef>
+</Defs>

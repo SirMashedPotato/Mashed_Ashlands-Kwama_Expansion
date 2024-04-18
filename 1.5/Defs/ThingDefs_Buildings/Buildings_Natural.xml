@@ -55,6 +55,10 @@
 					</li>
 				</potentialDrops>
 			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(33,94,84,0)</glowColor>
+			</li>
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_KwamaEggSac]==========-->

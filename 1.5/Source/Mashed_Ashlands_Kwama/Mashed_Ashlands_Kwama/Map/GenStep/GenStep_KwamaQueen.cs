@@ -8,7 +8,7 @@ namespace Mashed_Ashlands_Kwama
     public class GenStep_KwamaQueen : GenStep
     {
         private const int chamberSize = 40;
-        private const float minSpawnDistFromNestExit = 20f;
+        private const float minSpawnDistFromNestExit = 40f;
 
         public override int SeedPart => 23330778;
 

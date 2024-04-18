@@ -26,7 +26,8 @@
 			<li>RockChunks</li>
 			<li>Mashed_Ashlands_FindKwamaNestExit</li>
 			<li>Mashed_Ashlands_KwamaQueen</li>
-			<!-- <li>Mashed_Ashlands_KwamaEggSacs</li> -->
+			<li>Mashed_Ashlands_KwamaNestExplorer</li>
+			<li>Mashed_Ashlands_KwamaEggSacs</li>
 			<li>UndercaveInterest</li>
 			<li>Plants</li>
 			<li>Animals</li>
@@ -44,5 +45,27 @@
 		<defName>Mashed_Ashlands_KwamaQueen</defName>
 		<order>600</order>
 		<genStep Class="Mashed_Ashlands_Kwama.GenStep_KwamaQueen"/>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNestExplorer]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_KwamaNestExplorer</defName>
+		<order>610</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>Mashed_Ashlands_KwamaExplorerSkeleton</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowFoggedPositions>false</allowFoggedPositions>
+			<count>1</count>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_KwamaEggSacs]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_KwamaEggSacs</defName>
+		<order>611</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>Mashed_Ashlands_KwamaEggSac</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<countPer10kCellsRange>60~90</countPer10kCellsRange>
+			<clusterSize>3</clusterSize>
+		</genStep>
 	</GenStepDef>
 </Defs>

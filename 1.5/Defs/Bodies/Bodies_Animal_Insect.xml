@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaWarrior]==========-->
+	<BodyDef>
+		<defName>Mashed_Ashlands_KwamaWarrior</defName>
+		<label>kwama fusion</label>
+		<corePart>
+			<def>Shell</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>InsectHeart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Pronotum</def>
+					<coverage>0.18</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>InsectHead</def>
+							<coverage>0.65</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.2</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>left eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>right eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>right eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>InsectNostril</def>
+									<coverage>0.06</coverage>
+								</li>
+								<li>
+									<def>InsectMouth</def>
+									<customLabel>proboscis</customLabel>
+									<coverage>0.08</coverage>
+									<groups>
+										<li>Mouth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Mashed_Ashlands_InsectArm</def>
+					<customLabel>left arm</customLabel>
+					<coverage>0.09</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>FrontClaw</def>
+							<customLabel>left arm first claw</customLabel>
+							<coverage>0.05</coverage>
+							<groups>
+								<li>FrontLeftClaws</li>
+							</groups>
+						</li>
+						<li>
+							<def>FrontClaw</def>
+							<customLabel>left arm second claw</customLabel>
+							<coverage>0.05</coverage>
+							<groups>
+								<li>FrontLeftClaws</li>
+							</groups>
+						</li>
+						<li>
+							<def>FrontClaw</def>
+							<customLabel>left arm leg third claw</customLabel>
+							<coverage>0.05</coverage>
+							<groups>
+								<li>FrontLeftClaws</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Mashed_Ashlands_InsectArm</def>
+					<customLabel>right arm</customLabel>
+					<coverage>0.09</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>FrontClaw</def>
+							<customLabel>right arm first claw</customLabel>
+							<coverage>0.05</coverage>
+							<groups>
+								<li>FrontRightClaws</li>
+							</groups>
+						</li>
+						<li>
+							<def>FrontClaw</def>
+							<customLabel>right arm second claw</customLabel>
+							<coverage>0.05</coverage>
+							<groups>
+								<li>FrontRightClaws</li>
+							</groups>
+						</li>
+						<li>
+							<def>FrontClaw</def>
+							<customLabel>right arm leg third claw</customLabel>
+							<coverage>0.05</coverage>
+							<groups>
+								<li>FrontRightClaws</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>InsectLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.09</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>InsectLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.09</coverage>
+					<height>Bottom</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

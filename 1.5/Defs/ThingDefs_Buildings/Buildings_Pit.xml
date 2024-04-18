@@ -44,4 +44,44 @@
 			-->
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>Mashed_Ashlands_KwamaNestExit</defName>
+		<label>kwama nest exit</label>
+		<description>A rope line which links to the surface above.</description>
+		<size>(3,3)</size>
+		<useHitPoints>false</useHitPoints>
+		<thingClass>Mashed_Ashlands_Kwama.KwamaNestExit</thingClass>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<canOverlapZones>false</canOverlapZones>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<destroyable>false</destroyable>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/PitGate/PitGateExit/PitGateExit</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<passability>Standable</passability>
+		<building>
+			<deconstructible>false</deconstructible>
+			<isTargetable>false</isTargetable>
+			<isInert>true</isInert>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(140,160,184,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Effecter">
+				<effecterDef>UndercaveMapExitLightshafts</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

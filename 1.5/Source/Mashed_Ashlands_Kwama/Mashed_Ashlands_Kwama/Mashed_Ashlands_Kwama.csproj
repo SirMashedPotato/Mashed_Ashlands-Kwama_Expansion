@@ -58,8 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DefOf\MapGeneratorDefOf.cs" />
+    <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="Map\GenStep\GenStep_FindKwamaNestExit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingClass\KwamaNestEntrance.cs" />
+    <Compile Include="ThingClass\KwamaNestExit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

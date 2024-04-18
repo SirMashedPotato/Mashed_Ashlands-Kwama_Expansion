@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<MapGeneratorDef Name="Undercave">
+	<!-- ==========[Mashed_Ashlands_KwamaNest]==========-->
+	<MapGeneratorDef>
 		<defName>Mashed_Ashlands_KwamaNest</defName>
 		<label>kwama nest</label>
 		<isUnderground>true</isUnderground>
@@ -23,11 +24,17 @@
 			<li>Terrain</li>
 			<li>CavesTerrain</li>
 			<li>RockChunks</li>
-			<li>FindPitGateExit</li>
+			<li>Mashed_Ashlands_FindKwamaNestExit</li>
 			<li>UndercaveInterest</li>
 			<li>Plants</li>
 			<li>Animals</li>
 			<li>Fog</li>
 		</genSteps>
 	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_FindKwamaNestExit</defName>
+		<order>300</order>
+		<genStep Class="Mashed_Ashlands_Kwama.GenStep_FindKwamaNestExit"/>
+	</GenStepDef>
 </Defs>

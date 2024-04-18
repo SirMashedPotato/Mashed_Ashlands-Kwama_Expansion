@@ -8,7 +8,8 @@ namespace Mashed_Ashlands_Kwama
     public class GenStep_KwamaQueen : GenStep
     {
         private const int chamberSize = 40;
-        private const float minSpawnDistFromNestExit = 40f;
+        private const float minSpawnDistFromNestExit = 60f;
+        private static readonly IntRange numEggSacsInRange = new IntRange(6, 12);
 
         public override int SeedPart => 23330778;
 
@@ -28,6 +29,15 @@ namespace Mashed_Ashlands_Kwama
             }
 
             GenSpawn.Spawn(PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf.Mashed_Ashlands_KwamaQueen)), result, map, Rot4.Random);
+
+            int eggSacCount = numEggSacsInRange.RandomInRange;
+            for (int i = 0; i < eggSacCount; i++)
+            {
+                if (CellFinder.TryFindRandomCellNear(result, map, 5, (IntVec3 c) => c.Standable(map), out IntVec3 eggSacSpawn))
+                {
+                    GenSpawn.Spawn(ThingDefOf.Mashed_Ashlands_KwamaEggSac, eggSacSpawn, map);
+                }
+            }
         }
     }
 }

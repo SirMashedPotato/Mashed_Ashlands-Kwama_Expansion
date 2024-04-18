@@ -11,5 +11,6 @@ namespace Mashed_Ashlands_Kwama
             DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf));
         }
         public static ThingDef Mashed_Ashlands_KwamaNestExit;
+        public static ThingDef Mashed_Ashlands_KwamaEggSac;
     }
 }

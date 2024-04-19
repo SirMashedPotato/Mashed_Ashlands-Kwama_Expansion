@@ -345,9 +345,9 @@
 			<doesntMove>true</doesntMove>
 			<foodType>None</foodType>
 			<needsRest>false</needsRest>
-      		<hasGenders>false</hasGenders>
-     		<lifeExpectancy>100</lifeExpectancy>
-	  		<trainability>None</trainability>
+			<hasGenders>false</hasGenders>
+			<lifeExpectancy>100</lifeExpectancy>
+			<trainability>None</trainability>
 			<leatherDef>Mashed_Ashlands_KwamaChitin</leatherDef>
 			<wildness>1</wildness>
 			<lifeStageAges>

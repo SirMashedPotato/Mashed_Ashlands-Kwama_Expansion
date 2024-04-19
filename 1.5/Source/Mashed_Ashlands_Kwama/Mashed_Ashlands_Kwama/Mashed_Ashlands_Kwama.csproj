@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.3.3\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>I:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -57,14 +61,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefModExtension\UnderBiomeProperties.cs" />
     <Compile Include="DefOf\MapGeneratorDefOf.cs" />
     <Compile Include="DefOf\PawnKindDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="Harmony\WildPlants.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Map\GenStep\GenStep_FindKwamaNestExit.cs" />
     <Compile Include="Map\GenStep\GenStep_KwamaQueen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingClass\KwamaNestEntrance.cs" />
     <Compile Include="ThingClass\KwamaNestExit.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

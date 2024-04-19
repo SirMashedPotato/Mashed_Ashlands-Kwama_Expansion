@@ -9,13 +9,22 @@
 		<plantDensity>0.3</plantDensity>
 		<wildAnimalsCanWanderInto>true</wildAnimalsCanWanderInto>
 		<modExtensions>
-			<li Class="Mashed_Ashlands.BiomeProperties">
-				<useAshlandCavePlants>true</useAshlandCavePlants>
-				<useCustomCaveTerrain>true</useCustomCaveTerrain>
-				<otherTerrainDef>Mashed_Ashlands_RichAshGravelVolcanic</otherTerrainDef>
-				<waterTerrainDef>WaterShallow</waterTerrainDef>
-				<otherTerrainThreshold>0.25</otherTerrainThreshold>
-				<waterThreshold>0.9</waterThreshold>
+			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
+				<wildAnimals>
+					<Rat>0.2</Rat>
+					<Mashed_Ashlands_KwamaScrib>0.6</Mashed_Ashlands_KwamaScrib>
+					<Mashed_Ashlands_KwamaForager>0.5</Mashed_Ashlands_KwamaForager>
+					<Mashed_Ashlands_KwamaWorker>0.4</Mashed_Ashlands_KwamaWorker>
+					<Mashed_Ashlands_KwamaWarrior>0.3</Mashed_Ashlands_KwamaWarrior>
+				</wildAnimals>
+				<wildPlants>
+					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.1</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.1</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
+					<Mashed_Ashlands_Plant_TreeKwamacap>0.1</Mashed_Ashlands_Plant_TreeKwamacap>
+					<Mashed_Ashlands_GiantVioletCoprinus>0.05</Mashed_Ashlands_GiantVioletCoprinus>
+				</wildPlants>
 			</li>
 		</modExtensions>
 		<baseWeatherCommonalities>

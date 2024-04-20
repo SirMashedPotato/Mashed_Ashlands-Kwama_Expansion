@@ -15,7 +15,6 @@
 				<waterTerrain>WaterShallow</waterTerrain>
 				<waterThreshold>0.6</waterThreshold>
 				<wildAnimals>
-					<Rat>0.2</Rat>
 					<Mashed_Ashlands_KwamaScrib>0.6</Mashed_Ashlands_KwamaScrib>
 					<Mashed_Ashlands_KwamaForager>0.5</Mashed_Ashlands_KwamaForager>
 					<Mashed_Ashlands_KwamaWorker>0.4</Mashed_Ashlands_KwamaWorker>

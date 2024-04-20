@@ -24,6 +24,7 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<purpose>Beauty</purpose>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_GiantVioletCoprinus_Leafless</leaflessGraphicPath>
 		</plant>
 		<comps Inherit="False">
 			<li Class="CompProperties_Glower">

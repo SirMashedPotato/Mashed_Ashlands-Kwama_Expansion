@@ -32,6 +32,7 @@
 				<li>Mashed_Ashlands_AshSowing_Advanced</li>
 			</sowResearchPrerequisites>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_Immature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 </Defs>

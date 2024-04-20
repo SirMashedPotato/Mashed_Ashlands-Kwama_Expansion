@@ -76,6 +76,10 @@
 			<Flammability>1.0</Flammability>
 			<MarketValue>50</MarketValue>
 		</statBases>
+		<building>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+			<claimable>false</claimable>
+		</building>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>

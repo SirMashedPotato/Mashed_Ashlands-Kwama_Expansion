@@ -10,6 +10,10 @@
 		<wildAnimalsCanWanderInto>true</wildAnimalsCanWanderInto>
 		<modExtensions>
 			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
+				<gravelTerrain>Mashed_Ashlands_RichAshGravel</gravelTerrain>
+				<gravelThreshold>0.25</gravelThreshold>
+				<waterTerrain>WaterShallow</waterTerrain>
+				<waterThreshold>0.6</waterThreshold>
 				<wildAnimals>
 					<Rat>0.2</Rat>
 					<Mashed_Ashlands_KwamaScrib>0.6</Mashed_Ashlands_KwamaScrib>
@@ -22,7 +26,7 @@
 					<Mashed_Ashlands_Plant_LuminousRussula>0.1</Mashed_Ashlands_Plant_LuminousRussula>
 					<Mashed_Ashlands_Plant_VioletCoprinus>0.1</Mashed_Ashlands_Plant_VioletCoprinus>
 					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
-					<Mashed_Ashlands_Plant_TreeKwamacap>0.1</Mashed_Ashlands_Plant_TreeKwamacap>
+					<Mashed_Ashlands_Plant_TreeKwamacap>0.2</Mashed_Ashlands_Plant_TreeKwamacap>
 					<Mashed_Ashlands_GiantVioletCoprinus>0.05</Mashed_Ashlands_GiantVioletCoprinus>
 				</wildPlants>
 			</li>
@@ -83,24 +87,5 @@
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
-		<!-- errors
-		<wildPlants>
-			<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
-			<Mashed_Ashlands_Plant_LuminousRussula>0.1</Mashed_Ashlands_Plant_LuminousRussula>
-			<Mashed_Ashlands_Plant_VioletCoprinus>0.1</Mashed_Ashlands_Plant_VioletCoprinus>
-			<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
-		</wildPlants>
-		-->
-		<!--
-		<wildAnimals>
-			<Rat>0.2</Rat>
-			<Mashed_Ashlands_KwamaScrib>0.6</Mashed_Ashlands_KwamaScrib>
-			<Mashed_Ashlands_KwamaForager>0.5</Mashed_Ashlands_KwamaForager>
-		</wildAnimals>
-		<pollutionWildAnimals>
-			<Rat>0.6</Rat>
-			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.2</WasteRat>
-		</pollutionWildAnimals>
-		-->
 	</BiomeDef>
 </Defs>

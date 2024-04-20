@@ -22,19 +22,26 @@
 			<li>Undercave_RocksFromGrid</li>
 			<li>Undercave_Caves</li>
 			<li>Terrain</li>
-			<li>CavesTerrain</li>
+			<li>Mashed_Ashlands_KwamaNestTerrain</li>
 			<li>RockChunks</li>
 			<li>Mashed_Ashlands_FindKwamaNestExit</li>
 			<li>Mashed_Ashlands_KwamaQueen</li>
 			<li>Mashed_Ashlands_KwamaNestExplorer</li>
 			<li>Mashed_Ashlands_KwamaEggSacs</li>
 			<li>Mashed_Ashlands_GoldKwamaEggSacs</li>
-			<li>UndercaveInterest</li>
+			<!-- warriors -->
+			<!-- <li>UndercaveInterest</li> -->
 			<li>Plants</li>
 			<li>Animals</li>
 			<li>Fog</li>
 		</genSteps>
 	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNestTerrain]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_KwamaNestTerrain</defName>
+		<order>211</order>
+		<genStep Class="Mashed_Ashlands_Kwama.GenStep_NestTerrain"/>
+	  </GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_FindKwamaNestExit</defName>
@@ -56,6 +63,12 @@
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<allowFoggedPositions>false</allowFoggedPositions>
 			<count>1</count>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>3</radius>
+					<affordance>Heavy</affordance>
+				</li>
+			</validators>
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaEggSacs]==========-->
@@ -67,6 +80,12 @@
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<countPer10kCellsRange>60~90</countPer10kCellsRange>
 			<clusterSize>3</clusterSize>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>3</radius>
+					<affordance>Heavy</affordance>
+				</li>
+			</validators>
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_GoldKwamaEggSacs]==========-->
@@ -77,6 +96,12 @@
 			<thingDef>Mashed_Ashlands_GoldKwamaEggSac</thingDef>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<count>3</count>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>3</radius>
+					<affordance>Heavy</affordance>
+				</li>
+			</validators>
 		</genStep>
 	</GenStepDef>
 </Defs>

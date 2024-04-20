@@ -82,7 +82,7 @@
 			<clusterSize>3</clusterSize>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
-					<radius>3</radius>
+					<radius>1</radius>
 					<affordance>Heavy</affordance>
 				</li>
 			</validators>
@@ -98,7 +98,7 @@
 			<count>3</count>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
-					<radius>3</radius>
+					<radius>1</radius>
 					<affordance>Heavy</affordance>
 				</li>
 			</validators>

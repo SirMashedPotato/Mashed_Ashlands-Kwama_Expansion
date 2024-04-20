@@ -14,6 +14,8 @@
 			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<plant>
+			<growMinGlow>0</growMinGlow>
+     		<growOptimalGlow>0</growOptimalGlow>
 			<fertilityMin>0.1</fertilityMin>
 			<growDays>20</growDays>
 			<visualSizeRange>1.3~2.4</visualSizeRange>

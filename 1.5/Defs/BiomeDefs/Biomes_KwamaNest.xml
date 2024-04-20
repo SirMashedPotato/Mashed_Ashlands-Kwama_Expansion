@@ -6,7 +6,7 @@
 		<description>A cave filled with a damp musty smell. The calls of kwama can be heard echoing through out the tunnels.</description>
 		<generatesNaturally>false</generatesNaturally>
 		<animalDensity>1</animalDensity>
-		<plantDensity>0.3</plantDensity>
+		<plantDensity>0.5</plantDensity>
 		<wildAnimalsCanWanderInto>true</wildAnimalsCanWanderInto>
 		<modExtensions>
 			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
@@ -23,8 +23,8 @@
 				</wildAnimals>
 				<wildPlants>
 					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.1</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.1</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
 					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
 					<Mashed_Ashlands_Plant_TreeKwamacap>0.2</Mashed_Ashlands_Plant_TreeKwamacap>
 					<Mashed_Ashlands_GiantVioletCoprinus>0.05</Mashed_Ashlands_GiantVioletCoprinus>

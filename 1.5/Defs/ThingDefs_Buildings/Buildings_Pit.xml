@@ -36,12 +36,10 @@
 			<li>ITab_ContentsMapPortal</li>
 		</inspectorTabs>
 		<comps>
-			<!--
 			<li Class="CompProperties_LeaveFilthOnDestroyed">
 				<filthDef>Filth_LooseGround</filthDef>
 				<thickness>5</thickness>
 			</li>
-			-->
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
@@ -76,11 +74,47 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>10</glowRadius>
+				<glowRadius>4</glowRadius>
 				<glowColor>(140,160,184,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Effecter">
 				<effecterDef>UndercaveMapExitLightshafts</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_KwamaBurrow]==========-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>Mashed_Ashlands_KwamaBurrow</defName>
+		<label>kwama burrow</label>
+		<description>A small hole leading deeper into the kwama nest. Too treacherous to travel through. Kwama will periodically emerge from here.</description>
+		<!--<thingClass>PitBurrow</thingClass>-->
+		<size>(3, 3)</size>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/PitBurrow</texPath>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Impassable</passability>
+		<building>
+			<deconstructible>false</deconstructible>
+			<isTargetable>false</isTargetable>
+			<isInert>true</isInert>
+			<claimable>false</claimable>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_LeaveFilthOnDestroyed">
+				<filthDef>Filth_LooseGround</filthDef>
+				<thickness>2</thickness>
 			</li>
 		</comps>
 	</ThingDef>

@@ -35,6 +35,18 @@
 		<inspectorTabs>
 			<li>ITab_ContentsMapPortal</li>
 		</inspectorTabs>
+		<modExtensions>
+			<li Class="Mashed_Ashlands_Kwama.RandomMapGenDef">
+				<mapGenerators>
+					<li>Mashed_Ashlands_KwamaNest</li>
+					<li>Mashed_Ashlands_CrystalKwamaNest</li>
+					<li>Mashed_Ashlands_DarkshadeKwamaNest</li>
+					<li>Mashed_Ashlands_DustKwamaNest</li>
+					<li>Mashed_Ashlands_FloodedKwamaNest</li>
+					<li>Mashed_Ashlands_ThermalKwamaNest</li>
+				</mapGenerators>
+			</li>
+		</modExtensions>
 		<comps>
 			<li Class="CompProperties_LeaveFilthOnDestroyed">
 				<filthDef>Filth_LooseGround</filthDef>

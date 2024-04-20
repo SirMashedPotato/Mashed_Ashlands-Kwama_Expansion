@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefModExtension\RandomMapGenDef.cs" />
     <Compile Include="DefModExtension\UnderBiomeProperties.cs" />
     <Compile Include="DefOf\MapGeneratorDefOf.cs" />
     <Compile Include="DefOf\PawnKindDefOf.cs" />

@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_KwamaNest]==========-->
-	<MapGeneratorDef>
-		<defName>Mashed_Ashlands_KwamaNest</defName>
-		<label>kwama nest</label>
+	<!-- ==========[Mashed_Ashlands_KwamaNestGeneratorBase]==========-->
+	<MapGeneratorDef Abstract="True" Name="Mashed_Ashlands_KwamaNestGeneratorBase">
 		<isUnderground>true</isUnderground>
 		<forceCaves>true</forceCaves>
 		<ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
@@ -13,10 +11,6 @@
 			<li>UndercaveMapComponent</li>
 		</customMapComponents>
 		-->
-		<pocketMapProperties>
-			<biome>Mashed_Ashlands_KwamaNest</biome>
-			<temperature>15</temperature>
-		</pocketMapProperties>
 		<genSteps>
 			<li>ElevationFertility</li>
 			<li>Undercave_RocksFromGrid</li>
@@ -30,95 +24,67 @@
 			<li>Mashed_Ashlands_KwamaBurrow</li>
 			<li>Mashed_Ashlands_KwamaEggSacs</li>
 			<li>Mashed_Ashlands_GoldKwamaEggSacs</li>
-			<!-- warriors -->
 			<!-- <li>UndercaveInterest</li> -->
 			<li>Plants</li>
 			<li>Animals</li>
 			<li>Fog</li>
 		</genSteps>
 	</MapGeneratorDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestTerrain]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaNestTerrain</defName>
-		<order>211</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_NestTerrain"/>
-	  </GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_FindKwamaNestExit</defName>
-		<order>300</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_FindKwamaNestExit"/>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaQueen]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaQueen</defName>
-		<order>600</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_KwamaQueen"/>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestExplorer]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaNestExplorer</defName>
-		<order>610</order>
-		<genStep Class="GenStep_ScatterThings">
-			<thingDef>Mashed_Ashlands_KwamaExplorerSkeleton</thingDef>
-			<spotMustBeStandable>true</spotMustBeStandable>
-			<allowFoggedPositions>false</allowFoggedPositions>
-			<count>1</count>
-			<validators>
-				<li Class="ScattererValidator_Buildable">
-					<radius>3</radius>
-					<affordance>Heavy</affordance>
-				</li>
-			</validators>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaBurrow]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaBurrow</defName>
-		<order>611</order>
-		<genStep Class="GenStep_ScatterThings">
-			<thingDef>Mashed_Ashlands_KwamaBurrow</thingDef>
-			<spotMustBeStandable>true</spotMustBeStandable>
-			<countPer10kCellsRange>3</countPer10kCellsRange>
-			<validators>
-				<li Class="ScattererValidator_Buildable">
-					<radius>1</radius>
-					<affordance>SmoothableStone</affordance>
-				</li>
-			</validators>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaEggSacs]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaEggSacs</defName>
-		<order>612</order>
-		<genStep Class="GenStep_ScatterThings">
-			<thingDef>Mashed_Ashlands_KwamaEggSac</thingDef>
-			<spotMustBeStandable>true</spotMustBeStandable>
-			<countPer10kCellsRange>60~90</countPer10kCellsRange>
-			<clusterSize>3</clusterSize>
-			<validators>
-				<li Class="ScattererValidator_Buildable">
-					<radius>1</radius>
-					<affordance>Heavy</affordance>
-				</li>
-			</validators>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_GoldKwamaEggSacs]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_GoldKwamaEggSacs</defName>
-		<order>613</order>
-		<genStep Class="GenStep_ScatterThings">
-			<thingDef>Mashed_Ashlands_GoldKwamaEggSac</thingDef>
-			<spotMustBeStandable>true</spotMustBeStandable>
-			<count>3</count>
-			<validators>
-				<li Class="ScattererValidator_Buildable">
-					<radius>1</radius>
-					<affordance>Heavy</affordance>
-				</li>
-			</validators>
-		</genStep>
-	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+		<defName>Mashed_Ashlands_KwamaNest</defName>
+		<label>kwama nest</label>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_KwamaNest</biome>
+			<temperature>15</temperature>
+		</pocketMapProperties>
+	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_CrystalKwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+		<defName>Mashed_Ashlands_CrystalKwamaNest</defName>
+		<label>crystaline kwama nest</label>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_CrystalKwamaNest</biome>
+			<temperature>15</temperature>
+		</pocketMapProperties>
+	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_DarkshadeKwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+		<defName>Mashed_Ashlands_DarkshadeKwamaNest</defName>
+		<label>darkshade kwama nest</label>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_DarkshadeKwamaNest</biome>
+			<temperature>15</temperature>
+		</pocketMapProperties>
+	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_DustKwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+		<defName>Mashed_Ashlands_DustKwamaNest</defName>
+		<label>dust kwama nest</label>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_DustKwamaNest</biome>
+			<temperature>15</temperature>
+		</pocketMapProperties>
+		<genSteps>
+			<li>Mashed_Ashlands_DustAntHives</li>
+		</genSteps>
+	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_FloodedKwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+		<defName>Mashed_Ashlands_FloodedKwamaNest</defName>
+		<label>flooded kwama nest</label>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_FloodedKwamaNest</biome>
+			<temperature>15</temperature>
+		</pocketMapProperties>
+	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_ThermalKwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+		<defName>Mashed_Ashlands_ThermalKwamaNest</defName>
+		<label>thermal kwama nest</label>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_ThermalKwamaNest</biome>
+			<temperature>25</temperature>
+		</pocketMapProperties>
+	</MapGeneratorDef>
 </Defs>

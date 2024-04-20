@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<BiomeDef ParentName="Mashed_Ashlands_KwamaNestBase">
-		<defName>Mashed_Ashlands_KwamaNest</defName>
-		<label>kwama nest</label>
+		<defName>Mashed_Ashlands_FloodedKwamaNest</defName>
+		<label>flooded kwama nest</label>
+		<plantDensity>1</plantDensity>
 		<modExtensions>
 			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
-				<gravelTerrain>Mashed_Ashlands_RichAshGravel</gravelTerrain>
-				<gravelThreshold>0.25</gravelThreshold>
-				<waterTerrain>WaterShallow</waterTerrain>
-				<waterThreshold>0.6</waterThreshold>
+				<gravelTerrain>MarshyTerrain</gravelTerrain>
+				<gravelThreshold>0.05</gravelThreshold>
+				<waterTerrain>Mashed_Ashlands_ShallowMarsh</waterTerrain>
+				<waterThreshold>0.4</waterThreshold>
 				<wildPlants>
 					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
-					<Mashed_Ashlands_Plant_TreeKwamacap>0.2</Mashed_Ashlands_Plant_TreeKwamacap>
+					<Mashed_Ashlands_Plant_InkCap>0.05</Mashed_Ashlands_Plant_InkCap>
+					<Mashed_Ashlands_Plant_MuckSponge>0.2</Mashed_Ashlands_Plant_MuckSponge>
+					<Mashed_Ashlands_Plant_TreeKwamacap>0.05</Mashed_Ashlands_Plant_TreeKwamacap>
 					<Mashed_Ashlands_GiantVioletCoprinus>0.05</Mashed_Ashlands_GiantVioletCoprinus>
 					<!-- Polluted plants -->
 					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingRussula>

@@ -21,7 +21,8 @@ namespace Mashed_Ashlands_Kwama
 
         public void GenerateKwamaNest()
         {
-            kwamaNest = PocketMapUtility.GeneratePocketMap(new IntVec3(kwamaNestSize, 1, kwamaNestSize), MapGeneratorDefOf.Mashed_Ashlands_KwamaNest, null, Map);
+            RandomMapGenDef randomMapGenDef = RandomMapGenDef.Get(def);
+            kwamaNest = PocketMapUtility.GeneratePocketMap(new IntVec3(kwamaNestSize, 1, kwamaNestSize), randomMapGenDef.mapGenerators.RandomElement(), null, Map);
             nestExit = kwamaNest.listerThings.ThingsOfDef(ThingDefOf.Mashed_Ashlands_KwamaNestExit).First() as KwamaNestExit;
             nestExit.nestEntrance = this;
         }

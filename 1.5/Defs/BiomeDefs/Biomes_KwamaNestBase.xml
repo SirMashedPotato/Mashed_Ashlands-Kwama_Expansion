@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiomeDef Abstract="True" Name="Mashed_Ashlands_KwamaNestBase">
+		<description>A cave filled with a damp musty smell. The calls of kwama can be heard echoing throughout the tunnels.</description>
+		<generatesNaturally>false</generatesNaturally>
+		<animalDensity>1</animalDensity>
+		<plantDensity>0.5</plantDensity>
+		<wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
+		<baseWeatherCommonalities>
+			<Undercave>1</Undercave>
+		</baseWeatherCommonalities>
+		<diseaseMtbDays>80</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>40</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>40</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+		</diseases>
+	</BiomeDef>
+</Defs>

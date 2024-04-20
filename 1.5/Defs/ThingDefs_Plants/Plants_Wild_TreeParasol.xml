@@ -34,5 +34,11 @@
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_Immature</immatureGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeKwamacap_Leafless</leaflessGraphicPath>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(239,97,26,0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

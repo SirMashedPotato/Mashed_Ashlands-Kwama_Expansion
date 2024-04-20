@@ -105,6 +105,7 @@
 		<race>Mashed_Ashlands_KwamaWorker</race>
 		<combatPower>100</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>2~3</wildGroupSize>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>

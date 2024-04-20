@@ -13,7 +13,6 @@ namespace Mashed_Ashlands_Kwama
 
         public bool increaseCavePlantWeight = true;
         public List<BiomePlantRecord> wildPlants;
-        public List<BiomeAnimalRecord> wildAnimals;
 
         public static UnderBiomeProperties Get(Def def)
         {

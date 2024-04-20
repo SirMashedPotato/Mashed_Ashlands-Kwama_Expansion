@@ -27,6 +27,7 @@
 			<li>Mashed_Ashlands_FindKwamaNestExit</li>
 			<li>Mashed_Ashlands_KwamaQueen</li>
 			<li>Mashed_Ashlands_KwamaNestExplorer</li>
+			<li>Mashed_Ashlands_KwamaBurrow</li>
 			<li>Mashed_Ashlands_KwamaEggSacs</li>
 			<li>Mashed_Ashlands_GoldKwamaEggSacs</li>
 			<!-- warriors -->
@@ -71,10 +72,26 @@
 			</validators>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_KwamaBurrow]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_KwamaBurrow</defName>
+		<order>611</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>Mashed_Ashlands_KwamaBurrow</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<countPer10kCellsRange>3</countPer10kCellsRange>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>1</radius>
+					<affordance>SmoothableStone</affordance>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaEggSacs]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_KwamaEggSacs</defName>
-		<order>611</order>
+		<order>612</order>
 		<genStep Class="GenStep_ScatterThings">
 			<thingDef>Mashed_Ashlands_KwamaEggSac</thingDef>
 			<spotMustBeStandable>true</spotMustBeStandable>
@@ -91,7 +108,7 @@
 	<!-- ==========[Mashed_Ashlands_GoldKwamaEggSacs]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_GoldKwamaEggSacs</defName>
-		<order>612</order>
+		<order>613</order>
 		<genStep Class="GenStep_ScatterThings">
 			<thingDef>Mashed_Ashlands_GoldKwamaEggSac</thingDef>
 			<spotMustBeStandable>true</spotMustBeStandable>

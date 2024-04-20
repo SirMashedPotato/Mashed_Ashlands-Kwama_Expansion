@@ -86,10 +86,10 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Mashed_Ashlands_KwamaBurrow</defName>
 		<label>kwama burrow</label>
-		<description>A small hole leading deeper into the kwama nest. Too treacherous to travel through. Kwama will periodically emerge from here.</description>
-		<!--<thingClass>PitBurrow</thingClass>-->
-		<size>(3, 3)</size>
-		<tickerType>Normal</tickerType>
+		<description>A small hole leading deeper into the kwama nest. The sound of earth shifting can be heard from within, probably not very safe to traverse. Kwama will periodically emerge from here.</description>
+		<thingClass>Building</thingClass>
+		<size>(1, 1)</size>
+		<tickerType>Long</tickerType>
 		<useHitPoints>false</useHitPoints>
 		<rotatable>false</rotatable>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -97,7 +97,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>Things/Building/PitBurrow</texPath>
-			<drawSize>(3, 3)</drawSize>
+			<drawSize>(1, 1)</drawSize>
 		</graphicData>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<passability>Impassable</passability>
@@ -112,9 +112,35 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_LeaveFilthOnDestroyed">
-				<filthDef>Filth_LooseGround</filthDef>
-				<thickness>2</thickness>
+			<li Class="Mashed_Ashlands_Kwama.CompProperties_AnimalSpawner">
+				<tickInterval>10</tickInterval>
+				<spawnDefs>
+					<li>
+						<kindDef>Rat</kindDef>
+						<weight>0.2</weight>
+						<maxOnMap>3</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
+						<weight>0.6</weight>
+						<maxOnMap>12</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaForager</kindDef>
+						<weight>0.8</weight>
+						<maxOnMap>9</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaWorker</kindDef>
+						<weight>1</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaWarrior</kindDef>
+						<weight>1</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+				</spawnDefs>
 			</li>
 		</comps>
 	</ThingDef>

@@ -14,12 +14,6 @@
 				<gravelThreshold>0.25</gravelThreshold>
 				<waterTerrain>WaterShallow</waterTerrain>
 				<waterThreshold>0.6</waterThreshold>
-				<wildAnimals>
-					<Mashed_Ashlands_KwamaScrib>0.6</Mashed_Ashlands_KwamaScrib>
-					<Mashed_Ashlands_KwamaForager>0.5</Mashed_Ashlands_KwamaForager>
-					<Mashed_Ashlands_KwamaWorker>0.4</Mashed_Ashlands_KwamaWorker>
-					<Mashed_Ashlands_KwamaWarrior>0.3</Mashed_Ashlands_KwamaWarrior>
-				</wildAnimals>
 				<wildPlants>
 					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>

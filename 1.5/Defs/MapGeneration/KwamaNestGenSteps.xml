@@ -59,7 +59,7 @@
 			<thingDef>Mashed_Ashlands_KwamaEggSac</thingDef>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<countPer10kCellsRange>60~90</countPer10kCellsRange>
-			<clusterSize>3</clusterSize>
+			<minSpacing>3</minSpacing>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
 					<radius>1</radius>

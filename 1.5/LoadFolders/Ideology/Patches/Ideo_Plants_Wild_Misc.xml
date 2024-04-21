@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Plant_DarkshadeGlowstalk"]/plant/sowResearchPrerequisites/li[text()="Mashed_Ashlands_AshSowing_Advanced"]</xpath>
+		<value>
+			<li>Mashed_Ashlands_AshSowing_Darkshade</li>
+		</value>
+	</Operation>
+</Patch>

@@ -3,6 +3,8 @@
 	<v1.5>
 		<li>Common</li>
 		<li>1.5</li>
+		<!-- Ideology -->
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/LoadFolders/Ideology</li>
 		<!-- VE_Fishing -->
 		<li IfModActive="vanillaexpanded.vcef">LoadFolders/VE_FishingTextures</li>
 		<li IfModActive="vanillaexpanded.vcef">1.5/LoadFolders/VE_Fishing</li>

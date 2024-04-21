@@ -17,6 +17,11 @@
 						<maxOnMap>3</maxOnMap>
 					</li>
 					<li>
+						<kindDef>Mashed_Ashlands_Mudcrab</kindDef>
+						<weight>0.4</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+					<li>
 						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
 						<weight>0.6</weight>
 						<maxOnMap>12</maxOnMap>

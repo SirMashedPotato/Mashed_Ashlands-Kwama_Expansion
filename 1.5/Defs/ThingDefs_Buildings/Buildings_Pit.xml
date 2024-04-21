@@ -95,7 +95,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Mashed_Ashlands_KwamaBurrow</defName>
 		<label>kwama burrow</label>
-		<description>A small hole leading deeper into the kwama nest. The sound of earth shifting can be heard from within, probably not very safe to traverse. Kwama will periodically emerge from here.</description>
+		<description>A small hole leading deeper into the kwama nest. The sound of earth shifting can be heard from within, probably not very safe to traverse. Kwama, or possibly other animals, will periodically emerge from here.</description>
 		<thingClass>Building</thingClass>
 		<size>(1, 1)</size>
 		<tickerType>Long</tickerType>

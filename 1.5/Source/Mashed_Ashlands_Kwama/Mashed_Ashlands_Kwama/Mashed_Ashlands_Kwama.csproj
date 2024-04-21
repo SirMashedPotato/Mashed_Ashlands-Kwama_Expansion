@@ -67,9 +67,9 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="Harmony\WildPlants.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
-    <Compile Include="Map\GenStep\GenStep_FindKwamaNestExit.cs" />
-    <Compile Include="Map\GenStep\GenStep_KwamaQueen.cs" />
-    <Compile Include="Map\GenStep\GenStep_NestTerrain.cs" />
+    <Compile Include="GenStep\GenStep_FindKwamaNestExit.cs" />
+    <Compile Include="GenStep\GenStep_KwamaQueen.cs" />
+    <Compile Include="GenStep\GenStep_NestTerrain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingClass\KwamaNestEntrance.cs" />
     <Compile Include="ThingClass\KwamaNestExit.cs" />

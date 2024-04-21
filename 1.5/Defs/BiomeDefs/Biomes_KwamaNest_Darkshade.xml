@@ -17,14 +17,19 @@
 						<maxOnMap>3</maxOnMap>
 					</li>
 					<li>
+						<kindDef>Mashed_Ashlands_ShalkDarkshade</kindDef>
+						<weight>0.6</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+					<li>
 						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
 						<weight>0.6</weight>
-						<maxOnMap>12</maxOnMap>
+						<maxOnMap>8</maxOnMap>
 					</li>
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaForager</kindDef>
 						<weight>0.8</weight>
-						<maxOnMap>9</maxOnMap>
+						<maxOnMap>8</maxOnMap>
 					</li>
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaWorker</kindDef>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_ShalkDarkshade]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_ShalkThingBase">
+		<defName>Mashed_Ashlands_ShalkDarkshade</defName>
+		<label>darkshade shalk</label>
+		<description>A rare subspecies of the shalk that has evolved a symbiotic bond with a species of darkshade fungus. The shalk protects the mushrooms from being eaten, whilst the mushrooms help the shalk blend into the surroundings. Taming a darkshade shalk will allow one to regularly harvest these mushrooms, though they aren't particularly pleasant to eat.\n\nWhile many would think darkshade shalk pose little threat due to their size, the mandibles of darkshade shalk are coated in a flammable liquid, which can be ignited by their bite.</description>
+		<statBases>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_ShalkDarkshadeFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>2.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>RawFungus</woolDef>
+				<shearIntervalDays>4</shearIntervalDays>
+				<woolAmount>10</woolAmount>
+			</li>
+		</comps>
+		<race>
+			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+		</race>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+					<li>Mashed_Ashlands_BurnBite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_ShalkDarkshade</defName>
+		<label>darkshade shalk</label>
+		<race>Mashed_Ashlands_ShalkDarkshade</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>3~6</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_ShalkDarkshade</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_ShalkDarkshade</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_ShalkDarkshade</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Shalk/Mashed_Ashlands_Dessicated_Shalk</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>Mouth</bodyPartGroup>
+					<thing>Chemfuel</thing>
+				</butcherBodyPart>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

@@ -39,11 +39,8 @@
 			<li Class="Mashed_Ashlands_Kwama.RandomMapGenDef">
 				<mapGenerators>
 					<li>Mashed_Ashlands_KwamaNest</li>
-					<li>Mashed_Ashlands_CrystalKwamaNest</li>
 					<li>Mashed_Ashlands_DarkshadeKwamaNest</li>
-					<li>Mashed_Ashlands_DustKwamaNest</li>
 					<li>Mashed_Ashlands_FloodedKwamaNest</li>
-					<li>Mashed_Ashlands_ThermalKwamaNest</li>
 				</mapGenerators>
 			</li>
 		</modExtensions>
@@ -126,33 +123,6 @@
 		<comps>
 			<li Class="Mashed_Ashlands_Kwama.CompProperties_AnimalSpawner">
 				<tickInterval>10</tickInterval>
-				<spawnDefs>
-					<li>
-						<kindDef>Rat</kindDef>
-						<weight>0.2</weight>
-						<maxOnMap>3</maxOnMap>
-					</li>
-					<li>
-						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
-						<weight>0.6</weight>
-						<maxOnMap>12</maxOnMap>
-					</li>
-					<li>
-						<kindDef>Mashed_Ashlands_KwamaForager</kindDef>
-						<weight>0.8</weight>
-						<maxOnMap>9</maxOnMap>
-					</li>
-					<li>
-						<kindDef>Mashed_Ashlands_KwamaWorker</kindDef>
-						<weight>1</weight>
-						<maxOnMap>6</maxOnMap>
-					</li>
-					<li>
-						<kindDef>Mashed_Ashlands_KwamaWarrior</kindDef>
-						<weight>1</weight>
-						<maxOnMap>6</maxOnMap>
-					</li>
-				</spawnDefs>
 			</li>
 		</comps>
 	</ThingDef>

@@ -53,15 +53,23 @@ namespace Mashed_Ashlands_Kwama
 
         private void SpawnAnimals()
         {
-            List<AnimalSpawns> validSpawns = Props.spawnDefs.Where(x => parent.Map.mapPawns.AllPawnsSpawned.Where(y => y.kindDef == x.kindDef).Count() < x.maxOnMap).ToList();
-            if (!validSpawns.NullOrEmpty())
+            UnderBiomeProperties biomeProps = UnderBiomeProperties.Get(parent.Map.Biome);
+            if (biomeProps != null && !biomeProps.wildAnimals.NullOrEmpty())
             {
-                AnimalSpawns chosenSpawn = validSpawns.RandomElementByWeight(x => x.weight);
-                int count = chosenSpawn.kindDef.wildGroupSize.RandomInRange;
-                for (int i = 0; i < count; i++)
+                List<AnimalSpawns> validSpawns = biomeProps.wildAnimals.Where(x => parent.Map.mapPawns.AllPawnsSpawned.Where(y => y.kindDef == x.kindDef).Count() < x.maxOnMap).ToList();
+                if (!validSpawns.NullOrEmpty())
                 {
-                    GenSpawn.Spawn(PawnGenerator.GeneratePawn(new PawnGenerationRequest(chosenSpawn.kindDef)), parent.Position, parent.Map, Rot4.Random);
+                    AnimalSpawns chosenSpawn = validSpawns.RandomElementByWeight(x => x.weight);
+                    int count = chosenSpawn.kindDef.wildGroupSize.RandomInRange;
+                    for (int i = 0; i < count; i++)
+                    {
+                        GenSpawn.Spawn(PawnGenerator.GeneratePawn(new PawnGenerationRequest(chosenSpawn.kindDef)), parent.Position, parent.Map, Rot4.Random);
+                    }
                 }
+            }
+            else
+            {
+                Log.Warning("UnderBiomeProperties missing or wildAnimals is null in biome def: " + parent.Map.Biome);
             }
         }
     }

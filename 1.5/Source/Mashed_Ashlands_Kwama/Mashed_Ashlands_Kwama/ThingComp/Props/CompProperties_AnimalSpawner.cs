@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Verse;
+﻿using Verse;
 
 namespace Mashed_Ashlands_Kwama
 {
@@ -12,14 +11,5 @@ namespace Mashed_Ashlands_Kwama
 
         public int initialSpawnCount = 2;
         public int tickInterval = 10;
-        public List<AnimalSpawns> spawnDefs;
     }
-
-    public class AnimalSpawns 
-    {
-        public PawnKindDef kindDef;
-        public float weight = 1f;
-        public int maxOnMap;
-    }
-
 }

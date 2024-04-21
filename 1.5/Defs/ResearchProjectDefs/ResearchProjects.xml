@@ -1,5 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_AshSowing_Darkshade]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
+		<defName>Mashed_Ashlands_AshSowing_Darkshade</defName>
+		<label>darkshade ashland farming</label>
+		<description>Learn how to sow special darkshade plants, only found growing in caverns deep beneath the ashlands.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSowing_Intermediate</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->advanced ashland [action_grow]</li>
+				<li>subject_story->[action_grow] [middle_grow] [thing_plant]</li>
+				<li>subject_gerund->[action_grow] [thing_plant]</li>
+				<!-- things -->
+				<li>thing_plant->ash pomegranate</li>
+				<li>thing_plant->meadow rye</li>
+				<li>thing_plant->emperor parasol</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
 	<!-- ==========[Mashed_Ashlands_Kwama_EggFurniture]==========-->
 	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
 		<defName>Mashed_Ashlands_Kwama_EggFurniture</defName>
@@ -8,7 +33,7 @@
 		<baseCost>100</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0.00</researchViewX>
-		<researchViewY>3.00</researchViewY>
+		<researchViewY>4.00</researchViewY>
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<generalRules>
 			<rulesStrings>
@@ -31,7 +56,7 @@
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>1.00</researchViewX>
-		<researchViewY>3.00</researchViewY>
+		<researchViewY>4.00</researchViewY>
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<generalRules>
 			<rulesStrings>

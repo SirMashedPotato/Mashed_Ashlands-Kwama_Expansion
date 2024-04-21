@@ -26,7 +26,6 @@
 			<li>Mashed_Ashlands_GoldKwamaEggSacs</li>
 			<!-- <li>UndercaveInterest</li> -->
 			<li>Plants</li>
-			<li>Animals</li>
 			<li>Fog</li>
 		</genSteps>
 	</MapGeneratorDef>
@@ -40,6 +39,7 @@
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_CrystalKwamaNest]==========-->
+	<!--
 	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
 		<defName>Mashed_Ashlands_CrystalKwamaNest</defName>
 		<label>crystaline kwama nest</label>
@@ -48,6 +48,7 @@
 			<temperature>15</temperature>
 		</pocketMapProperties>
 	</MapGeneratorDef>
+	-->
 	<!-- ==========[Mashed_Ashlands_DarkshadeKwamaNest]==========-->
 	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
 		<defName>Mashed_Ashlands_DarkshadeKwamaNest</defName>
@@ -58,6 +59,7 @@
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_DustKwamaNest]==========-->
+	<!--
 	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
 		<defName>Mashed_Ashlands_DustKwamaNest</defName>
 		<label>dust kwama nest</label>
@@ -69,6 +71,7 @@
 			<li>Mashed_Ashlands_DustAntHives</li>
 		</genSteps>
 	</MapGeneratorDef>
+	-->
 	<!-- ==========[Mashed_Ashlands_FloodedKwamaNest]==========-->
 	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
 		<defName>Mashed_Ashlands_FloodedKwamaNest</defName>
@@ -79,6 +82,7 @@
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_ThermalKwamaNest]==========-->
+	<!--
 	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
 		<defName>Mashed_Ashlands_ThermalKwamaNest</defName>
 		<label>thermal kwama nest</label>
@@ -87,4 +91,5 @@
 			<temperature>25</temperature>
 		</pocketMapProperties>
 	</MapGeneratorDef>
+	-->
 </Defs>

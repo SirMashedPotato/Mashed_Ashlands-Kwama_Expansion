@@ -33,6 +33,7 @@
 				<doers>
 					<li Class="BookOutcomeProperties_GainResearch">
 						<include>
+							<Mashed_Ashlands_AshSowing_Darkshade/>
 							<Mashed_Ashlands_Kwama_EggFurniture/>
 							<Mashed_Ashlands_Kwama_EggPacking/>
 						</include>

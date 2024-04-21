@@ -10,6 +10,33 @@
 				<gravelThreshold>0.25</gravelThreshold>
 				<waterTerrain>WaterShallow</waterTerrain>
 				<waterThreshold>0.6</waterThreshold>
+				<wildAnimals>
+					<li>
+						<kindDef>Rat</kindDef>
+						<weight>0.2</weight>
+						<maxOnMap>3</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
+						<weight>0.6</weight>
+						<maxOnMap>12</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaForager</kindDef>
+						<weight>0.8</weight>
+						<maxOnMap>9</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaWorker</kindDef>
+						<weight>1</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaWarrior</kindDef>
+						<weight>1</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+				</wildAnimals>
 				<wildPlants>
 					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>

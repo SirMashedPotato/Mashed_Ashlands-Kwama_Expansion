@@ -13,10 +13,18 @@ namespace Mashed_Ashlands_Kwama
 
         public bool increaseCavePlantWeight = true;
         public List<BiomePlantRecord> wildPlants;
+        public List<AnimalSpawns> wildAnimals;
 
         public static UnderBiomeProperties Get(Def def)
         {
             return def.GetModExtension<UnderBiomeProperties>();
         }
+    }
+
+    public class AnimalSpawns 
+    {
+        public PawnKindDef kindDef;
+        public float weight = 1f;
+        public int maxOnMap;
     }
 }

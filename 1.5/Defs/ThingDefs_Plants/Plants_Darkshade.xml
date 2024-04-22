@@ -17,7 +17,7 @@
 		<pathCost>30</pathCost>
 		<ingestible />
 		<plant>
-			<growMinGlow>0</growMinGlow>
+			<growMinGlow>-0.01</growMinGlow>
 			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
@@ -54,7 +54,7 @@
 			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_DarkshadeEntoloma</texPath>
 		</graphicData>
 		<plant>
-			<growMinGlow>0</growMinGlow>
+			<growMinGlow>-0.01</growMinGlow>
 			<growOptimalGlow>0.5</growOptimalGlow>
 			<growDays>3</growDays>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
@@ -86,7 +86,7 @@
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>
-			<growMinGlow>0</growMinGlow>
+			<growMinGlow>-0.01</growMinGlow>
 			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<fertilityMin>1</fertilityMin>
@@ -127,12 +127,12 @@
 			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeParasolBush</texPath>
 		</graphicData>
 		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<growDays>9</growDays>
 			<sowResearchPrerequisites Inherit="False">
 				<li>Mashed_Ashlands_AshSowing_Darkshade</li>
 			</sowResearchPrerequisites>
-			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0.5</growOptimalGlow>
 		</plant>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -150,7 +150,7 @@
 			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeScathecrawPlant</texPath>
 		</graphicData>
 		<plant>
-			<growMinGlow>0</growMinGlow>
+			<growMinGlow>-0.01</growMinGlow>
 			<growOptimalGlow>0.5</growOptimalGlow>
 			<harvestYield>6</harvestYield>
 			<harvestedThingDef>Mashed_Ashlands_RawScathecraw</harvestedThingDef>
@@ -196,9 +196,6 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(78,226,229,0)</glowColor>
-			</li>
-			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
-				<effecterDef>Mashed_Ashlands_DarklightTorchbugEffecter</effecterDef>
 			</li>
 		</comps>
 	</ThingDef>

@@ -67,12 +67,23 @@ namespace Mashed_Ashlands_Kwama
                     }
                 };
             }
-            /*
-            if (isCollapsing || !DebugSettings.ShowDevGizmos)
+            if (DebugSettings.ShowDevGizmos)
             {
-                yield break;
+                if (kwamaNest != null)
+                {
+                    yield return new Command_Action
+                    {
+                        defaultLabel = "DEV: Destroy inner map",
+                        action = delegate 
+                        {
+                            PocketMapUtility.DestroyPocketMap(kwamaNest);
+                            kwamaNest = null;
+
+                        }
+                    };
+                    
+                }
             }
-            */
             /*
             yield return new Command_Action
             {

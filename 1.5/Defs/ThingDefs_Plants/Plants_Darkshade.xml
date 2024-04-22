@@ -18,7 +18,7 @@
 		<ingestible />
 		<plant>
 			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
 			<growDays>60</growDays>
@@ -55,7 +55,7 @@
 		</graphicData>
 		<plant>
 			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<growDays>3</growDays>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
 			<sowResearchPrerequisites>
@@ -87,7 +87,7 @@
 		<pathCost>14</pathCost>
 		<plant>
 			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<fertilityMin>1</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
@@ -113,6 +113,34 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_DarkshadeParasolBush]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_ParasolBushBase">
+		<defName>Mashed_Ashlands_Plant_DarkshadeParasolBush</defName>
+		<label>darkshade parasol bush</label>
+		<description>An incredibly rare strain of the parasol bush, only found growing deep in the caverns beneath the ashlands. The stem can be harvested for parasol wood, though it takes slightly longer to harden than the regular parasol bush. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Mashed_Ashlands_AshResistance>0.8</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeParasolBush</texPath>
+		</graphicData>
+		<plant>
+			<growDays>9</growDays>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Mashed_Ashlands_AshSowing_Darkshade</li>
+			</sowResearchPrerequisites>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(78,226,229,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Plant_DarkshadeScathecraw]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_ScathecrawBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeScathecraw</defName>
@@ -123,7 +151,7 @@
 		</graphicData>
 		<plant>
 			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<harvestYield>6</harvestYield>
 			<harvestedThingDef>Mashed_Ashlands_RawScathecraw</harvestedThingDef>
 			<sowResearchPrerequisites Inherit="False">
@@ -153,7 +181,7 @@
 		</statBases>
 		<plant>
 			<growMinGlow>0</growMinGlow>
-			<growOptimalGlow>0</growOptimalGlow>
+			<growOptimalGlow>0.5</growOptimalGlow>
 			<fertilityMin>0.1</fertilityMin>
 			<growDays>20</growDays>
 			<visualSizeRange>1.3~2.4</visualSizeRange>

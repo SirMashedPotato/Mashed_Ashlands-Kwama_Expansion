@@ -7,7 +7,7 @@
 		<modExtensions>
 			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
 				<gravelTerrain>Mashed_Ashlands_DarkshadeMossyAshSoil</gravelTerrain>
-				<gravelThreshold>0.25</gravelThreshold>
+				<gravelThreshold>0.15</gravelThreshold>
 				<waterTerrain>WaterShallow</waterTerrain>
 				<waterThreshold>0.6</waterThreshold>
 				<wildAnimals>
@@ -43,12 +43,13 @@
 					</li>
 				</wildAnimals>
 				<wildPlants>
-					<Mashed_Ashlands_Plant_DarkshadeBryolux>0.1</Mashed_Ashlands_Plant_DarkshadeBryolux>
-					<Mashed_Ashlands_Plant_DarkshadeEntoloma>0.3</Mashed_Ashlands_Plant_DarkshadeEntoloma>
+					<Mashed_Ashlands_Plant_DarkshadeBryolux>0.15</Mashed_Ashlands_Plant_DarkshadeBryolux>
+					<Mashed_Ashlands_Plant_DarkshadeEntoloma>0.2</Mashed_Ashlands_Plant_DarkshadeEntoloma>
 					<Mashed_Ashlands_Plant_DarkshadeScathecraw>0.05</Mashed_Ashlands_Plant_DarkshadeScathecraw>
 					<Mashed_Ashlands_Plant_DarkshadeMushroom>0.1</Mashed_Ashlands_Plant_DarkshadeMushroom>
+					<Mashed_Ashlands_Plant_DarkshadeParasolBush>0.05</Mashed_Ashlands_Plant_DarkshadeParasolBush>
 					<Mashed_Ashlands_GiantDarkshadeCoprinus>0.2</Mashed_Ashlands_GiantDarkshadeCoprinus>
-					<Mashed_Ashlands_Plant_DarkshadeGlowstalk MayRequire="Ludeon.RimWorld.Ideology">0.1</Mashed_Ashlands_Plant_DarkshadeGlowstalk>
+					<Mashed_Ashlands_Plant_DarkshadeGlowstalk MayRequire="Ludeon.RimWorld.Ideology">0.05</Mashed_Ashlands_Plant_DarkshadeGlowstalk>
 					<!-- Polluted plants -->
 					<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_GlowingEntoloma>
 					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>

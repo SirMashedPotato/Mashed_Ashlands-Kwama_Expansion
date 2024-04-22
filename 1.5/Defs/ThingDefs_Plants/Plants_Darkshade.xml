@@ -113,6 +113,31 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_DarkshadeScathecraw]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_ScathecrawBase">
+		<defName>Mashed_Ashlands_Plant_DarkshadeScathecraw</defName>
+		<label>darkshade scathecraw plant</label>
+		<description>An incredibly rare strain of scathecraw, only found growing deep in the caverns beneath the ashlands. Does not yield as much edible flesh as the regular scathecraw, though it is able to grow in near darkness. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeScathecrawPlant</texPath>
+		</graphicData>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<harvestYield>6</harvestYield>
+			<harvestedThingDef>Mashed_Ashlands_RawScathecraw</harvestedThingDef>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Mashed_Ashlands_AshSowing_Darkshade</li>
+			</sowResearchPrerequisites>
+			<visualSizeRange>0.8~1.5</visualSizeRange>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(78,226,229,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_GiantDarkshadeCoprinus]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeDecorativeBase">
 		<defName>Mashed_Ashlands_GiantDarkshadeCoprinus</defName>

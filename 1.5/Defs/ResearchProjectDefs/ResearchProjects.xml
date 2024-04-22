@@ -15,13 +15,16 @@
 		</prerequisites>
 		<generalRules>
 			<rulesStrings>
-				<li>subject->advanced ashland [action_grow]</li>
+				<li>subject->darkshade ashland [action_grow]</li>
 				<li>subject_story->[action_grow] [middle_grow] [thing_plant]</li>
+				<li>subject_story->the interesting biology of the [thing_plant]</li>
 				<li>subject_gerund->[action_grow] [thing_plant]</li>
 				<!-- things -->
-				<li>thing_plant->ash pomegranate</li>
-				<li>thing_plant->meadow rye</li>
-				<li>thing_plant->emperor parasol</li>
+				<li>thing_plant->darkshade bryolux</li>
+				<li>thing_plant->darkshade entoloma</li>
+				<li>thing_plant->darkshade glowstalk</li>
+				<li>thing_plant->darkshade mushroom</li>
+				<li>thing_plant->darkshade coprinus</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
@@ -42,7 +45,7 @@
 				<li>subject_story->how to properly hollow out a kwama egg</li>
 				<li>subject_story->what happens when don't properly hollow out a kwama egg</li>
 				<li>subject_story->how to clean up after you improperly hollowed out a kwama egg</li>
-				<li>subject_story->how to get the smell of rotten kwama eggs out of your shoes in fewer than 10 days</li>
+				<li>subject_story->how to get the smell of rotten kwama eggs out of your furniture before it becomes permanent</li>
 				<li>subject_gerund->hollowing out kwama eggs</li>
 				<li>subject_gerund->preserving kwama eggs</li>
 			</rulesStrings>

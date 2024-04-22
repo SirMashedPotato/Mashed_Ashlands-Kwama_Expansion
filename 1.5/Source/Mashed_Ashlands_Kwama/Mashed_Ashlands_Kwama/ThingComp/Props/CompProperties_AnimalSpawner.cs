@@ -11,5 +11,6 @@ namespace Mashed_Ashlands_Kwama
 
         public int initialSpawnCount = 2;
         public int tickInterval = 10;
+        public bool disableIfPolluted = true;
     }
 }

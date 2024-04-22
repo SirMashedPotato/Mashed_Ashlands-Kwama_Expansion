@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Verse;
 
 namespace Mashed_Ashlands_Kwama
@@ -53,6 +54,11 @@ namespace Mashed_Ashlands_Kwama
 
         private void SpawnAnimals()
         {
+            if (Props.disableIfPolluted && parent.Position.IsPolluted(parent.Map))
+            {
+                FleckMaker.ThrowDustPuffThick(parent.Position.ToVector3(), parent.Map, 1f, Color.green);
+                return;
+            }
             UnderBiomeProperties biomeProps = UnderBiomeProperties.Get(parent.Map.Biome);
             if (biomeProps != null && !biomeProps.wildAnimals.NullOrEmpty())
             {

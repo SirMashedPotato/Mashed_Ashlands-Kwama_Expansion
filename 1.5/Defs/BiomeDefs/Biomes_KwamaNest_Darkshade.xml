@@ -18,6 +18,7 @@
 					<!-- Polluted plants -->
 					<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_GlowingEntoloma>
 					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
+					<Mashed_Ashlands_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingParasolBush>
 					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_GiantGlowingCoprinus>
 				</cavePlants>
 				<dryToReplacers>

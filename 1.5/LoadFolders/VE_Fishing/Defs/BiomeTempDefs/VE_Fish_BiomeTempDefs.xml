@@ -6,6 +6,7 @@
 		<biomeTempLabel>Mashed_Ashlands_DarkshadeAshland</biomeTempLabel>
 		<biomes>
 			<li>Mashed_Ashlands_DarkshadeKwamaNest</li>
+			<li>Mashed_Ashlands_FloodedDarkshadeKwamaNest</li>
 		</biomes>
 	</VCE_Fishing.BiomeTempDef>
 </Defs>

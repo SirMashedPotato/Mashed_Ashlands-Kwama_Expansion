@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MudcrabDarkshadeEgg]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_MudcrabDarkshadeEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_MudcrabDarkshadeFertilized</thingDef>
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_BiomeTempAshlandDarkshade</li>
+		</allowedBiomes>
+		<commonality>0.3</commonality>
+		<baseFishingYield>2</baseFishingYield>
+	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_ShalkDarkshadeEgg]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_ShalkDarkshadeEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_ShalkDarkshadeFertilized</thingDef>
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_BiomeTempAshlandDarkshade</li>
+		</allowedBiomes>
+		<commonality>0.3</commonality>
+		<baseFishingYield>1</baseFishingYield>
+	</VCE_Fishing.FishDef>
+</Defs>

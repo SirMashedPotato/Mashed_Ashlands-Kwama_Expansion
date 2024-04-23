@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_Egg_MudcrabDarkshadeFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_MudcrabDarkshadeFertilized</defName>
+		<label>darkshade mudcrab egg (fert.)</label>
+		<description>A fertilised darkshade mudcrab egg. If all goes well, it should hatch into a baby darkshade mudcrab. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(186,247,251)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_MudcrabDarkshade</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_ShalkDarkshadeFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_ShalkDarkshadeFertilized</defName>

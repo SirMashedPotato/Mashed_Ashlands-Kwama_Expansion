@@ -1,25 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<BiomeDef ParentName="Mashed_Ashlands_KwamaNestBase">
-		<defName>Mashed_Ashlands_DarkshadeKwamaNest</defName>
-		<label>darkshade kwama nest</label>
-		<plantDensity>0.8</plantDensity>
+		<defName>Mashed_Ashlands_DarkshadeFloodedKwamaNest</defName>
+		<label>flooded darkshade kwama nest</label>
+		<plantDensity>1</plantDensity>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<forceCustomCavePlants>true</forceCustomCavePlants>
 				<cavePlants>
-					<Mashed_Ashlands_Plant_DarkshadeBryolux>0.15</Mashed_Ashlands_Plant_DarkshadeBryolux>
+					<Mashed_Ashlands_Plant_DarkshadeBryolux>0.1</Mashed_Ashlands_Plant_DarkshadeBryolux>
+					<Mashed_Ashlands_Plant_DarkshadeDraggleTails>0.05</Mashed_Ashlands_Plant_DarkshadeDraggleTails>
 					<Mashed_Ashlands_Plant_DarkshadeEntoloma>0.2</Mashed_Ashlands_Plant_DarkshadeEntoloma>
-					<Mashed_Ashlands_Plant_DarkshadeTramaShrub>0.025</Mashed_Ashlands_Plant_DarkshadeTramaShrub>
-					<Mashed_Ashlands_Plant_DarkshadeScathecraw>0.025</Mashed_Ashlands_Plant_DarkshadeScathecraw>
 					<Mashed_Ashlands_Plant_DarkshadeMushroom>0.1</Mashed_Ashlands_Plant_DarkshadeMushroom>
 					<Mashed_Ashlands_Plant_DarkshadeParasolBush>0.05</Mashed_Ashlands_Plant_DarkshadeParasolBush>
+					<Mashed_Ashlands_DarkshadeDuskCap>0.1</Mashed_Ashlands_DarkshadeDuskCap>
 					<Mashed_Ashlands_GiantDarkshadeCoprinus>0.2</Mashed_Ashlands_GiantDarkshadeCoprinus>
 					<Mashed_Ashlands_Plant_TreeDarkshadeNetchShield>0.025</Mashed_Ashlands_Plant_TreeDarkshadeNetchShield>
-					<Mashed_Ashlands_Plant_DarkshadeGlowstalk MayRequire="Ludeon.RimWorld.Ideology">0.025</Mashed_Ashlands_Plant_DarkshadeGlowstalk>
+					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
+					<Mashed_Ashlands_Plant_DarkshadeGlowstalk MayRequire="Ludeon.RimWorld.Ideology">0.05</Mashed_Ashlands_Plant_DarkshadeGlowstalk>
 					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingBryolux>
-					<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_GlowingEntoloma>
+					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingBryolux>
+					<Mashed_Ashlands_Plant_GlowingDraggleTails MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_GlowingDraggleTails>
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
 					<Mashed_Ashlands_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingParasolBush>
 					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_GiantGlowingCoprinus>
 				</cavePlants>
@@ -34,10 +37,10 @@
 					</li>
 				</dryToReplacers>
 				<increasePollutedFertility>true</increasePollutedFertility>
-				<otherTerrainDef>Mashed_Ashlands_DarkshadeMossyAshSoil</otherTerrainDef>
+				<otherTerrainDef>MarshyTerrain</otherTerrainDef>
 				<otherTerrainThreshold>0.05</otherTerrainThreshold>
-				<waterTerrainDef>WaterShallow</waterTerrainDef>
-				<waterThreshold>0.6</waterThreshold>
+				<waterTerrainDef>Mashed_Ashlands_ShallowMarsh</waterTerrainDef>
+				<waterThreshold>0.4</waterThreshold>
 			</li>
 			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
 				<wildAnimals>
@@ -47,7 +50,7 @@
 						<maxOnMap>3</maxOnMap>
 					</li>
 					<li>
-						<kindDef>Mashed_Ashlands_ShalkDarkshade</kindDef>
+						<kindDef>Mashed_Ashlands_MudcrabDarkshade</kindDef>
 						<weight>0.6</weight>
 						<maxOnMap>6</maxOnMap>
 					</li>

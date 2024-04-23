@@ -58,6 +58,15 @@
 			<temperature>15</temperature>
 		</pocketMapProperties>
 	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_DarkshadeFloodedKwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+		<defName>Mashed_Ashlands_DarkshadeFloodedKwamaNest</defName>
+		<label>flooded darkshade kwama nest</label>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_DarkshadeFloodedKwamaNest</biome>
+			<temperature>15</temperature>
+		</pocketMapProperties>
+	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_DustKwamaNest]==========-->
 	<!--
 	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">

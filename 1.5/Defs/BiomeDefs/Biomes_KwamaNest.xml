@@ -4,11 +4,37 @@
 		<defName>Mashed_Ashlands_KwamaNest</defName>
 		<label>kwama nest</label>
 		<modExtensions>
-			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
-				<gravelTerrain>Mashed_Ashlands_RichAshGravel</gravelTerrain>
-				<gravelThreshold>0.25</gravelThreshold>
-				<waterTerrain>WaterShallow</waterTerrain>
+			<li Class="Mashed_Ashlands.BiomeProperties">
+				<forceCustomCavePlants>true</forceCustomCavePlants>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
+					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
+					<Mashed_Ashlands_Plant_TreeKwamacap>0.25</Mashed_Ashlands_Plant_TreeKwamacap>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingCoprinus>
+					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
+					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantGlowingCoprinus>
+				</cavePlants>
+				<dryToReplacers>
+					<li>
+						<originalTerrain>Gravel</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_RichAshGravel</replacedTerrain>
+					</li>
+					<li>
+						<originalTerrain>Soil</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshSoil</replacedTerrain>
+					</li>
+				</dryToReplacers>
+				<increasePollutedFertility>true</increasePollutedFertility>
+				<otherTerrainDef>Mashed_Ashlands_RichAshGravel</otherTerrainDef>
+				<otherTerrainThreshold>0.25</otherTerrainThreshold>
+				<waterTerrainDef>WaterShallow</waterTerrainDef>
 				<waterThreshold>0.6</waterThreshold>
+			</li>
+			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
 				<wildAnimals>
 					<li>
 						<kindDef>Rat</kindDef>
@@ -36,18 +62,6 @@
 						<maxOnMap>6</maxOnMap>
 					</li>
 				</wildAnimals>
-				<wildPlants>
-					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
-					<Mashed_Ashlands_Plant_TreeKwamacap>0.25</Mashed_Ashlands_Plant_TreeKwamacap>
-					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingRussula>
-					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingCoprinus>
-					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
-					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantGlowingCoprinus>
-				</wildPlants>
 			</li>
 		</modExtensions>
 	</BiomeDef>

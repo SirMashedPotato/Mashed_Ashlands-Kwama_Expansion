@@ -1,5 +1,6 @@
 ﻿using Verse;
 using Verse.Noise;
+using Mashed_Ashlands;
 
 namespace Mashed_Ashlands_Kwama 
 {
@@ -10,7 +11,7 @@ namespace Mashed_Ashlands_Kwama
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            UnderBiomeProperties props = UnderBiomeProperties.Get(map.Biome);
+            BiomeProperties props = BiomeProperties.Get(map.Biome);
             if (props == null)
             {
                 Log.Error("UnderBiomeProperties in " + map.Biome + " is missing");
@@ -29,11 +30,11 @@ namespace Mashed_Ashlands_Kwama
                         float num2 = (float)perlin2.GetValue(cell.x, 0.0, cell.z);
                         if (num > props.waterThreshold)
                         {
-                            map.terrainGrid.SetTerrain(cell, props.waterTerrain);
+                            map.terrainGrid.SetTerrain(cell, props.waterTerrainDef);
                         }
-                        else if (num2 > props.gravelThreshold)
+                        else if (num2 > props.otherTerrainThreshold)
                         {
-                            map.terrainGrid.SetTerrain(cell, props.gravelTerrain);
+                            map.terrainGrid.SetTerrain(cell, props.otherTerrainDef);
                         }
                     }
                 }

@@ -13,6 +13,19 @@
 		<commonality>0.3</commonality>
 		<baseFishingYield>2</baseFishingYield>
 	</VCE_Fishing.FishDef>
+	<!-- ==========[Mashed_Ashlands_NixOxDarkshadeEgg]==========-->
+	<VCE_Fishing.FishDef>
+		<defName>Mashed_Ashlands_NixOxDarkshadeEgg</defName>
+		<thingDef>Mashed_Ashlands_Egg_NixOxDarkshadeFertilized</thingDef>
+		<fishSizeCategory>Special</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Mashed_Ashlands_BiomeTempAshlandDarkshade</li>
+		</allowedBiomes>
+		<commonality>0.2</commonality>
+		<baseFishingYield>1</baseFishingYield>
+	</VCE_Fishing.FishDef>
 	<!-- ==========[Mashed_Ashlands_ShalkDarkshadeEgg]==========-->
 	<VCE_Fishing.FishDef>
 		<defName>Mashed_Ashlands_ShalkDarkshadeEgg</defName>

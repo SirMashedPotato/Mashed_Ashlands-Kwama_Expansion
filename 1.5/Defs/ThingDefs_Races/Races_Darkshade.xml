@@ -80,6 +80,109 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_NixOxDarkshade]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_NixOxThingBase">
+		<defName>Mashed_Ashlands_NixOxDarkshade</defName>
+		<label>darkshade nix-ox</label>
+		<description>A rare subspecies of nix-ox that can only be found in darkshade caverns deep underneath the ashlands. Unlike their cousins, darkshade nix-ox are generall solitary creatures. They can sometimes be found sleeping in sulphuric water, which helps to soften their outer shell, making it easier to shear off.</description>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>Mashed_Ashlands_Egg_NixOxDarkshadeFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.3</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Mashed_Ashlands_NixOxChitin</woolDef>
+				<shearIntervalDays>10</shearIntervalDays>
+				<woolAmount>100</woolAmount>
+			</li>
+		</comps>
+		<race>
+			<herdAnimal>false</herdAnimal>
+		</race>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_NixOxDarkshade" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_NixOxDarkshade</defName>
+		<label>darkshade nix-ox</label>
+		<labelMale>darkshade nix-ox bull</labelMale>
+		<labelFemale>darkshade nix-ox cow</labelFemale>
+		<race>Mashed_Ashlands_NixOxDarkshade</race>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>0.8</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>darkshade nix-ox calf</label>
+				<labelPlural>darkshade nix-ox calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxDarkshadeCalf</texPath>
+					<drawSize>1</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_Dessicated_NixOx</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxDarkshade</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxDarkshade</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_Dessicated_NixOx</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_Dessicated_NixOx</texPath>
+					<drawSize>1.4</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxDarkshade</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_NixOxDarkshade</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_Dessicated_NixOx</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_NixOx/Mashed_Ashlands_Dessicated_NixOx</texPath>
+					<drawSize>1.9</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_ShalkDarkshade]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_ShalkThingBase">
 		<defName>Mashed_Ashlands_ShalkDarkshade</defName>

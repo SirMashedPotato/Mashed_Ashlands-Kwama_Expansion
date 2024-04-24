@@ -8,10 +8,10 @@
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<forceCustomCavePlants>true</forceCustomCavePlants>
 				<cavePlants>
-					<Mashed_Ashlands_Plant_DarkshadeBryolux>0.2</Mashed_Ashlands_Plant_DarkshadeBryolux>
-					<Mashed_Ashlands_Plant_DarkshadeEntoloma>0.1</Mashed_Ashlands_Plant_DarkshadeEntoloma>
-					<Mashed_Ashlands_Plant_DarkshadeScathecraw>0.1</Mashed_Ashlands_Plant_DarkshadeScathecraw>
-					<Mashed_Ashlands_Plant_DarkshadeTramaShrub>0.1</Mashed_Ashlands_Plant_DarkshadeTramaShrub>
+					<Mashed_Ashlands_Plant_DarkshadeBryolux>0.1</Mashed_Ashlands_Plant_DarkshadeBryolux>
+					<Mashed_Ashlands_Plant_DarkshadeEntoloma>0.2</Mashed_Ashlands_Plant_DarkshadeEntoloma>
+					<Mashed_Ashlands_Plant_DarkshadeScathecraw>0.05</Mashed_Ashlands_Plant_DarkshadeScathecraw>
+					<Mashed_Ashlands_Plant_DarkshadeTramaShrub>0.05</Mashed_Ashlands_Plant_DarkshadeTramaShrub>
 					<Mashed_Ashlands_Plant_DarkshadeParasolBush>0.05</Mashed_Ashlands_Plant_DarkshadeParasolBush>
 					<Mashed_Ashlands_GiantDarkshadeCoprinus>0.1</Mashed_Ashlands_GiantDarkshadeCoprinus>
 					<Mashed_Ashlands_Plant_TreeDarkshadeNetchShield>0.025</Mashed_Ashlands_Plant_TreeDarkshadeNetchShield>

@@ -52,7 +52,7 @@
 					<li>
 						<kindDef>Mashed_Ashlands_MudcrabDarkshade</kindDef>
 						<weight>0.6</weight>
-						<maxOnMap>6</maxOnMap>
+						<maxOnMap>3</maxOnMap>
 					</li>
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>

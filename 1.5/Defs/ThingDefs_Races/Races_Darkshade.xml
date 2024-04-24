@@ -34,6 +34,10 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
+		<tradeTags Inherit="False">
+			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
+			<li>Mashed_Ashlands_AshlandAnimalDarkshade</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_MudcrabDarkshade</defName>
@@ -102,6 +106,10 @@
 		<race>
 			<herdAnimal>false</herdAnimal>
 		</race>
+		<tradeTags Inherit="False">
+			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
+			<li>Mashed_Ashlands_AshlandAnimalDarkshade</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef Name="Mashed_Ashlands_NixOxDarkshade" ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_NixOxDarkshade</defName>
@@ -220,6 +228,10 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
+		<tradeTags Inherit="False">
+			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
+			<li>Mashed_Ashlands_AshlandAnimalDarkshade</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>Mashed_Ashlands_ShalkDarkshade</defName>

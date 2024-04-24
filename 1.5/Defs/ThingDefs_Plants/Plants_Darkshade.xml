@@ -294,6 +294,7 @@
 			<interferesWithRoof>false</interferesWithRoof>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0.5</growOptimalGlow>
+			<harvestYield>30</harvestYield>
 			<immatureGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeDarkshadeNetchShield_Immature</immatureGraphicPath>
 			<leaflessGraphicPath>Things/Plant/Trees/Mashed_Ashlands_TreeDarkshadeNetchShield_Leafless</leaflessGraphicPath>
 			<sowResearchPrerequisites Inherit="False">

@@ -6,11 +6,9 @@
 		<forceCaves>true</forceCaves>
 		<ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
 		<disableCallAid>true</disableCallAid>
-		<!--
 		<customMapComponents>
-			<li>UndercaveMapComponent</li>
+			<li>Mashed_Ashlands_Kwama.KwamaNestMapComponent</li>
 		</customMapComponents>
-		-->
 		<genSteps>
 			<li>ElevationFertility</li>
 			<li>Undercave_RocksFromGrid</li>

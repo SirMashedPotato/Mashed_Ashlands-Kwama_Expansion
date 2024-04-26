@@ -338,7 +338,11 @@
 			</li>
 		</tools>
 		<comps>
-
+			<li Class="Mashed_Ashlands_Kwama.CompProperties_KwamaQueen">
+				<sacSpawnSound>Hive_Spawn</sacSpawnSound>
+				<warriorKind>Mashed_Ashlands_KwamaWarrior</warriorKind>
+				<workerKind>Mashed_Ashlands_KwamaWorker</workerKind>
+			</li>
 		</comps>
 		<race>
 			<body>Mashed_Ashlands_KwamaWarrior</body>
@@ -349,6 +353,7 @@
 			<foodType>None</foodType>
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
+			<canBecomeShambler>false</canBecomeShambler>
 			<lifeExpectancy>100</lifeExpectancy>
 			<trainability>None</trainability>
 			<leatherDef>Mashed_Ashlands_KwamaChitin</leatherDef>

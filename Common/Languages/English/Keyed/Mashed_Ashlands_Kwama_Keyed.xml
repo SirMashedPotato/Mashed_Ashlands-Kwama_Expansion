@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- ==========[egg sac laying]==========-->
+	<Mashed_Ashlands_Kwama_EggSacProgress>Egg sac progress: {0}</Mashed_Ashlands_Kwama_EggSacProgress>
+	<!-- ==========[queen defending]==========-->
+	<Mashed_Ashlands_Kwama_QueenDamaged_Label>{0} threatened</Mashed_Ashlands_Kwama_QueenDamaged_Label>
+	<Mashed_Ashlands_Kwama_QueenDamaged_Description>Recent actions have threatened the {0} of this hive. Her cries of pain have been heard by her {1}, who have entered a manhunting rage. They will hunt down any humanoid they can reach, at least until the {0} has calmed.</Mashed_Ashlands_Kwama_QueenDamaged_Description>
+	<!-- ==========[nest collapsing]==========-->
+	<Mashed_Ashlands_Kwama_NestCollapse_Label>nest collapse</Mashed_Ashlands_Kwama_NestCollapse_Label>
+	<Mashed_Ashlands_Kwama_NestCollapse_Description>With the the death of this hives queen, her workers have entered a panicked state. They have begun to dig numerous tunnels, with little care for maintaining the stability of the surrounding area. Soon the entire nest will collapse in on itself.</Mashed_Ashlands_Kwama_NestCollapse_Description>
+</LanguageData>

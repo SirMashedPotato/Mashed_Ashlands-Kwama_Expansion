@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<BiomeDef Abstract="True" Name="Mashed_Ashlands_KwamaNestBase">
-		<description>A cave filled with a damp musty smell. The calls of kwama can be heard echoing throughout the tunnels.</description>
+		<description>An intricate network of tunnels and chambers, excavated by kwama workers, and home to a kwama nest. The orange glow of kwama egg sacs illuminates the darkness, which can be harvested without repercussion.\n\nAt the heart of this cave system is the kwama queen, who will periodically lay egg sacs. If any workers hear her call, they will collect the egg sac from her, and place it in the tunnels. Otherwise the queen will simply place the egg sac nearby. If the queen is threatened, she will call for her warriors to defend her. And if she is killed, her workers will enter a panicked state, and begin collapsing the cave system.</description>
 		<generatesNaturally>false</generatesNaturally>
 		<animalDensity>1</animalDensity>
 		<plantDensity>0.5</plantDensity>

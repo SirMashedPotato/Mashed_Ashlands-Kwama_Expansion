@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<JobDef>
+		<defName>Mashed_Ashlands_MoveEggSac</defName>
+		<driverClass>Mashed_Ashlands_Kwama.JobDriver_MoveEggSac</driverClass>
+		<reportString>moving egg sac.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+</Defs>

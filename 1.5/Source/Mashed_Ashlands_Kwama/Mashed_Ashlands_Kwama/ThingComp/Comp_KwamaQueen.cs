@@ -50,8 +50,9 @@ namespace Mashed_Ashlands_Kwama
                 eggSacProgress += num;
                 if (eggSacProgress >= 1f)
                 {
-                    if (NestComp.EggSacReady(parent))
+                    if (NestComp.EggSacReady(parent, Props.workerKind))
                     {
+                        Props.sacSpawnSound.PlayOneShot(parent);
                         eggSacProgress = 0f;
                     }
                     else

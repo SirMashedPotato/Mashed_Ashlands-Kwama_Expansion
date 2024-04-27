@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
 using Verse;
+using Verse.AI;
 
 namespace Mashed_Ashlands_Kwama
 {
@@ -12,10 +13,32 @@ namespace Mashed_Ashlands_Kwama
         {
         }
 
-        public bool EggSacReady(Thing queen)
+        public bool EggSacReady(Thing queen, PawnKindDef workerKind)
         {
-
+            List<Pawn> workers = AllOfKind(map, workerKind);
+            if (!workers.NullOrEmpty())
+            {
+                foreach (Pawn potentialWorker in workers.InRandomOrder())
+                {
+                    if (potentialWorker.CanReach(queen, PathEndMode.Touch, Danger.Deadly, true))
+                    {
+                        IntVec3 placeCell = FindEggSacPlacementCell(potentialWorker);
+                        if (placeCell != null)
+                        {
+                            Job workerJob = JobMaker.MakeJob(JobDefOf.Mashed_Ashlands_MoveEggSac, queen, placeCell);
+                            potentialWorker.jobs.StartJob(workerJob, JobCondition.InterruptForced);
+                            return true;
+                        }
+                    }
+                    
+                }
+            }
             return false;
+        }
+
+        private IntVec3 FindEggSacPlacementCell(Pawn worker)
+        {
+            return CellFinder.RandomClosewalkCellNear(worker.Position, worker.Map, 6);
         }
 
         public bool QueenDamaged(Thing queen, PawnKindDef warriorKind)

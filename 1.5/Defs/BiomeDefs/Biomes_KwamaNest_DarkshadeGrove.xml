@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiomeDef ParentName="Mashed_Ashlands_KwamaNestBase">
+		<defName>Mashed_Ashlands_DarkshadeGroveKwamaNest</defName>
+		<label>darkshade grove kwama nest</label>
+		<plantDensity>1.2</plantDensity>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeProperties">
+				<forceCustomCavePlants>true</forceCustomCavePlants>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_DarkshadeBryolux>0.1</Mashed_Ashlands_Plant_DarkshadeBryolux>
+					<Mashed_Ashlands_Plant_DarkshadeEntoloma>0.2</Mashed_Ashlands_Plant_DarkshadeEntoloma>
+					<Mashed_Ashlands_Plant_DarkshadeButtercake>0.05</Mashed_Ashlands_Plant_DarkshadeButtercake>
+					<Mashed_Ashlands_Plant_DarkshadeMushroom>0.1</Mashed_Ashlands_Plant_DarkshadeMushroom>
+					<Mashed_Ashlands_Plant_DarkshadeParasolBush>0.05</Mashed_Ashlands_Plant_DarkshadeParasolBush>
+					<Mashed_Ashlands_Plant_DarkshadeReed>0.1</Mashed_Ashlands_Plant_DarkshadeReed>
+					<Mashed_Ashlands_GiantDarkshadeCoprinus>0.2</Mashed_Ashlands_GiantDarkshadeCoprinus>
+					<Mashed_Ashlands_Plant_TreeDarkshadeNetchShield>0.05</Mashed_Ashlands_Plant_TreeDarkshadeNetchShield>
+					<Mashed_Ashlands_Plant_DarkshadeGlowstalk MayRequire="Ludeon.RimWorld.Ideology">0.025</Mashed_Ashlands_Plant_DarkshadeGlowstalk>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingBryolux>
+					<Mashed_Ashlands_GlowingEntoloma MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_GlowingEntoloma>
+					<Mashed_Ashlands_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingParasolBush>
+					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_GiantGlowingCoprinus>
+				</cavePlants>
+				<dryToReplacers>
+					<li>
+						<originalTerrain>Gravel</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_RichAshGravel</replacedTerrain>
+					</li>
+					<li>
+						<originalTerrain>Soil</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_DarkshadeMossyAshSoil</replacedTerrain>
+					</li>
+				</dryToReplacers>
+				<increasePollutedFertility>true</increasePollutedFertility>
+				<otherTerrainDef>Mashed_Ashlands_DarkshadeMossyAshSoil</otherTerrainDef>
+				<otherTerrainThreshold>0.05</otherTerrainThreshold>
+				<waterTerrainDef>WaterShallow</waterTerrainDef>
+				<waterThreshold>0.7</waterThreshold>
+			</li>
+			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
+				<wildAnimals>
+					<li>
+						<kindDef>Rat</kindDef>
+						<weight>0.2</weight>
+						<maxOnMap>3</maxOnMap>
+					</li>
+					<!--
+					<li>
+						<kindDef>Mashed_Ashlands_ShalkDarkshade</kindDef>
+						<weight>0.6</weight>
+						<maxOnMap>3</maxOnMap>
+					</li>
+					-->
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
+						<weight>0.6</weight>
+						<maxOnMap>8</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaForager</kindDef>
+						<weight>0.8</weight>
+						<maxOnMap>8</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaWorker</kindDef>
+						<weight>1</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaWarrior</kindDef>
+						<weight>1</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+				</wildAnimals>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+</Defs>

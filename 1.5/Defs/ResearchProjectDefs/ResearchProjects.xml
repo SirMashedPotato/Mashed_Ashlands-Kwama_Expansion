@@ -21,10 +21,12 @@
 				<li>subject_gerund->[action_grow] [thing_plant]</li>
 				<!-- things -->
 				<li>thing_plant->darkshade bryolux</li>
+				<li>thing_plant->darkshade buttercake</li>
 				<li>thing_plant->darkshade entoloma</li>
 				<li>thing_plant->darkshade glowstalk</li>
 				<li>thing_plant->darkshade mushroom</li>
 				<li>thing_plant->darkshade parasol bush</li>
+				<li>thing_plant->darkshade reed</li>
 				<li>thing_plant->darkshade scathecraw</li>
 				<li>thing_plant->darkshade trama</li>
 				<li>thing_plant->darkshade coprinus</li>

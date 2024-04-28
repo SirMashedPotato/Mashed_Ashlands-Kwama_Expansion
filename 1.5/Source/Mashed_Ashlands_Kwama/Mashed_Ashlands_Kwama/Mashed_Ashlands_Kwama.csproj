@@ -65,6 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert\Alert_KwamaNestUnstable.cs" />
     <Compile Include="DefModExtension\RandomMapGenDef.cs" />
     <Compile Include="DefModExtension\UnderBiomeProperties.cs" />
     <Compile Include="DefOf\JobDefOf.cs" />

@@ -84,7 +84,7 @@ namespace Mashed_Ashlands_Kwama
             KwamaNestMapComponent prevNestComp = prevMap.GetComponent<KwamaNestMapComponent>();
             if (prevNestComp != null)
             {
-                prevNestComp.QueenKilled(prevMap, Props.workerKind);
+                prevNestComp.QueenKilled();
                 Find.LetterStack.ReceiveLetter("Mashed_Ashlands_Kwama_NestCollapse_Label".Translate(), "Mashed_Ashlands_Kwama_NestCollapse_Description".Translate(), LetterDefOf.NegativeEvent);
             }
             base.Notify_Killed(prevMap, dinfo);

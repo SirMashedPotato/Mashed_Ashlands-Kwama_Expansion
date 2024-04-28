@@ -17,6 +17,27 @@ namespace Mashed_Ashlands_Kwama
         public int kwamaNestSize = 100;
         private KwamaNestExit nestExit;
 
+        //collapsing
+        private static readonly IntRange CollapseDurationTicks = new IntRange(25000, 27500);
+        private int collapseTick = -999999;
+        private bool isCollapsing;
+
+        public bool IsCollapsing => isCollapsing;
+
+        public int CollapseStage
+        {
+            get
+            {
+                if (collapseTick - Find.TickManager.TicksGame >= 3600)
+                {
+                    return 1;
+                }
+                return 2;
+            }
+        }
+
+        public int TicksUntilCollapse => collapseTick - Find.TickManager.TicksGame;
+
         protected override Texture2D EnterTex => EnterPitGateTex.Texture;
 
         public void GenerateKwamaNest()
@@ -30,7 +51,10 @@ namespace Mashed_Ashlands_Kwama
 
         public void BeginCollapsing()
         {
-
+            int randomInRange = CollapseDurationTicks.RandomInRange;
+            collapseTick = Find.TickManager.TicksGame + randomInRange;
+            kwamaNest?.GetComponent<KwamaNestMapComponent>().Notify_BeginCollapsing();
+            isCollapsing = true;
         }
 
         public override IntVec3 GetDestinationLocation()
@@ -47,11 +71,47 @@ namespace Mashed_Ashlands_Kwama
             return kwamaNest;
         }
 
+        public override void Tick()
+        {
+            base.Tick();
+            if (isCollapsing)
+            {
+                if (Find.TickManager.TicksGame >= collapseTick)
+                {
+                    Collapse();
+                }
+                return;
+            }
+        }
+
+        private void Collapse()
+        {
+            if (kwamaNest != null)
+            {
+                DamageInfo damageInfo = new DamageInfo(DamageDefOf.Crush, 99999f, 999f);
+                for (int num = kwamaNest.mapPawns.AllPawns.Count - 1; num >= 0; num--)
+                {
+                    Pawn pawn = kwamaNest.mapPawns.AllPawns[num];
+                    pawn.TakeDamage(damageInfo);
+                    if (!pawn.Dead)
+                    {
+                        pawn.Kill(damageInfo);
+                    }
+                }
+                PocketMapUtility.DestroyPocketMap(kwamaNest);
+            }
+            allowDestroyNonDestroyable = true;
+            Destroy(DestroyMode.Deconstruct);
+            allowDestroyNonDestroyable = false;
+        }
+
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_References.Look(ref kwamaNest, "kwamaNestMap");
             Scribe_References.Look(ref nestExit, "kwamaNestExit");
+            Scribe_Values.Look(ref collapseTick, "collapseTick", 0);
+            Scribe_Values.Look(ref isCollapsing, "isCollapsing", defaultValue: false);
         }
 
         public override IEnumerable<Gizmo> GetGizmos()
@@ -87,16 +147,14 @@ namespace Mashed_Ashlands_Kwama
 
                         }
                     };
-                    
                 }
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV: Collapse Kwama Nest Entrance",
+                    action = BeginCollapsing
+                };
             }
-            /*
-            yield return new Command_Action
-            {
-                defaultLabel = "DEV: Collapse Pit Gate",
-                action = BeginCollapsing
-            };
-            */
+            
         }
     }
 }

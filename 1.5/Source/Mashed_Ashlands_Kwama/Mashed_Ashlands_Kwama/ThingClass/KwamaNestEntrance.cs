@@ -148,6 +148,17 @@ namespace Mashed_Ashlands_Kwama
                         }
                     };
                 }
+                else
+                {
+                    yield return new Command_Action
+                    {
+                        defaultLabel = "DEV: Create inner map",
+                        action = delegate
+                        {
+                            GenerateKwamaNest();
+                        }
+                    };
+                }
                 yield return new Command_Action
                 {
                     defaultLabel = "DEV: Collapse Kwama Nest Entrance",

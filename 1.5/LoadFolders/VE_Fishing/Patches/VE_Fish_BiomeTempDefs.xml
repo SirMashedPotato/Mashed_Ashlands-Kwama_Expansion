@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandCave]==========-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/VCE_Fishing.BiomeTempDef[defName="Mashed_Ashlands_BiomeTempAshlandCave"]/biomes</xpath>
 		<value>
 			<li>Mashed_Ashlands_KwamaNest</li>
 			<li>Mashed_Ashlands_DarkshadeKwamaNest</li>
+			<li>Mashed_Ashlands_DarkshadeFloodedKwamaNest</li>
+			<li>Mashed_Ashlands_DarkshadeThermalKwamaNest</li>
 			<li>Mashed_Ashlands_FloodedKwamaNest</li>
+			<li>Mashed_Ashlands_ThermalKwamaNest</li>
 		</value>
 	</Operation>
 </Patch>

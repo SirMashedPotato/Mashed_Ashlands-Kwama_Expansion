@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BiomeDef ParentName="Mashed_Ashlands_KwamaNestBase">
+		<defName>Mashed_Ashlands_ThermalKwamaNest</defName>
+		<label>thermal kwama nest</label>
+		<plantDensity>0.6</plantDensity>
+		<modExtensions>
+			<li Class="Mashed_Ashlands.BiomeProperties">
+				<forceCustomCavePlants>true</forceCustomCavePlants>
+				<cavePlants>
+					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_SulphurFungus>0.2</Mashed_Ashlands_Plant_SulphurFungus>
+					<Mashed_Ashlands_GiantSulphuricCoprinus>0.2</Mashed_Ashlands_GiantSulphuricCoprinus>
+					<Mashed_Ashlands_Plant_TreeKwamacap>0.1</Mashed_Ashlands_Plant_TreeKwamacap>
+					<Mashed_Ashlands_Plant_PurpleCrystal>0.05</Mashed_Ashlands_Plant_PurpleCrystal>
+					<!-- Polluted plants -->
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.2</Mashed_Ashlands_Plant_GlowingCoprinus>
+					<Mashed_Ashlands_Plant_GlowingParasolBush MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingParasolBush>
+					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantGlowingCoprinus>
+				</cavePlants>
+				<dryToReplacers>
+					<li>
+						<originalTerrain>Gravel</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_RichAshGravel</replacedTerrain>
+					</li>
+					<li>
+						<originalTerrain>Soil</originalTerrain>
+						<replacedTerrain>Mashed_Ashlands_AshSoil</replacedTerrain>
+					</li>
+				</dryToReplacers>
+				<increasePollutedFertility>true</increasePollutedFertility>
+				<otherTerrainDef>Mashed_Ashlands_RichAshGravel</otherTerrainDef>
+				<otherTerrainThreshold>0.15</otherTerrainThreshold>
+				<waterTerrainDef>Mashed_Ashlands_ShallowSulphuricWater</waterTerrainDef>
+				<waterThreshold>0.6</waterThreshold>
+			</li>
+			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
+				<wildAnimals>
+					<li>
+						<kindDef>Rat</kindDef>
+						<weight>0.3</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_Shalk</kindDef>
+						<weight>0.4</weight>
+						<maxOnMap>3</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
+						<weight>0.6</weight>
+						<maxOnMap>9</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaForager</kindDef>
+						<weight>0.8</weight>
+						<maxOnMap>9</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaWorker</kindDef>
+						<weight>1</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+					<li>
+						<kindDef>Mashed_Ashlands_KwamaWarrior</kindDef>
+						<weight>1</weight>
+						<maxOnMap>6</maxOnMap>
+					</li>
+				</wildAnimals>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+</Defs>

@@ -98,7 +98,6 @@
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_ThermalKwamaNest]==========-->
-	<!--
 	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
 		<defName>Mashed_Ashlands_ThermalKwamaNest</defName>
 		<label>thermal kwama nest</label>
@@ -107,5 +106,4 @@
 			<temperature>25</temperature>
 		</pocketMapProperties>
 	</MapGeneratorDef>
-	-->
 </Defs>

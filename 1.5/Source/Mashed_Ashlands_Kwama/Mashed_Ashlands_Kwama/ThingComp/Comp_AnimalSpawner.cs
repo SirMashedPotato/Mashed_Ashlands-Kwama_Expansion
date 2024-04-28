@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
+using Verse.Noise;
 
 namespace Mashed_Ashlands_Kwama
 {
@@ -69,7 +70,14 @@ namespace Mashed_Ashlands_Kwama
                     int count = chosenSpawn.kindDef.wildGroupSize.RandomInRange;
                     for (int i = 0; i < count; i++)
                     {
-                        GenSpawn.Spawn(PawnGenerator.GeneratePawn(new PawnGenerationRequest(chosenSpawn.kindDef)), parent.Position, parent.Map, Rot4.Random);
+                        if (CellFinder.TryFindRandomCellNear(parent.Position, parent.Map, 1, (IntVec3 c) => c.Standable(parent.Map), out IntVec3 spawnPoint))
+                        {
+                            GenSpawn.Spawn(PawnGenerator.GeneratePawn(new PawnGenerationRequest(chosenSpawn.kindDef)), spawnPoint, parent.Map, Rot4.Random);
+                        }
+                        else
+                        {
+                            GenSpawn.Spawn(PawnGenerator.GeneratePawn(new PawnGenerationRequest(chosenSpawn.kindDef)), parent.Position, parent.Map, Rot4.Random);
+                        }
                     }
                 }
             }

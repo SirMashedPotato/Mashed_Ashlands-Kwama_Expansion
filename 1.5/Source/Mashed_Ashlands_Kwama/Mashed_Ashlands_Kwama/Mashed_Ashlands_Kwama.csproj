@@ -84,7 +84,8 @@
     <Compile Include="ThingComp\Comp_KwamaQueen.cs" />
     <Compile Include="ThingComp\Props\CompProperties_AnimalSpawner.cs" />
     <Compile Include="ThingComp\Props\CompProperties_KwamaQueen.cs" />
-    <Compile Include="KwamaUtility.cs" />
+    <Compile Include="Utility\KwamaUtility.cs" />
+    <Compile Include="Utility\QueuedCellEffecter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

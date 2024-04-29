@@ -22,6 +22,10 @@ namespace Mashed_Ashlands_Kwama
         private int collapseTick = -999999;
         private bool isCollapsing;
 
+        private Sustainer collapseSustainer;
+        private Effecter collapseEffecter1;
+        private Effecter collapseEffecter2;
+
         public bool IsCollapsing => isCollapsing;
 
         public int CollapseStage
@@ -76,6 +80,32 @@ namespace Mashed_Ashlands_Kwama
             base.Tick();
             if (isCollapsing)
             {
+                if (CollapseStage == 1)
+                {
+                    if (collapseEffecter1 == null)
+                    {
+                        collapseEffecter1 = EffecterDefOf.PitGateAboveGroundCollapseStage1.Spawn(this, Map);
+                    }
+                }
+                else if (CollapseStage == 2)
+                {
+                    if (collapseSustainer == null)
+                    {
+                        collapseSustainer = SoundDefOf.PitGateCollapsing.TrySpawnSustainer(SoundInfo.InMap(this, MaintenanceType.PerTick));
+                    }
+                    collapseSustainer.Maintain();
+                    if (collapseEffecter2 == null)
+                    {
+                        collapseEffecter2 = EffecterDefOf.PitGateAboveGroundCollapseStage2.Spawn(this, Map);
+                    }
+                    if (Find.CurrentMap == Map && Rand.MTBEventOccurs(2f, 60f, 1f))
+                    {
+                        Find.CameraDriver.shaker.DoShake(0.2f);
+                    }
+                }
+                collapseEffecter1?.EffectTick(this, this);
+                collapseEffecter2?.EffectTick(this, this);
+
                 if (Find.TickManager.TicksGame >= collapseTick)
                 {
                     Collapse();
@@ -86,6 +116,20 @@ namespace Mashed_Ashlands_Kwama
 
         private void Collapse()
         {
+            collapseSustainer.End();
+            collapseEffecter2?.Cleanup();
+            collapseEffecter2 = null;
+            collapseEffecter1?.Cleanup();
+            collapseEffecter1 = null;
+            EffecterDefOf.PitGateAboveGroundCollapsed.Spawn(Position, Map);
+            if (Find.CurrentMap == kwamaNest)
+            {
+                SoundDefOf.UndercaveCollapsing_End.PlayOneShotOnCamera();
+            }
+            else
+            {
+                SoundDefOf.PitGateCollapsing_End.PlayOneShot(new TargetInfo(Position, Map));
+            }
             if (kwamaNest != null)
             {
                 DamageInfo damageInfo = new DamageInfo(DamageDefOf.Crush, 99999f, 999f);
@@ -103,6 +147,19 @@ namespace Mashed_Ashlands_Kwama
             allowDestroyNonDestroyable = true;
             Destroy(DestroyMode.Deconstruct);
             allowDestroyNonDestroyable = false;
+        }
+
+        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
+        {
+            if (mode == DestroyMode.Vanish)
+            {
+                base.Destroy(mode);
+                return;
+            }
+            Map map = Map;
+            base.Destroy(mode);
+            EffecterDefOf.ImpactDustCloud.Spawn(Position, map).Cleanup();
+            Messages.Message("MessagePitGateCollapsed".Translate(), new TargetInfo(Position, map), MessageTypeDefOf.NeutralEvent);
         }
 
         public override void ExposeData()

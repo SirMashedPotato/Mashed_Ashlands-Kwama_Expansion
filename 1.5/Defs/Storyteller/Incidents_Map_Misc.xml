@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaNestExpands]==========-->
+	<IncidentDef ParentName="Mashed_Ashlands_AshlandsMapIncident">
+		<defName>Mashed_Ashlands_KwamaNestExpands</defName>
+		<label>kwama nest expands</label>
+		<category>Misc</category>
+		<workerClass>Mashed_Ashlands_Kwama.IncidentWorker_KwamaNestExpands</workerClass>
+		<letterLabel>kwama nest expands</letterLabel>
+		<letterText>A kwama nest is expanding into the caverns beneath this area. The kwama workers expanding the tunnels appears to have destabilised a small area of ground, which has begun sinking into the caverns bellow.</letterText>
+		<letterDef>NeutralEvent</letterDef>
+		<baseChance>1</baseChance>
+		<minRefireDays>33</minRefireDays>
+	</IncidentDef>
+</Defs>

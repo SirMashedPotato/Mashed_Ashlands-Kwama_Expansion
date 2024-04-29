@@ -76,6 +76,7 @@
     <Compile Include="GenStep\GenStep_FindKwamaNestExit.cs" />
     <Compile Include="GenStep\GenStep_KwamaQueen.cs" />
     <Compile Include="GenStep\GenStep_NestTerrain.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_KwamaNestExpands.cs" />
     <Compile Include="JobDriver\JobDriver_MoveEggSac.cs" />
     <Compile Include="MapComp\KwamaNestMapComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

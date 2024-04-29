@@ -91,16 +91,12 @@ namespace Mashed_Ashlands_Kwama
                 {
                     if (collapseSustainer == null)
                     {
-                        collapseSustainer = SoundDefOf.PitGateCollapsing.TrySpawnSustainer(SoundInfo.InMap(this, MaintenanceType.PerTick));
+                        collapseSustainer = RimWorld.SoundDefOf.PitGateCollapsing.TrySpawnSustainer(SoundInfo.InMap(this, MaintenanceType.PerTick));
                     }
                     collapseSustainer.Maintain();
                     if (collapseEffecter2 == null)
                     {
                         collapseEffecter2 = EffecterDefOf.PitGateAboveGroundCollapseStage2.Spawn(this, Map);
-                    }
-                    if (Find.CurrentMap == Map && Rand.MTBEventOccurs(2f, 60f, 1f))
-                    {
-                        Find.CameraDriver.shaker.DoShake(0.2f);
                     }
                 }
                 collapseEffecter1?.EffectTick(this, this);
@@ -121,15 +117,7 @@ namespace Mashed_Ashlands_Kwama
             collapseEffecter2 = null;
             collapseEffecter1?.Cleanup();
             collapseEffecter1 = null;
-            EffecterDefOf.PitGateAboveGroundCollapsed.Spawn(Position, Map);
-            if (Find.CurrentMap == kwamaNest)
-            {
-                SoundDefOf.UndercaveCollapsing_End.PlayOneShotOnCamera();
-            }
-            else
-            {
-                SoundDefOf.PitGateCollapsing_End.PlayOneShot(new TargetInfo(Position, Map));
-            }
+            SoundDefOf.BuildingDestroyed_Stone_Big.PlayOneShot(new TargetInfo(Position, Map));
             if (kwamaNest != null)
             {
                 DamageInfo damageInfo = new DamageInfo(DamageDefOf.Crush, 99999f, 999f);
@@ -159,7 +147,7 @@ namespace Mashed_Ashlands_Kwama
             Map map = Map;
             base.Destroy(mode);
             EffecterDefOf.ImpactDustCloud.Spawn(Position, map).Cleanup();
-            Messages.Message("MessagePitGateCollapsed".Translate(), new TargetInfo(Position, map), MessageTypeDefOf.NeutralEvent);
+            Messages.Message("Mashed_Ashlands_Kwama_NestCollapsed".Translate(), new TargetInfo(Position, map), MessageTypeDefOf.NeutralEvent);
         }
 
         public override void ExposeData()

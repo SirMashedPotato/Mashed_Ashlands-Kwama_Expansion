@@ -10,8 +10,8 @@ namespace Mashed_Ashlands_Kwama
     {
         public Alert_KwamaNestUnstable()
         {
-            defaultLabel = "Alert_UndercaveUnstable".Translate();
-            defaultExplanation = "Alert_UndercaveUnstableDesc".Translate();
+            defaultLabel = "Mashed_Ashlands_Kwama_AlertNestCollapse_Label".Translate();
+            defaultExplanation = "Mashed_Ashlands_Kwama_AlertNestCollapse_Description".Translate();
             requireAnomaly = true;
         }
 

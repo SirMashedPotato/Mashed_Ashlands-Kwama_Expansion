@@ -7,7 +7,7 @@
 		<plantDensity>0.5</plantDensity>
 		<wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto>
 		<baseWeatherCommonalities>
-			<Undercave>1</Undercave>
+			<Mashed_Ashlands_KwamaNest>1</Mashed_Ashlands_KwamaNest>
 		</baseWeatherCommonalities>
 		<diseaseMtbDays>80</diseaseMtbDays>
 		<diseases>

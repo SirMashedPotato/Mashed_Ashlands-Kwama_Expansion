@@ -70,6 +70,7 @@
     <Compile Include="DefModExtension\UnderBiomeProperties.cs" />
     <Compile Include="DefOf\JobDefOf.cs" />
     <Compile Include="DefOf\PawnKindDefOf.cs" />
+    <Compile Include="DefOf\SoundDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="GenStep\GenStep_FindKwamaNestExit.cs" />

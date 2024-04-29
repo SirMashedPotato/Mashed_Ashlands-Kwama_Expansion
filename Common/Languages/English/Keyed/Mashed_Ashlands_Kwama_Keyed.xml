@@ -8,4 +8,7 @@
 	<!-- ==========[nest collapsing]==========-->
 	<Mashed_Ashlands_Kwama_NestCollapse_Label>nest collapse</Mashed_Ashlands_Kwama_NestCollapse_Label>
 	<Mashed_Ashlands_Kwama_NestCollapse_Description>With the the death of this hives queen, her workers have entered a panicked state. They have begun to dig numerous tunnels, with little care for maintaining the stability of the surrounding area. Soon the entire nest will collapse in on itself.</Mashed_Ashlands_Kwama_NestCollapse_Description>
+	<Mashed_Ashlands_Kwama_AlertNestCollapse_Label>Kwama nest unstable</Mashed_Ashlands_Kwama_AlertNestCollapse_Label>
+	<Mashed_Ashlands_Kwama_AlertNestCollapse_Description>The kwama nest has become unstable, and will soon collapse in on itself.\n\nCollect any eggs you can and leave before it's too late.</Mashed_Ashlands_Kwama_AlertNestCollapse_Description>
+	<Mashed_Ashlands_Kwama_NestCollapsed>The kwama nest has collapsed.</Mashed_Ashlands_Kwama_NestCollapsed>
 </LanguageData>

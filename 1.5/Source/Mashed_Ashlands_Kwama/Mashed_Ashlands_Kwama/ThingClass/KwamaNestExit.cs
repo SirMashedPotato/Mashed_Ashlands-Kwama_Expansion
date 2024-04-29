@@ -58,13 +58,13 @@ namespace Mashed_Ashlands_Kwama
         public override void OnEntered(Pawn pawn)
         {
             base.OnEntered(pawn);
-            if (Find.CurrentMap == base.Map)
+            if (Find.CurrentMap == Map)
             {
-                SoundDefOf.TraversePitGate.PlayOneShot(this);
+                RimWorld.SoundDefOf.TraversePitGate.PlayOneShot(this);
             }
             else if (Find.CurrentMap == nestEntrance.Map)
             {
-                SoundDefOf.TraversePitGate.PlayOneShot(nestEntrance);
+                RimWorld.SoundDefOf.TraversePitGate.PlayOneShot(nestEntrance);
             }
         }
 

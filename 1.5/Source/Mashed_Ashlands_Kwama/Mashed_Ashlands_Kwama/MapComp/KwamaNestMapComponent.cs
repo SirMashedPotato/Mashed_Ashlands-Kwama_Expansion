@@ -44,12 +44,6 @@ namespace Mashed_Ashlands_Kwama
 
         private Sustainer collapsingSustainer;
 
-        private static EffecterDef[] AmbientEffecters { get; } = new EffecterDef[2]
-        {
-        EffecterDefOf.UndercaveMapAmbience,
-        EffecterDefOf.UndercaveCeilingDebris
-        };
-
         private readonly Queue<QueuedCellEffecter> fxQueue = new Queue<QueuedCellEffecter>();
 
         public Map SourceMap => (map.Parent as PocketMapParent)?.sourceMap;
@@ -59,7 +53,7 @@ namespace Mashed_Ashlands_Kwama
 
         public void Notify_BeginCollapsing()
         {
-            SoundDefOf.UndercaveRumble.PlayOneShotOnCamera(map);
+            RimWorld.SoundDefOf.UndercaveRumble.PlayOneShotOnCamera(map);
             Find.CameraDriver.shaker.DoShake(InitialShakeAmount, InitialShakeDurationTicks);
         }
 
@@ -80,7 +74,7 @@ namespace Mashed_Ashlands_Kwama
                 {
                     if (collapsingSustainer == null || collapsingSustainer.Ended)
                     {
-                        collapsingSustainer = SoundDefOf.UndercaveCollapsingStage1.TrySpawnSustainer(SoundInfo.OnCamera(MaintenanceType.PerTick));
+                        collapsingSustainer = RimWorld.SoundDefOf.UndercaveCollapsingStage1.TrySpawnSustainer(SoundInfo.OnCamera(MaintenanceType.PerTick));
                     }
                     if (Find.CurrentMap == map && Rand.MTBEventOccurs(mtb, 1f, 1f))
                     {
@@ -91,7 +85,7 @@ namespace Mashed_Ashlands_Kwama
                 {
                     if (collapsingSustainer == null || collapsingSustainer.Ended)
                     {
-                        collapsingSustainer = SoundDefOf.UndercaveCollapsingStage2.TrySpawnSustainer(SoundInfo.OnCamera(MaintenanceType.PerTick));
+                        collapsingSustainer = RimWorld.SoundDefOf.UndercaveCollapsingStage2.TrySpawnSustainer(SoundInfo.OnCamera(MaintenanceType.PerTick));
                     }
                     if (Find.CurrentMap == map && Rand.MTBEventOccurs(mtb, 1f, 1f))
                     {
@@ -114,17 +108,12 @@ namespace Mashed_Ashlands_Kwama
             {
                 fxQueue.Enqueue(new QueuedCellEffecter(EffecterDefOf.UndercaveMapAmbienceWater, result, 0));
             }
-            if (CellFinderLoose.TryGetRandomCellWith((IntVec3 c) => c.Standable(map), map, 100, out var result2) && !result2.Fogged(map) && Find.CameraDriver.CurrentViewRect.Contains(result2))
-            {
-                EffecterDef edef = AmbientEffecters.RandomElementByWeight((EffecterDef p) => p.randomWeight);
-                fxQueue.Enqueue(new QueuedCellEffecter(edef, result2, 0));
-            }
         }
 
         private void TriggerCollapseFX(float shakeAmt, int numDustEffecters)
         {
             Find.CameraDriver.shaker.DoShake(shakeAmt);
-            SoundDefOf.UndercaveRumble.PlayOneShotOnCamera(map);
+            RimWorld.SoundDefOf.UndercaveRumble.PlayOneShotOnCamera(map);
             int randomInRange = NumRockCollapsesRange.RandomInRange;
             for (int i = 0; i < randomInRange; i++)
             {

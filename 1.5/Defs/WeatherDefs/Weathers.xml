@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<WeatherDef ParentName="Underground">
+		<defName>Mashed_Ashlands_KwamaNest</defName>
+		<label>kwama nest</label>
+		<ambientSounds>
+			<li>Ambient_Wind_Clear</li>
+		</ambientSounds>
+	</WeatherDef>
+</Defs>

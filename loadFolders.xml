@@ -7,8 +7,6 @@
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/LoadFolders/Ideology</li>
 		<!-- Anomaly -->
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/LoadFolders/Anomaly</li>
-		<!-- Geological Landforms -->
-		<li IfModActive="m00nl1ght.geologicallandforms">1.5/LoadFolders/GeologicalLandforms</li>
 		<!-- VE_Fishing -->
 		<li IfModActive="vanillaexpanded.vcef">LoadFolders/VE_FishingTextures</li>
 		<li IfModActive="vanillaexpanded.vcef">1.5/LoadFolders/VE_Fishing</li>

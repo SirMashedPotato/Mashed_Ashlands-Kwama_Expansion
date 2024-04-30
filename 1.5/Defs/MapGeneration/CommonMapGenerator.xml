@@ -1,17 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_KwamaNestTerrain]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaNestTerrain</defName>
-		<order>211</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_NestTerrain"/>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_FindKwamaNestExit</defName>
-		<order>300</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_FindKwamaNestExit"/>
-	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaQueen]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_KwamaQueen</defName>
@@ -31,22 +19,6 @@
 				<li Class="ScattererValidator_Buildable">
 					<radius>3</radius>
 					<affordance>Heavy</affordance>
-				</li>
-			</validators>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaBurrow]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaBurrow</defName>
-		<order>611</order>
-		<genStep Class="GenStep_ScatterThings">
-			<thingDef>Mashed_Ashlands_KwamaBurrow</thingDef>
-			<spotMustBeStandable>true</spotMustBeStandable>
-			<countPer10kCellsRange>3</countPer10kCellsRange>
-			<validators>
-				<li Class="ScattererValidator_Buildable">
-					<radius>1</radius>
-					<affordance>SmoothableStone</affordance>
 				</li>
 			</validators>
 		</genStep>

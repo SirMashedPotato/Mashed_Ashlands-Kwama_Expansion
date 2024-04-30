@@ -27,7 +27,7 @@ namespace Mashed_Ashlands_Kwama
                     kwamaNestMapComponent = parent.Map.GetComponent<KwamaNestMapComponent>();
                     if (kwamaNestMapComponent == null)
                     {
-                        parent.Destroy();
+                        return null;
                     }
                 }
                 return kwamaNestMapComponent;

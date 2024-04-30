@@ -176,7 +176,7 @@ namespace Mashed_Ashlands_Kwama
 
         public bool EggSacReady(Thing queen, PawnKindDef workerKind)
         {
-            List<Pawn> workers = AllOfKind(map, workerKind);
+            List<Pawn> workers = KwamaUtility.AllOfKind(map, workerKind);
             if (!workers.NullOrEmpty())
             {
                 foreach (Pawn potentialWorker in workers.InRandomOrder())
@@ -204,7 +204,7 @@ namespace Mashed_Ashlands_Kwama
 
         public bool QueenDamaged(Thing queen, PawnKindDef warriorKind)
         {
-            List<Pawn> warriors = AllOfKind(queen, warriorKind);
+            List<Pawn> warriors = KwamaUtility.AllOfKind(queen, warriorKind);
             if (!warriors.NullOrEmpty())
             {
                 List<Pawn> manhunteredPawns = TriggerMentalState(warriors, MentalStateDefOf.Manhunter);
@@ -241,22 +241,11 @@ namespace Mashed_Ashlands_Kwama
             List<Building> burrows = map.listerBuildings.AllBuildingsNonColonistOfDef(ThingDefOf.Mashed_Ashlands_KwamaBurrow).ToList();
             if (!burrows.NullOrEmpty())
             {
-                Log.Message("bruh");
                 for (int i = burrows.Count-1; i >= 0; i--)
                 {
                     burrows[i].Destroy();
                 }
             }
-        }
-
-        private List<Pawn> AllOfKind(Thing queen, PawnKindDef kind)
-        {
-            return AllOfKind(queen.Map, kind);
-        }
-
-        private List<Pawn> AllOfKind(Map map, PawnKindDef kind)
-        {
-            return map.mapPawns.AllPawnsSpawned.Where(x => x.kindDef == kind && x.Faction == null).ToList();
         }
 
         private List<Pawn> TriggerMentalState(List<Pawn> pawnList, MentalStateDef stateDef)

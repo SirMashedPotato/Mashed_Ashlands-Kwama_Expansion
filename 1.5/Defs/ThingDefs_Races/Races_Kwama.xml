@@ -354,6 +354,7 @@
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
 			<canBecomeShambler>false</canBecomeShambler>
+			<canBePredatorPrey>false</canBePredatorPrey>
 			<lifeExpectancy>100</lifeExpectancy>
 			<trainability>None</trainability>
 			<leatherDef>Mashed_Ashlands_KwamaChitin</leatherDef>

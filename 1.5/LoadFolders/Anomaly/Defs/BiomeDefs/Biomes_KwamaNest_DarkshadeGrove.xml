@@ -46,13 +46,11 @@
 						<weight>0.2</weight>
 						<maxOnMap>3</maxOnMap>
 					</li>
-					<!--
 					<li>
-						<kindDef>Mashed_Ashlands_ShalkDarkshade</kindDef>
+						<kindDef>Mashed_Ashlands_NetchDarkshade</kindDef>
 						<weight>0.6</weight>
 						<maxOnMap>3</maxOnMap>
 					</li>
-					-->
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
 						<weight>0.6</weight>

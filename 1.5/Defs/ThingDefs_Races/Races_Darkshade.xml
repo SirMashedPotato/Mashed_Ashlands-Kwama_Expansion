@@ -84,11 +84,109 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	<!-- ==========[Mashed_Ashlands_NetchDarkshade]========== -->
+	<ThingDef ParentName="Mashed_Ashlands_NetchThingBase">
+		<defName>Mashed_Ashlands_NetchDarkshade</defName>
+		<label>darkshade netch</label>
+		<description>A rare subspecies of netch that can only be found in darkshade caverns deep underneath the ashlands. Despite their size, darkshade netch are somehow able to nimply navigate through the tight tunnels, and dense foliage, of darkshade groves.</description>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Mashed_Ashlands_NetchJelly</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>20</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<tradeTags Inherit="False">
+			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
+			<li>Mashed_Ashlands_AshlandAnimalDarkshade</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef Name="Mashed_Ashlands_NetchDarkshade" ParentName="AnimalKindBase">
+		<defName>Mashed_Ashlands_NetchDarkshade</defName>
+		<label>darkshade netch</label>
+		<labelMale>darkshade netch bull</labelMale>
+		<labelFemale>darkshade netch betty</labelFemale>
+		<race>Mashed_Ashlands_NetchDarkshade</race>
+		<combatPower>120</combatPower>
+		<ecoSystemWeight>0.7</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>darkshade netch calf</label>
+				<labelPlural>darkshade netch calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchCalfDarkshade</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchCalfDarkshade</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBullDarkshade</texPath>
+					<drawSize>2.0</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBettyDarkshade</texPath>
+					<drawSize>1.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBullDarkshade</texPath>
+					<drawSize>1.9</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBettyDarkshade</texPath>
+					<drawSize>1.6</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBullDarkshade</texPath>
+					<drawSize>2.6</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_NetchBettyDarkshade</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBullDarkshade</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Mashed_Ashlands_Netch/Mashed_Ashlands_Dessicated_NetchBettyDarkshade</texPath>
+					<drawSize>2.2</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 	<!-- ==========[Mashed_Ashlands_NixOxDarkshade]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_NixOxThingBase">
 		<defName>Mashed_Ashlands_NixOxDarkshade</defName>
 		<label>darkshade nix-ox</label>
-		<description>A rare subspecies of nix-ox that can only be found in darkshade caverns deep underneath the ashlands. Unlike their cousins, darkshade nix-ox are generall solitary creatures. They can sometimes be found sleeping in sulphuric water, which helps to soften their outer shell, making it easier to shear off.</description>
+		<description>A rare subspecies of nix-ox that can only be found in darkshade caverns deep underneath the ashlands. Unlike their cousins, darkshade nix-ox are generally solitary creatures. They can sometimes be found sleeping in sulphuric water, which helps to soften their outer shell, making it easier to shear off.</description>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_NixOxDarkshadeFertilized</eggFertilizedDef>

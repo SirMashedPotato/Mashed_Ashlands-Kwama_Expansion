@@ -20,6 +20,25 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Egg_NetchDarkshadeFertilized]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_EggFertBase">
+		<defName>Mashed_Ashlands_Egg_NetchDarkshadeFertilized</defName>
+		<label>darkshade netch egg (fert.)</label>
+		<description>A fertilised darkshade netch egg. If all goes well, it should hatch into a darkshade netch calf. It can be eaten raw, but it's much better cooked. As darkshade netch are rather protective of their eggs, darkshade netch eggs somewhat valuable.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/Mashed_Ashlands_JellyEgg</texPath>
+			<color>(186,247,251)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>Mashed_Ashlands_NetchDarkshade</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_Egg_NixOxDarkshadeFertilized]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_InsectEggFertBase">
 		<defName>Mashed_Ashlands_Egg_NixOxDarkshadeFertilized</defName>

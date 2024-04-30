@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MineKwamaEggs]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_HarvestHiveBase">
+		<defName>Mashed_Ashlands_MineKwamaEggs</defName>
+		<label>mine kwama eggs</label>
+		<description>Mine 3 kwama eggs. The nest entrance is damaged slightly each time kwama eggs are mined. Over mining will destroy the entrance before the kwama are able to repair any damage.</description>
+		<jobString>Mining kwama eggs.</jobString>
+		<effectWorking>Mine</effectWorking>
+		<soundWorking>Interact_GraveDig</soundWorking>
+		<workAmount>1000</workAmount>
+		<products>
+			<Mashed_Ashlands_KwamaEgg>3</Mashed_Ashlands_KwamaEgg>
+		</products>
+		<skillRequirements>
+			<Animals>6</Animals>
+			<Mining>6</Mining>
+		  </skillRequirements>
+	</RecipeDef>
+</Defs>

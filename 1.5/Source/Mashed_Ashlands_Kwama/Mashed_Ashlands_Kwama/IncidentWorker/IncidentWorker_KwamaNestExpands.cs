@@ -7,10 +7,6 @@ namespace Mashed_Ashlands_Kwama
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            if (!ModsConfig.AnomalyActive)
-            {
-                return false;
-            }
             Map map = (Map)parms.target;
             return base.CanFireNowSub(parms) && map.listerThings.ThingsOfDef(ThingDefOf.Mashed_Ashlands_KwamaNestEntrance).Count == 0;
         }

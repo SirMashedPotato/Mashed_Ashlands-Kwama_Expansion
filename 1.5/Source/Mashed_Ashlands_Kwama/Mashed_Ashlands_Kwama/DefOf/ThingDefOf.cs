@@ -10,12 +10,11 @@ namespace Mashed_Ashlands_Kwama
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf));
         }
-        [MayRequireAnomaly]
         public static ThingDef Mashed_Ashlands_KwamaNestEntrance;
+        public static ThingDef Mashed_Ashlands_KwamaNestEntranceSpawner;
+
         [MayRequireAnomaly]
         public static ThingDef Mashed_Ashlands_KwamaNestExit;
-        [MayRequireAnomaly]
-        public static ThingDef Mashed_Ashlands_KwamaNestEntranceSpawner;
         [MayRequireAnomaly]
         public static ThingDef Mashed_Ashlands_KwamaBurrow;
 

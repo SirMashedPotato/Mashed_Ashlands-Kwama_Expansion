@@ -54,6 +54,50 @@
 			<li>Mashed_Ashlands_Kwama_EggFurniture</li>
 		</researchPrerequisites>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_KwamaEggLamp]========== -->
+	<ThingDef ParentName="LampBase">
+		<defName>Mashed_Ashlands_KwamaEggLamp</defName>
+		<label>kwama egg standing lamp</label>
+		<description>A hollowed out kwama egg, with an electrical standing lamp inside it.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/Mashed_Ashlands_KwamaEggLamp</texPath>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<costList>
+			<Mashed_Ashlands_KwamaEgg>1</Mashed_Ashlands_KwamaEgg>
+			<Steel>20</Steel>
+		</costList>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_Kwama_EggFurniture</li>
+		</researchPrerequisites>
+		<statBases>
+			<Mass>4</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<uiOrder>2990</uiOrder>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+				<powerUpgrades>
+					<li>
+						<researchProject>ColoredLights</researchProject>
+						<factor>0.5</factor>
+					</li>
+				</powerUpgrades>
+			</li>
+			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(214,148,94,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_KwamaEggTorchbugLamp]========== -->
 	<ThingDef ParentName="Mashed_Ashlands_TorchbugLamp_Base">
 		<defName>Mashed_Ashlands_KwamaEggTorchbugLamp</defName>

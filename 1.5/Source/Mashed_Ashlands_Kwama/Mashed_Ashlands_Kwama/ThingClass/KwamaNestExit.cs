@@ -8,8 +8,8 @@ namespace Mashed_Ashlands_Kwama
 {
     public class KwamaNestExit : MapPortal
     {
-        private static readonly CachedTexture ExitPitGateTex = new CachedTexture("UI/Commands/ExitPitGate");
-        private static readonly CachedTexture ViewSurfaceTex = new CachedTexture("UI/Commands/ViewUndercave");
+        private static readonly CachedTexture ExitPitGateTex = new CachedTexture("UI/Commands/Mashed_Ashlands_ExitUndermap");
+        private static readonly CachedTexture ViewSurfaceTex = new CachedTexture("UI/Commands/Mashed_Ashlands_ViewOvermap");
         private static readonly Vector3 RopeDrawOffset = new Vector3(0f, 1f, 1f);
         public KwamaNestEntrance nestEntrance;
 

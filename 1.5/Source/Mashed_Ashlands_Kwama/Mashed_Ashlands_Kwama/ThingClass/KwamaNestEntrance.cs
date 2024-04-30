@@ -10,8 +10,8 @@ namespace Mashed_Ashlands_Kwama
     [StaticConstructorOnStartup]
     public class KwamaNestEntrance : MapPortal
     {
-        private static readonly CachedTexture EnterPitGateTex = new CachedTexture("UI/Commands/EnterPitGate");
-        private static readonly CachedTexture ViewUndercaveTex = new CachedTexture("UI/Commands/ViewUndercave");
+        private static readonly CachedTexture EnterPitGateTex = new CachedTexture("UI/Commands/Mashed_Ashlands_EnterUndermap");
+        private static readonly CachedTexture ViewUndercaveTex = new CachedTexture("UI/Commands/Mashed_Ashlands_ViewUndermap");
         public Map kwamaNest;
         public int kwamaNestSize = 100;
         private KwamaNestExit nestExit;
@@ -168,8 +168,8 @@ namespace Mashed_Ashlands_Kwama
             {
                 yield return new Command_Action
                 {
-                    defaultLabel = "ViewUndercave".Translate(),
-                    defaultDesc = "ViewUndercaveDesc".Translate(),
+                    defaultLabel = "Mashed_Ashlands_Kwama_ViewNest_Label".Translate(),
+                    defaultDesc = "Mashed_Ashlands_Kwama_ViewNest_Description".Translate(),
                     icon = ViewUndercaveTex.Texture,
                     action = delegate
                     {

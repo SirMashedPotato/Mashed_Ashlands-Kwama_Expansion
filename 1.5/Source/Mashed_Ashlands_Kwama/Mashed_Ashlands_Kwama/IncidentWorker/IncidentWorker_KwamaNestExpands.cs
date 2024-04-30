@@ -11,7 +11,6 @@ namespace Mashed_Ashlands_Kwama
             {
                 return false;
             }
-
             Map map = (Map)parms.target;
             return base.CanFireNowSub(parms) && map.listerThings.ThingsOfDef(ThingDefOf.Mashed_Ashlands_KwamaNestEntrance).Count == 0;
         }

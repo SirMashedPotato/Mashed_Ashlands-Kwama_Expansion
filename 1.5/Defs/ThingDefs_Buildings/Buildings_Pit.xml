@@ -144,8 +144,8 @@
 		<size>(3, 3)</size>
 		<uiIconPath>UI/Icons/UndergroundEmergence</uiIconPath>
 		<building>
-			<groundSpawnerSustainedEffecter>EmergencePointSustained8X8</groundSpawnerSustainedEffecter>
-			<groundSpawnerCompleteEffecter>EmergencePointComplete8X8</groundSpawnerCompleteEffecter>
+			<groundSpawnerSustainedEffecter>EmergencePointSustained3X3</groundSpawnerSustainedEffecter>
+			<groundSpawnerCompleteEffecter>EmergencePointComplete3X3</groundSpawnerCompleteEffecter>
 			<groundSpawnerThingToSpawn>Mashed_Ashlands_KwamaNestEntrance</groundSpawnerThingToSpawn>
 			<groundSpawnerSpawnDelay>5000~20000</groundSpawnerSpawnDelay>
 			<groundSpawnerSustainerSound>PitGateOpening</groundSpawnerSustainerSound>

@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_Plant_Chokevine]==========-->
 	<ThingDef ParentName="PlantBase">
 		<defName>Mashed_Ashlands_Plant_Chokevine</defName>
-		<label>chokevine</label>
+		<label>cavern chokevine</label>
 		<description>Tangled masses of cord-like, spiky vines which coil in great masses along the ground. Chokevine greatly slows down anyone who moves over it. Multiple tribes have independently generated stories of chokevine strangling children to death in the night, as a way to scare kids into coming home before dark.</description>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>

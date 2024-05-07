@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaNestTunnels]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_KwamaNestTunnels</defName>
+		<order>11</order>
+		<genStep Class="GenStep_Undercaves">
+			<baseWidth>3</baseWidth>
+			<branchChance>0.1</branchChance>
+			<minTunnelWidth>1.6</minTunnelWidth>
+			<widthOffsetPerCell>0.0001</widthOffsetPerCell>
+		</genStep>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNestChambers]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_KwamaNestChambers</defName>
+		<order>201</order>
+		<genStep Class="Mashed_Ashlands_Kwama.GenStep_NestChambers">
+			<chamberSizeRange>60~90</chamberSizeRange>
+			<chamberCountRange>3~6</chamberCountRange>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaNestTerrain]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_KwamaNestTerrain</defName>

@@ -35,7 +35,7 @@ namespace Mashed_Ashlands_Kwama
             {
                 if (CellFinder.TryFindRandomCellNear(result, map, 5, (IntVec3 c) => c.Standable(map) && !c.GetTerrain(map).IsWater, out IntVec3 eggSacSpawn))
                 {
-                    GenSpawn.Spawn(ThingDefOf.Mashed_Ashlands_KwamaEggSac, eggSacSpawn, map);
+                    GenSpawn.Spawn(KwamaUtility.GetKwamaEggType(), eggSacSpawn, map);
                 }
             }
         }

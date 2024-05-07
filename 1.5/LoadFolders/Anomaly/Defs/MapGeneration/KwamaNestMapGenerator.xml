@@ -12,7 +12,8 @@
 		<genSteps>
 			<li>ElevationFertility</li>
 			<li>Undercave_RocksFromGrid</li>
-			<li>Undercave_Caves</li>
+			<li>Mashed_Ashlands_KwamaNestTunnels</li>
+			<li>Mashed_Ashlands_KwamaNestChambers</li>
 			<li>Terrain</li>
 			<li>Mashed_Ashlands_KwamaNestTerrain</li>
 			<li>RockChunks</li>

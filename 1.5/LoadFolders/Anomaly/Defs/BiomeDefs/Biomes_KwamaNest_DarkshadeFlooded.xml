@@ -3,12 +3,12 @@
 	<BiomeDef ParentName="Mashed_Ashlands_KwamaNestBase">
 		<defName>Mashed_Ashlands_DarkshadeFloodedKwamaNest</defName>
 		<label>flooded darkshade kwama nest</label>
-		<plantDensity>1</plantDensity>
+		<plantDensity>1.2</plantDensity>
 		<modExtensions>
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<forceCustomCavePlants>true</forceCustomCavePlants>
 				<cavePlants>
-					<Mashed_Ashlands_Plant_DarkshadeBryolux>0.1</Mashed_Ashlands_Plant_DarkshadeBryolux>
+					<Mashed_Ashlands_Plant_Chokevine>0.2</Mashed_Ashlands_Plant_Chokevine>
 					<Mashed_Ashlands_Plant_DarkshadeDraggleTails>0.05</Mashed_Ashlands_Plant_DarkshadeDraggleTails>
 					<Mashed_Ashlands_Plant_DarkshadeEntoloma>0.2</Mashed_Ashlands_Plant_DarkshadeEntoloma>
 					<Mashed_Ashlands_Plant_DarkshadeMushroom>0.1</Mashed_Ashlands_Plant_DarkshadeMushroom>

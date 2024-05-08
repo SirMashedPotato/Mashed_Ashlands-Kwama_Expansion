@@ -41,6 +41,30 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_DarkshadeChokevine]==========-->
+	<!--
+	<ThingDef ParentName="Mashed_Ashlands_Plant_ChokevineBase">
+		<defName>Mashed_Ashlands_Plant_DarkshadeChokevine</defName>
+		<label>darkshade chokevine</label>
+		<description>A rare strain of the common chokevine, only found growing deep in the caverns beneath the ashlands. A tangled mass of vines, that produce a strange pale glow.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeChokevine</texPath>
+		</graphicData>
+		<plant>
+			<pollution>CleanOnly</pollution>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Darkshade</li>
+			</sowResearchPrerequisites>
+			<sowWork>230</sowWork>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(78,226,229,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	-->
 	<!-- ==========[Mashed_Ashlands_Plant_DarkshadeDraggleTails]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_Plant_DraggleTailsBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeDraggleTails</defName>

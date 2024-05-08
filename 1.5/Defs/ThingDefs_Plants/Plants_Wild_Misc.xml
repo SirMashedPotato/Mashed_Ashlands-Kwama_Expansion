@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_Plant_Chokevine]==========-->
-	<ThingDef ParentName="PlantBase">
+	<ThingDef ParentName="PlantBase" Name="Mashed_Ashlands_Plant_ChokevineBase">
 		<defName>Mashed_Ashlands_Plant_Chokevine</defName>
 		<label>cavern chokevine</label>
 		<description>Tangled masses of cord-like, spiky vines which coil in great masses along the ground. Chokevine greatly slows down anyone who moves over it. Multiple tribes have independently generated stories of chokevine strangling children to death in the night, as a way to scare kids into coming home before dark.</description>

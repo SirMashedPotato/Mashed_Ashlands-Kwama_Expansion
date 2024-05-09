@@ -81,6 +81,7 @@
     <Compile Include="JobDriver\JobDriver_MoveEggSac.cs" />
     <Compile Include="MapComp\KwamaNestMapComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScattererValidator\ScattererValidator_RoomSize.cs" />
     <Compile Include="ThingClass\KwamaNestEntrance.cs" />
     <Compile Include="ThingClass\KwamaNestExit.cs" />
     <Compile Include="ThingComp\Comp_AnimalSpawner.cs" />

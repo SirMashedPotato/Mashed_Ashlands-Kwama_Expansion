@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_KwamaEggPackingSpot]==========-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>Mashed_Ashlands_KwamaEggPackingSpot</defName>
+		<label>kwama egg packing spot</label>
+		<description>A spot equipped to pack kwama eggs into crates.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/Mashed_Ashlands_KwamaEggPackingSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.5, 1, 0.5)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>false</useHitPoints>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<comps>
+			<li Class="CompProperties_ReportWorkSpeed">
+				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Mashed_Ashlands_Kwama_EggPacking</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>

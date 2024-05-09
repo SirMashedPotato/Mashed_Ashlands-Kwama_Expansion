@@ -27,8 +27,7 @@
 		<allowedArchonexusCount>10</allowedArchonexusCount>
 		<recipeMaker>
 			<recipeUsers>
-				<li>CraftingSpot</li>
-				<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Workbench</li>
+				<li>Mashed_Ashlands_KwamaEggPackingSpot</li>
 			</recipeUsers>
 			<researchPrerequisites>
 				<li>Mashed_Ashlands_Kwama_EggPacking</li>

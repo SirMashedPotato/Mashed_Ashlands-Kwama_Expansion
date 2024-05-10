@@ -71,11 +71,13 @@
 		<destroyable>false</destroyable>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Building/PitGate/PitGateExit/PitGateExit</texPath>
+			<texPath>Things/Building/KwamaNest/Mashed_Ashlands_KwamaNestExit</texPath>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<passability>Standable</passability>
 		<building>
+			<isEdifice>true</isEdifice>
 			<deconstructible>false</deconstructible>
 			<isTargetable>false</isTargetable>
 			<isInert>true</isInert>
@@ -113,7 +115,7 @@
 			<drawSize>(1, 1)</drawSize>
 		</graphicData>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
-		<passability>Impassable</passability>
+		<passability>PassThroughOnly</passability>
 		<building>
 			<deconstructible>false</deconstructible>
 			<isTargetable>false</isTargetable>

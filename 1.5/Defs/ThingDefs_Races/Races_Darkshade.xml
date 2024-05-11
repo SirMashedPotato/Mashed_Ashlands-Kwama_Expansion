@@ -35,6 +35,7 @@
 			</li>
 		</tools>
 		<tradeTags Inherit="False">
+			<li>AnimalExotic</li>
 			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
 			<li>Mashed_Ashlands_AshlandAnimalDarkshade</li>
 		</tradeTags>
@@ -98,6 +99,7 @@
 			</li>
 		</comps>
 		<tradeTags Inherit="False">
+			<li>AnimalExotic</li>
 			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
 			<li>Mashed_Ashlands_AshlandAnimalDarkshade</li>
 		</tradeTags>
@@ -205,6 +207,7 @@
 			<herdAnimal>false</herdAnimal>
 		</race>
 		<tradeTags Inherit="False">
+			<li>AnimalExotic</li>
 			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
 			<li>Mashed_Ashlands_AshlandAnimalDarkshade</li>
 		</tradeTags>
@@ -327,6 +330,7 @@
 			</li>
 		</tools>
 		<tradeTags Inherit="False">
+			<li>AnimalExotic</li>
 			<li>Mashed_Ashlands_AshlandAnimalExotic</li>
 			<li>Mashed_Ashlands_AshlandAnimalDarkshade</li>
 		</tradeTags>

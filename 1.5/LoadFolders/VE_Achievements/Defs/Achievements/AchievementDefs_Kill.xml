@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_KillKwamaQueen]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_KillKwamaQueen</defName>
+		<label>Regicide</label>
+		<description>Kill a kwama queen</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<kindDef>Mashed_Ashlands_KwamaQueen</kindDef>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_KillKwamaQueen</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

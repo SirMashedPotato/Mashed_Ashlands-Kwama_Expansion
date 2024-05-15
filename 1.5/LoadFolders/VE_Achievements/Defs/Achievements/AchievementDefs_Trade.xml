@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_TradeKwamaEggCrate]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_TradeKwamaEggCrate</defName>
+		<label>Kwama Egg Baron</label>
+		<description>Earn a total of 10,000 silver trading kwama egg crates</description>
+		<tracker Class="AchievementsExpanded.TraderTracker">
+			<def>Mashed_Ashlands_KwamaEggCrate</def>
+			<worth>10000</worth>
+			<singleTransaction>false</singleTransaction>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_TradeKwamaEggCrate</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

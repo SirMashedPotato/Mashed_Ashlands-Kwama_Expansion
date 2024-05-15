@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_CollectKwamaEgg]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_CollectKwamaEgg</defName>
+		<label>Kwama Egg Collector</label>
+		<description>Collect 333 kwama eggs</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Ashlands_KwamaEgg</def>
+			<count>333</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_CollectKwamaEgg</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_CollectKwamaEggAgain]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_CollectKwamaEggAgain</defName>
+		<label>Kwama Egg Obsession</label>
+		<description>Collect 666 kwama eggs</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>Mashed_Ashlands_KwamaEgg</def>
+			<count>666</count>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_CollectKwamaEggAgain</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

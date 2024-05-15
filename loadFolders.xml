@@ -11,5 +11,8 @@
 		<!-- VE_Fishing -->
 		<li IfModActive="vanillaexpanded.vcef">LoadFolders/VE_FishingTextures</li>
 		<li IfModActive="vanillaexpanded.vcef">1.5/LoadFolders/VE_Fishing</li>
+		<!-- VE_Achievements -->
+		<li IfModActive="vanillaexpanded.achievements">LoadFolders/VE_AchievementsTextures</li>
+		<li IfModActive="vanillaexpanded.achievements">1.5/LoadFolders/VE_Achievements</li>
 	</v1.5>
 </loadFolders>

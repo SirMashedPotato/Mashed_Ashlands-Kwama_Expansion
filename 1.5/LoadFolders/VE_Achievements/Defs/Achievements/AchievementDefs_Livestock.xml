@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_AchievementAshlands_TameKwamaWorker]========== -->
+	<!--
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_TameKwamaWorker</defName>
+		<label>Work Work Work</label>
+		<description>Have six tame kwama workers at the same time</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_KwamaWorker</key>
+					<value>6</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_TameKwamaWorker</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+	-->
+	<!-- ==========[Mashed_AchievementAshlands_TameKwamaWarrior]========== -->
+	<!--
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_TameKwamaWarrior</defName>
+		<label>Hands of the Queen</label>
+		<description>Have three tame kwama warriors at the same time</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_KwamaWorker</key>
+					<value>3</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_TameKwamaWarrior</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+	-->
+	<!-- ==========[Mashed_AchievementAshlands_DarkshadeAnimalTamer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_DarkshadeAnimalTamer</defName>
+		<label>Darkshade Animal Tamer</label>
+		<description>Tame your first darkshade ashland animal</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<requireAll>false</requireAll>
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_NetchDarkshade</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_MudcrabDarkshade</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_NixOxDarkshade</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_ShalkDarkshade</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_DarkshadeAnimalTamer</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[Mashed_AchievementAshlands_DarkshadeAnimalCollector]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
+		<defName>Mashed_AchievementAshlands_DarkshadeAnimalCollector</defName>
+		<label>Darkshade Animal Collector</label>
+		<description>Have at least one of each darkshade ashland animal at the same time</description>
+		<tracker Class="AchievementsExpanded.KindDefTracker">
+			<requireAll>true</requireAll>
+			<kindDefs>
+				<li>
+					<key>Mashed_Ashlands_NetchDarkshade</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_MudcrabDarkshade</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_NixOxDarkshade</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>Mashed_Ashlands_ShalkDarkshade</key>
+					<value>1</value>
+				</li>
+			</kindDefs>
+		</tracker>
+		<texPath>Achievements/Mashed_AchievementAshlands_DarkshadeAnimalCollector</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

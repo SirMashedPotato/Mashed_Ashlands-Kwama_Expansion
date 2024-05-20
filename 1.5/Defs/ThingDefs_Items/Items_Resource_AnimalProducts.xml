@@ -20,7 +20,7 @@
 		<stackLimit>25</stackLimit>
 		<statBases>
 			<MarketValue>13</MarketValue>
-			<Mass>0.1</Mass>
+			<Mass>0.3</Mass>
 			<Nutrition>0.8</Nutrition>
 			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
 		</statBases>

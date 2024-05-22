@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_DeepnestDarkness]==========-->
+	<GameConditionDef>
+		<defName>Mashed_Ashlands_DeepnestDarkness</defName>
+		<conditionClass>Mashed_Ashlands_Kwama.GameCondition_DeepnestDarkness</conditionClass>
+		<label>deepnest</label>
+		<description>The all consuming darkness of a kwama deepnest, illuminated by only the faintest glow of bioluminescent bacteria and fungi.</description>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+</Defs>

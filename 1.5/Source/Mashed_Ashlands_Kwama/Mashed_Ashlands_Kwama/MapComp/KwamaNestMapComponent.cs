@@ -47,8 +47,18 @@ namespace Mashed_Ashlands_Kwama
         private readonly Queue<QueuedCellEffecter> fxQueue = new Queue<QueuedCellEffecter>();
 
         public Map SourceMap => (map.Parent as PocketMapParent)?.sourceMap;
+
         public KwamaNestMapComponent(Map map) : base(map)
         {
+            UnderBiomeProperties biomeProperties = UnderBiomeProperties.Get(map.Biome);
+            if (biomeProperties == null || biomeProperties.forcedCondition == null 
+                || map.gameConditionManager.ConditionIsActive(biomeProperties.forcedCondition))
+            {
+                return;
+            }
+            GameCondition gameCondition = GameConditionMaker.MakeCondition(biomeProperties.forcedCondition);
+            gameCondition.Permanent = true;
+            map.gameConditionManager.RegisterCondition(gameCondition);
         }
 
         public void Notify_BeginCollapsing()

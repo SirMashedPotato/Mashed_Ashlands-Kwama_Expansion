@@ -1,5 +1,4 @@
-﻿using RimWorld;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace Mashed_Ashlands_Kwama
@@ -7,6 +6,7 @@ namespace Mashed_Ashlands_Kwama
     public class UnderBiomeProperties : DefModExtension
     {
         public List<AnimalSpawns> wildAnimals;
+        public GameConditionDef forcedCondition;
 
         public static UnderBiomeProperties Get(Def def)
         {

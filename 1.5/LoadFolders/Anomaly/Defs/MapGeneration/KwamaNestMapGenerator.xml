@@ -69,6 +69,14 @@
 			<biome>Mashed_Ashlands_DarkshadeThermalKwamaNest</biome>
 		</pocketMapProperties>
 	</MapGeneratorDef>
+	<!-- ==========[Mashed_Ashlands_DeepKwamaNest]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+		<defName>Mashed_Ashlands_DeepKwamaNest</defName>
+		<label>kwama deepnest</label>
+		<pocketMapProperties>
+			<biome>Mashed_Ashlands_DeepKwamaNest</biome>
+		</pocketMapProperties>
+	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_FloodedKwamaNest]==========-->
 	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
 		<defName>Mashed_Ashlands_FloodedKwamaNest</defName>

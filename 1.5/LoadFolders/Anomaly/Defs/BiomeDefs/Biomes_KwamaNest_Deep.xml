@@ -48,7 +48,7 @@
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaForager</kindDef>
 						<weight>0.8</weight>
-						<maxOnMap>6</maxOnMap>
+						<maxOnMap>9</maxOnMap>
 					</li>
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaWorker</kindDef>

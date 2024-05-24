@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
 using UnityEngine;
@@ -43,10 +44,34 @@ namespace Mashed_Ashlands_Kwama
 
         protected override Texture2D EnterTex => EnterPitGateTex.Texture;
 
-        public void GenerateKwamaNest()
+        private List<FloatMenuOption> debugGenOptions;
+
+        public List<FloatMenuOption> DebugGenOptions
+        {
+            get
+            {
+                if (debugGenOptions.NullOrEmpty())
+                {
+                    debugGenOptions = new List<FloatMenuOption>();
+                    RandomMapGenDef randomMapGenDef = RandomMapGenDef.Get(def);
+                    foreach (MapGeneratorDef mapGeneratorDef in randomMapGenDef.mapGenerators)
+                    {
+                        FloatMenuOption item = new FloatMenuOption(mapGeneratorDef.LabelCap, delegate
+                        {
+                            GenerateKwamaNest(mapGeneratorDef);
+                        });
+                        debugGenOptions.Add(item);
+                    }
+                }
+                return debugGenOptions;
+            }
+        }
+
+        public void GenerateKwamaNest(MapGeneratorDef forcedMapGenerator = null)
         {
             RandomMapGenDef randomMapGenDef = RandomMapGenDef.Get(def);
-            kwamaNest = PocketMapUtility.GeneratePocketMap(new IntVec3(kwamaNestSize, 1, kwamaNestSize), randomMapGenDef.mapGenerators.RandomElement(), null, Map);
+            kwamaNest = PocketMapUtility.GeneratePocketMap(new IntVec3(kwamaNestSize, 1, kwamaNestSize), 
+                forcedMapGenerator ?? randomMapGenDef.mapGenerators.RandomElement(), null, Map);
             nestExit = kwamaNest.listerThings.ThingsOfDef(ThingDefOf.Mashed_Ashlands_KwamaNestExit).First() as KwamaNestExit;
             nestExit.nestEntrance = this;
             Find.LetterStack.ReceiveLetter(kwamaNest.Biome.LabelCap, kwamaNest.Biome.description, LetterDefOf.NeutralEvent, nestExit);
@@ -194,12 +219,14 @@ namespace Mashed_Ashlands_Kwama
                 }
                 else
                 {
+                    
                     yield return new Command_Action
                     {
                         defaultLabel = "DEV: Create inner map",
                         action = delegate
                         {
-                            GenerateKwamaNest();
+                            FloatMenu floatMenu = new FloatMenu(DebugGenOptions);
+                            Find.WindowStack.Add(floatMenu);
                         }
                     };
                 }

@@ -5,7 +5,7 @@
 		<defName>Mashed_Ashlands_DeepnestDarkness</defName>
 		<conditionClass>Mashed_Ashlands_Kwama.GameCondition_DeepnestDarkness</conditionClass>
 		<label>deepnest</label>
-		<description>The all consuming darkness of a kwama deepnest, illuminated by only the faintest glow of bioluminescent bacteria and fungi.</description>
+		<description>The all-consuming darkness of a kwama deepnest, illuminated by only the faintest glow of bioluminescent bacteria and fungi. Even the normally soothing sound of a scrib thumping becomes highly unnerving, as it echoes throughout the absolute darkness.</description>
 		<canBePermanent>true</canBePermanent>
 	</GameConditionDef>
 </Defs>

@@ -8,8 +8,9 @@
 				<forceCustomCavePlants>true</forceCustomCavePlants>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_Bloatspore>0.2</Mashed_Ashlands_Plant_Bloatspore>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.1</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.1</Mashed_Ashlands_Plant_VioletCoprinus>
+					<Mashed_Ashlands_Plant_PaleEntoloma>0.1</Mashed_Ashlands_Plant_PaleEntoloma>
+					<Mashed_Ashlands_Plant_PaleMushroom>0.075</Mashed_Ashlands_Plant_PaleMushroom>
+					<Mashed_Ashlands_Plant_PaleGlowstalk>0.05</Mashed_Ashlands_Plant_PaleGlowstalk>
 					<Mashed_Ashlands_Plant_TreeKwamacap>0.1</Mashed_Ashlands_Plant_TreeKwamacap>
 					<!-- Polluted plants -->
 					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingRussula>
@@ -28,9 +29,9 @@
 				</dryToReplacers>
 				<increasePollutedFertility>true</increasePollutedFertility>
 				<otherTerrainDef>Mashed_Ashlands_RichAshGravel</otherTerrainDef>
-				<otherTerrainThreshold>0.3</otherTerrainThreshold>
+				<otherTerrainThreshold>0.25</otherTerrainThreshold>
 				<waterTerrainDef>WaterShallow</waterTerrainDef>
-				<waterThreshold>0.8</waterThreshold>
+				<waterThreshold>0.6</waterThreshold>
 			</li>
 			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
 				<forcedCondition>Mashed_Ashlands_DeepnestDarkness</forcedCondition>

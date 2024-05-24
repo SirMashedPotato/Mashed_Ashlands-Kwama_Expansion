@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_Plant_PaleEntoloma]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
+		<defName>Mashed_Ashlands_Plant_PaleEntoloma</defName>
+		<label>pale entoloma</label>
+		<description>A small pale mushroom, only found growing in the deepest caverns beneath the ashlands. Emits a very faint pale glow, that's almost enough to ensure you don't get lost.</description>
+		<statBases>
+			<Beauty>10</Beauty>
+			<BeautyOutdoors>10</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_PaleEntoloma</texPath>
+		</graphicData>
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<growDays>3</growDays>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<sowWork>200</sowWork>
+			<purpose>Beauty</purpose>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(204,190,234,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_PaleMushroom]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
+		<defName>Mashed_Ashlands_Plant_PaleMushroom</defName>
+		<label>pale mushroom</label>
+		<description>A small edible mushroom, only found growing in the deepest caverns beneath the ashlandss. Its flesh is edible, though most don't consider it very pleasant to eat. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Mashed_Ashlands_AshResistance>0.6</Mashed_Ashlands_AshResistance>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_PaleMushroomPlant</texPath>
+		</graphicData>
+		<pathCost>14</pathCost>
+		<plant>
+			<growMinGlow>-0.01</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<fertilityMin>1</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<sowResearchPrerequisites>
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.05</topWindExposure>
+			<growDays>5</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.4~0.8</visualSizeRange>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>2</wildOrder>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(204,190,234,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_PaleGlowstalk]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_GlowstalkBase">
+		<defName>Mashed_Ashlands_Plant_PaleGlowstalk</defName>
+		<label>pale glowstalk</label>
+		<description>A rare strain of glowstalk, that is only found growing in the deepest caverns beneath the ashlands. It emits a faint pale light, that can be crucial in navigating the suffocatingly dark caverns.</description>
+		<graphicData>
+			<texPath>Things/Plant/Mashed_Ashlands_PaleGlowstalk</texPath>
+		</graphicData>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>12</sowMinSkill>
+		</plant>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(204,190,234,0)</glowColor>
+			</li>
+			<li Class="Mashed_Ashlands.CompProperties_EffecterAtNight">
+				<effecterDef>Mashed_Ashlands_PaleTorchbugEffecter</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

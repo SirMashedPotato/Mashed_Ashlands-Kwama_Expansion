@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!-- ==========[Mashed_Ashlands_BiomeTempAshlandCave]==========-->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/VCE_Fishing.BiomeTempDef[defName="Mashed_Ashlands_BiomeTempAshlandCave"]/biomes</xpath>
-		<value>
-			<li>Mashed_Ashlands_KwamaNest</li>
-			<li>Mashed_Ashlands_DarkshadeKwamaNest</li>
-			<li>Mashed_Ashlands_DarkshadeFloodedKwamaNest</li>
-			<li>Mashed_Ashlands_DarkshadeGroveKwamaNest</li>
-			<li>Mashed_Ashlands_DarkshadeThermalKwamaNest</li>
-			<li>Mashed_Ashlands_FloodedKwamaNest</li>
-			<li>Mashed_Ashlands_ThermalKwamaNest</li>
-		</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/VCE_Fishing.BiomeTempDef[defName="Mashed_Ashlands_BiomeTempAshlandCave"]/biomes</xpath>
+					<value>
+						<li>Mashed_Ashlands_KwamaNest</li>
+						<li>Mashed_Ashlands_DarkshadeKwamaNest</li>
+						<li>Mashed_Ashlands_DarkshadeFloodedKwamaNest</li>
+						<li>Mashed_Ashlands_DarkshadeGroveKwamaNest</li>
+						<li>Mashed_Ashlands_DarkshadeThermalKwamaNest</li>
+						<li>Mashed_Ashlands_DeepKwamaNest</li>
+						<li>Mashed_Ashlands_FloodedKwamaNest</li>
+						<li>Mashed_Ashlands_ThermalKwamaNest</li>
+					</value>
+				</li>
+			</operations>
+		</match>
 	</Operation>
 </Patch>

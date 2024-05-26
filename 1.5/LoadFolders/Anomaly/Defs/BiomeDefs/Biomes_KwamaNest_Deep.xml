@@ -11,7 +11,6 @@
 					<Mashed_Ashlands_Plant_PaleEntoloma>0.1</Mashed_Ashlands_Plant_PaleEntoloma>
 					<Mashed_Ashlands_Plant_PaleMushroom>0.075</Mashed_Ashlands_Plant_PaleMushroom>
 					<Mashed_Ashlands_Plant_PaleGlowstalk>0.05</Mashed_Ashlands_Plant_PaleGlowstalk>
-					<Mashed_Ashlands_Plant_TreeKwamacap>0.1</Mashed_Ashlands_Plant_TreeKwamacap>
 					<!-- Polluted plants -->
 					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingRussula>
 					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingCoprinus>
@@ -34,7 +33,6 @@
 				<waterThreshold>0.6</waterThreshold>
 			</li>
 			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
-				<forcedCondition>Mashed_Ashlands_DeepnestDarkness</forcedCondition>
 				<wildAnimals>
 					<li>
 						<kindDef>Rat</kindDef>
@@ -65,5 +63,8 @@
 			</li>
 		</modExtensions>
 		<plantDensity>0.3</plantDensity>
+		<baseWeatherCommonalities Inherit="False">
+			<Mashed_Ashlands_KwamaDeepnest>1</Mashed_Ashlands_KwamaDeepnest>
+		</baseWeatherCommonalities>
 	</BiomeDef>
 </Defs>

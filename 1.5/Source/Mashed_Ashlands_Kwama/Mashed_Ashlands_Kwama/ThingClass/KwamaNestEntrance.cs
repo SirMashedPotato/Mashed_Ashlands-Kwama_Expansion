@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
 using UnityEngine;
@@ -204,22 +203,13 @@ namespace Mashed_Ashlands_Kwama
             }
             if (DebugSettings.ShowDevGizmos)
             {
-                if (kwamaNest != null)
+                yield return new Command_Action
                 {
-                    yield return new Command_Action
-                    {
-                        defaultLabel = "DEV: Destroy inner map",
-                        action = delegate 
-                        {
-                            PocketMapUtility.DestroyPocketMap(kwamaNest);
-                            kwamaNest = null;
-
-                        }
-                    };
-                }
-                else
+                    defaultLabel = "DEV: Collapse Kwama Nest Entrance",
+                    action = BeginCollapsing
+                };
+                if (kwamaNest == null)
                 {
-                    
                     yield return new Command_Action
                     {
                         defaultLabel = "DEV: Create inner map",
@@ -230,13 +220,7 @@ namespace Mashed_Ashlands_Kwama
                         }
                     };
                 }
-                yield return new Command_Action
-                {
-                    defaultLabel = "DEV: Collapse Kwama Nest Entrance",
-                    action = BeginCollapsing
-                };
             }
-            
         }
     }
 }

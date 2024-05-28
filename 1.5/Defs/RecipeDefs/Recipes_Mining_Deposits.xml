@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_MineGlassDepositBase]==========-->
+	<RecipeDef Name="Mashed_Ashlands_MineGlassDepositBase" Abstract="True">
+		<workerClass>Mashed_Ashlands.RecipeWorker_ConsumeCharge</workerClass>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>MiningSpeed</workSpeedStat>
+		<workSkill>Mining</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>Mine</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<skillRequirements>
+			<Mining>6</Mining>
+		</skillRequirements>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_MineEbonyDeposit]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MineGlassDepositBase">
+		<defName>Mashed_Ashlands_MineEbonyDeposit</defName>
+		<label>mine volcanic ebony</label>
+		<description>Mine 3 raw volcanic ebony. A resource charge is consumed each time ebony is harvested.</description>
+		<jobString>Mining volcanic ebony deposit.</jobString>
+		<products>
+			<Mashed_Ashlands_VolcanicEbony>3</Mashed_Ashlands_VolcanicEbony>
+		</products>
+	</RecipeDef>
+	<!-- ==========[Mashed_Ashlands_MineGlassDeposit]==========-->
+	<RecipeDef ParentName="Mashed_Ashlands_MineGlassDepositBase">
+		<defName>Mashed_Ashlands_MineGlassDeposit</defName>
+		<label>mine volcanic malachite</label>
+		<description>Mine 3 raw volcanic malachite. A resource charge is consumed each time ebony is harvested.</description>
+		<jobString>Mining volcanic malachite deposit.</jobString>
+		<products>
+			<Mashed_Ashlands_VolcanicGlass>3</Mashed_Ashlands_VolcanicGlass>
+		</products>
+	</RecipeDef>
+</Defs>

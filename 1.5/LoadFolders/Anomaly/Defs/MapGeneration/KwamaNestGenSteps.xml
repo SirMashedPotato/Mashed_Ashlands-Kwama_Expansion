@@ -20,17 +20,28 @@
 			<chamberCountRange>3~6</chamberCountRange>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_FindKwamaNestExit</defName>
+		<order>206</order>
+		<genStep Class="Mashed_Ashlands_Kwama.GenStep_FindKwamaNestExit"/>
+	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNestLargeResourceDeposit]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_KwamaNestLargeResourceDeposit</defName>
+		<order>207</order>
+		<genStep Class="Mashed_Ashlands_Kwama.GenStep_LargeResourceDeposit">
+			<resourceDeposits>
+				<li>Mashed_Ashlands_EbonyDepositLarge</li>
+				<li>Mashed_Ashlands_GlassDepositLarge</li>
+			</resourceDeposits>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaNestTerrain]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_KwamaNestTerrain</defName>
 		<order>211</order>
 		<genStep Class="Mashed_Ashlands_Kwama.GenStep_NestTerrain"/>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_FindKwamaNestExit</defName>
-		<order>300</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_FindKwamaNestExit"/>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaBurrow]==========-->
 	<GenStepDef>

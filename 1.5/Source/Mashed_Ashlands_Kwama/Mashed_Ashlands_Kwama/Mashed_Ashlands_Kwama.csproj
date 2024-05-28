@@ -72,6 +72,7 @@
     <Compile Include="DefOf\PawnKindDefOf.cs" />
     <Compile Include="DefOf\SoundDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="GenStep\GenStep_LargeResourceDeposit.cs" />
     <Compile Include="GenStep\GenStep_NestChambers.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="GenStep\GenStep_FindKwamaNestExit.cs" />

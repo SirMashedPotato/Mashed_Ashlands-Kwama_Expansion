@@ -14,12 +14,6 @@
 			<thingDef>Mashed_Ashlands_KwamaExplorerSkeleton</thingDef>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<count>1</count>
-			<validators>
-				<li Class="ScattererValidator_Buildable">
-					<radius>3</radius>
-					<affordance>Heavy</affordance>
-				</li>
-			</validators>
 		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaEggSacs]==========-->

@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_DoBillsHarvestKwamaNest]==========-->
+	<!-- ==========[Mashed_Ashlands_DoBillsMineGlassDeposit]==========-->
 	<WorkGiverDef>
-		<defName>Mashed_Ashlands_DoBillsPackKwamaEggs</defName>
-		<label>pack kwama eggs</label>
+		<defName>Mashed_Ashlands_DoBillsMineGlassDeposit</defName>
+		<label>minve volcanic glass deposit</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
-		<priorityInType>100</priorityInType>
+		<workType>Mining</workType>
+		<priorityInType>50</priorityInType>
 		<fixedBillGiverDefs>
-			<li>Mashed_Ashlands_KwamaEggPackingSpot</li>
+			<li>Mashed_Ashlands_EbonyDepositLarge</li>
+			<li>Mashed_Ashlands_GlassDepositLarge</li>
 		</fixedBillGiverDefs>
-		<verb>pack eggs</verb>
-		<gerund>packing eggs at</gerund>
+		<verb>mine deposit</verb>
+		<gerund>mining</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>

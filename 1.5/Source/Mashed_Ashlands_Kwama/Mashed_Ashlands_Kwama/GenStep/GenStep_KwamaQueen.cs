@@ -8,6 +8,7 @@ namespace Mashed_Ashlands_Kwama
     public class GenStep_KwamaQueen : GenStep
     {
         private const int chamberSize = 40;
+        private const int minRoomSize = 91;
         private const float minSpawnDistFromNestExit = 60f;
         private static readonly IntRange numEggSacsInRange = new IntRange(6, 12);
 
@@ -16,7 +17,10 @@ namespace Mashed_Ashlands_Kwama
         public override void Generate(Map map, GenStepParams parms)
         {
             KwamaNestExit nestExit = (KwamaNestExit)map.listerThings.ThingsOfDef(ThingDefOf.Mashed_Ashlands_KwamaNestExit).First();
-            CellFinder.TryFindRandomCell(map, (IntVec3 c) => c.Standable(map) && !c.InHorDistOf(nestExit.Position, minSpawnDistFromNestExit) && c.DistanceToEdge(map) > 10, out IntVec3 result);
+            CellFinder.TryFindRandomCell(map, (IntVec3 c) => c.Standable(map) 
+            && (c.GetRoom(map) == null || c.GetRoom(map).CellCount > minRoomSize)
+            && !c.InHorDistOf(nestExit.Position, minSpawnDistFromNestExit) 
+            && c.DistanceToEdge(map) > 10, out IntVec3 result);
             List<IntVec3> list = GridShapeMaker.IrregularLump(result, map, chamberSize);
             foreach (IntVec3 item in list)
             {

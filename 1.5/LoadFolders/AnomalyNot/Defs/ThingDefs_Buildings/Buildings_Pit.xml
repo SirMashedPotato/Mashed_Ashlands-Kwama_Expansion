@@ -2,7 +2,7 @@
 <Defs>
 	<!-- Overwritten in Anomaly loadfolder -->
 	<!-- ==========[Mashed_Ashlands_KwamaNestEntrance]==========-->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_KwamaNestEntrance</defName>
 		<label>kwama nest entrance</label>
 		<description>The entrance to an underground kwama nest. It's possible to travel down into the nest and 'mine' the kwama eggs.</description>

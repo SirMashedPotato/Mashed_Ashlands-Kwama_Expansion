@@ -137,8 +137,8 @@
 			<texPath>Things/Building/Natural/Mashed_Ashlands_GoldKwamaEggSac</texPath>
 		</graphicData>
 	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_LargeGlassDepositBase]==========-->
-	<ThingDef ParentName="BuildingBase" Name="Mashed_Ashlands_LargeGlassDepositBase" Abstract="True">
+	<!-- ==========[Mashed_Ashlands_MineableDepositLargeBase]==========-->
+	<ThingDef ParentName="BuildingNaturalBase" Name="Mashed_Ashlands_MineableDepositLargeBase" Abstract="True">
 		<thingClass>Building_WorkTable</thingClass>
 		<size>(3,3)</size>
 		<useHitPoints>false</useHitPoints>
@@ -148,7 +148,6 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<canOverlapZones>false</canOverlapZones>
 		<passability>Impassable</passability>
-		<holdsRoof>true</holdsRoof>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(3,3)</drawSize>
@@ -171,7 +170,7 @@
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_EbonyDepositLarge]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_LargeGlassDepositBase">
+	<ThingDef ParentName="Mashed_Ashlands_MineableDepositLargeBase">
 		<defName>Mashed_Ashlands_EbonyDepositLarge</defName>
 		<label>large volcanic ebony deposit</label>
 		<description>A large volcanic rock, covered in ebony deposits. Raw volcanic ebony can be mined from here, though it will take some time to fully harvest.</description>
@@ -185,14 +184,14 @@
 			<li>Mashed_Ashlands_MineEbonyDeposit</li>
 		</recipes>
 		<comps>
-			<li Class="Mashed_Ashlands.CompProperties_NodeCharges">
+			<li Class="Mashed_Ashlands.CompProperties_DepositCharges">
 				<chargesRange>30~60</chargesRange>
 				<resourceName>volcanic ebony</resourceName>
 			</li>
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_GlassDepositLarge]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_LargeGlassDepositBase">
+	<ThingDef ParentName="Mashed_Ashlands_MineableDepositLargeBase">
 		<defName>Mashed_Ashlands_GlassDepositLarge</defName>
 		<label>large volcanic malachite deposit</label>
 		<description>A large volcanic rock, covered in malachite deposits. Raw volcanic malachite can be mined from here, though it will take some time to fully harvest.</description>
@@ -206,7 +205,7 @@
 			<li>Mashed_Ashlands_MineGlassDeposit</li>
 		</recipes>
 		<comps>
-			<li Class="Mashed_Ashlands.CompProperties_NodeCharges">
+			<li Class="Mashed_Ashlands.CompProperties_DepositCharges">
 				<chargesRange>30~60</chargesRange>
 				<resourceName>volcanic malachite</resourceName>
 			</li>

@@ -5,18 +5,21 @@ using Verse;
 
 namespace Mashed_Ashlands_Kwama
 {
-    public class GenStep_LargeResourceDeposit : GenStep
+    public class GenStep_HiddenResourceDeposit : GenStep
     {
         public List<ThingDef> resourceDeposits;
 
-        private const int chamberSize = 90;
-        private const int validationRadius = 11;
+        public int chamberSize = 90;
+        public int validationRadius = 11;
 
-        private const int chamberSizeBackup = 60;
-        private const int validationRadiusBackup = 9;
+        public int chamberSizeBackup = 60;
+        public int validationRadiusBackup = 9;
 
-        private const int chamberSizeBackupFinal = 30;
-        private const int validationRadiusBackupFinal = 6;
+        public int chamberSizeBackupFinal = 30;
+        public int validationRadiusBackupFinal = 6;
+
+        public int chamberSizeBackupFinalReally = 9;
+        public int validationRadiusBackupFinalReally = 3;
 
         public override int SeedPart => 23330778;
 
@@ -26,24 +29,34 @@ namespace Mashed_Ashlands_Kwama
             {
                 return;
             }
-            CellFinder.TryFindRandomCell(map, (IntVec3 c) => ValidLocation(c, map, validationRadius), out IntVec3 result);
-            if (ValidLocation(result, map, validationRadius))
+            ThingDef resourceDeposit = resourceDeposits.RandomElement();
+            if (AttemptGeneration(map, validationRadius, chamberSize, resourceDeposit))
             {
-                GenerateChamber(result, map, chamberSize);
                 return;
             }
             ///try again in case we can still manage a hidden chamber
-            Log.Message("Failed to find valid location for GenStep_LargeResourceDeposit, attempting backup plan.");
-            CellFinder.TryFindRandomCell(map, (IntVec3 c) => ValidLocation(c, map, validationRadiusBackup), out result);
-            if (ValidLocation(result, map, validationRadiusBackup))
+            if (AttemptGeneration(map, validationRadiusBackup, chamberSizeBackup, resourceDeposit))
             {
-                GenerateChamber(result, map, chamberSizeBackup);
                 return;
             }
-            ///final go
-            Log.Warning("Failed to find valid location for GenStep_LargeResourceDeposit. If this is still generated unfogged, please report to Mashed with a screenshot of the entire map unfogged.");
-            CellFinder.TryFindRandomCell(map, (IntVec3 c) => ValidLocation(c, map, validationRadiusBackupFinal), out result);
-            GenerateChamber(result, map, chamberSizeBackupFinal);
+            ///and again
+            if (AttemptGeneration(map, validationRadiusBackupFinal, chamberSizeBackupFinal, resourceDeposit))
+            {
+                return;
+            }
+            ///final resort
+            AttemptGeneration(map, validationRadiusBackupFinalReally, chamberSizeBackupFinalReally, resourceDeposit, true);
+        }
+
+        public bool AttemptGeneration(Map map, int validationRadius, int chamberSize, ThingDef resourceDeposit, bool forced = false)
+        {
+            CellFinder.TryFindRandomCell(map, (IntVec3 c) => ValidLocation(c, map, validationRadius), out IntVec3 result);
+            if (forced || ValidLocation(result, map, validationRadius))
+            {
+                GenerateChamber(result, map, chamberSize, resourceDeposit);
+                return true;
+            }
+            return false;
         }
 
         private bool ValidLocation(IntVec3 c, Map map, int validationRadius)
@@ -67,7 +80,7 @@ namespace Mashed_Ashlands_Kwama
             return true;
         }
 
-        private void GenerateChamber(IntVec3 c, Map map, int chamberSize)
+        private void GenerateChamber(IntVec3 c, Map map, int chamberSize, ThingDef resourceDeposit)
         {
             List<IntVec3> list = GridShapeMaker.IrregularLump(c, map, chamberSize);
             MapGenFloatGrid caves = MapGenerator.Caves;
@@ -81,7 +94,7 @@ namespace Mashed_Ashlands_Kwama
                     item2.Destroy();
                 }
             }
-            GenSpawn.Spawn(resourceDeposits.RandomElement(), c, map);
+            GenSpawn.Spawn(resourceDeposit, c, map);
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- ==========[Mashed_Ashlands_KwamaNestEntrance]==========-->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_KwamaNestEntrance</defName>
 		<label>kwama nest entrance</label>
 		<description>The entrance to an underground kwama nest. It's possible to travel down into the nest and 'mine' the kwama eggs.</description>
@@ -57,7 +57,7 @@
 		</comps>
 	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_KwamaNestExit</defName>
 		<label>kwama nest exit</label>
 		<description>A rope line which links to the surface above.</description>

@@ -26,11 +26,11 @@
 		<order>206</order>
 		<genStep Class="Mashed_Ashlands_Kwama.GenStep_FindKwamaNestExit"/>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestLargeResourceDeposit]==========-->
+	<!-- ==========[Mashed_Ashlands_KwamaNestResourceDepositLarge]==========-->
 	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaNestLargeResourceDeposit</defName>
+		<defName>Mashed_Ashlands_KwamaNestResourceDepositLarge</defName>
 		<order>207</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_LargeResourceDeposit">
+		<genStep Class="Mashed_Ashlands_Kwama.GenStep_HiddenResourceDeposit">
 			<resourceDeposits>
 				<li>Mashed_Ashlands_EbonyDepositLarge</li>
 				<li>Mashed_Ashlands_GlassDepositLarge</li>

@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==========[Mashed_AchievementAshlands_TameKwamaWorker]========== -->
-	<!--
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">
 		<defName>Mashed_AchievementAshlands_TameKwamaWorker</defName>
-		<label>Work Work Work</label>
-		<description>Have six tame kwama workers at the same time</description>
+		<label>Work Work</label>
+		<description>Have two tame kwama workers at the same time</description>
 		<tracker Class="AchievementsExpanded.KindDefTracker">
 			<kindDefs>
 				<li>
 					<key>Mashed_Ashlands_KwamaWorker</key>
-					<value>6</value>
+					<value>2</value>
 				</li>
 			</kindDefs>
 		</tracker>
 		<texPath>Achievements/Mashed_AchievementAshlands_TameKwamaWorker</texPath>
-		<points>20</points>
+		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
-	-->
 	<!-- ==========[Mashed_AchievementAshlands_TameKwamaWarrior]========== -->
 	<!--
 	<AchievementsExpanded.AchievementDef ParentName="Mashed_AchievementAshlands_Base">

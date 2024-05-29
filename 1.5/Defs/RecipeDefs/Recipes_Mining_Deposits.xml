@@ -3,7 +3,7 @@
 	<!-- ==========[Mashed_Ashlands_MineGlassDepositBase]==========-->
 	<RecipeDef Name="Mashed_Ashlands_MineGlassDepositBase" Abstract="True">
 		<workerClass>Mashed_Ashlands.RecipeWorker_ConsumeDepositCharge</workerClass>
-		<workAmount>1000</workAmount>
+		<workAmount>3000</workAmount>
 		<workSpeedStat>MiningSpeed</workSpeedStat>
 		<workSkill>Mining</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>

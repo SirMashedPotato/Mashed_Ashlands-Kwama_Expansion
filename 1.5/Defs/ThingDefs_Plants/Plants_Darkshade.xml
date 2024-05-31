@@ -4,7 +4,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_GroundcoverBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeBryolux</defName>
 		<label>darkshade bryolux</label>
-		<description>A blue moss only found growing deep in the caverns beneath the ashlands. It is sticky, with tangled fibers, which slows anyone walking over it.</description>
+		<description>A blue moss, only found growing in darklight caverns beneath the ashlands. It is sticky, with tangled fibers, which slows anyone walking over it.</description>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -46,7 +46,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_ChokevineBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeChokevine</defName>
 		<label>darkshade chokevine</label>
-		<description>A rare strain of the common chokevine, only found growing deep in the caverns beneath the ashlands. A tangled mass of vines, that produce a strange pale glow.</description>
+		<description>A rare strain of the common chokevine, only found growing in darklight caverns beneath the ashlands. A tangled mass of vines, that produce a strange pale glow.</description>
 		<graphicData>
 			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeChokevine</texPath>
 		</graphicData>
@@ -69,7 +69,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_DraggleTailsBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeDraggleTails</defName>
 		<label>darkshade draggle-tails</label>
-		<description>A rare strain of the common draggle-tails, only found growing deep in the caverns beneath the ashlands. They produce a strange pale glow, that while somewhat unsettling, can help navigate dark caverns.</description>
+		<description>A rare strain of the common draggle-tails, only found growing in darklight caverns beneath the ashlands. They produce a strange pale glow, that while somewhat unsettling, can help navigate dark caverns.</description>
 		<graphicData>
 			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeDraggleTails</texPath>
 		</graphicData>
@@ -91,7 +91,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_SmallMushroomBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeEntoloma</defName>
 		<label>darkshade entoloma</label>
-		<description>A small mushroom, only found growing deep in the caverns beneath the ashlands. While the strange pale glow it produces might be somewhat unsettling to some, most find its striking colouration quite beautiful.</description>
+		<description>A small mushroom, only found growing in darklight caverns beneath the ashlands. While the strange pale glow it produces might be somewhat unsettling to some, most find its striking colouration quite beautiful.</description>
 		<statBases>
 			<Beauty>10</Beauty>
 			<BeautyOutdoors>10</BeautyOutdoors>
@@ -121,7 +121,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeButtercake</defName>
 		<label>darkshade buttercake mushroom</label>
-		<description>An incredibly rare strain of the buttercake mushroom, only found growing deep in the caverns beneath the ashlands. Despite its eerie glow, the flesh harvested from it is just as tasty, and still safe to eat While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<description>A rare strain of the buttercake mushroom, only found growing in darklight caverns beneath the ashlands. Despite its eerie glow, the flesh harvested from it is just as tasty, and still safe to eat While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
@@ -162,7 +162,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeMushroom</defName>
 		<label>darkshade mushroom</label>
-		<description>A small edible mushroom, only found growing deep in the caverns beneath the ashlands. Its flesh is edible, though most don't consider it very pleasant to eat. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<description>A small edible mushroom, only found growing in darklight caverns beneath the ashlands. Its flesh is edible, though most don't consider it very pleasant to eat. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
@@ -204,7 +204,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_ParasolBushBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeParasolBush</defName>
 		<label>darkshade parasol bush</label>
-		<description>An incredibly rare strain of the parasol bush, only found growing deep in the caverns beneath the ashlands. The stem can be harvested for parasol wood, though it takes slightly longer to harden than the regular parasol bush. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<description>A rare strain of the parasol bush, only found growing in darklight caverns beneath the ashlands. The stem can be harvested for parasol wood, though it takes slightly longer to harden than the regular parasol bush. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
 		<statBases>
 			<Beauty>2</Beauty>
 			<BeautyOutdoors>2</BeautyOutdoors>
@@ -232,7 +232,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PseudoTreeBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeReed</defName>
 		<label>darkshade reed plant</label>
-		<description>An incredibly rare type of reed, only found growing deep in the caverns beneath the ashlands. Sometimes used as a supplement for wood. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<description>A rare type of reed, only found growing in darklight caverns beneath the ashlands. Sometimes used as a supplement for wood. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
 		<statBases>
 			<Beauty>3</Beauty>
 			<BeautyOutdoors>3</BeautyOutdoors>
@@ -273,7 +273,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_ScathecrawBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeScathecraw</defName>
 		<label>darkshade scathecraw plant</label>
-		<description>An incredibly rare strain of scathecraw, only found growing deep in the caverns beneath the ashlands. Does not yield as much edible flesh as the regular scathecraw, though it is able to grow in near darkness. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<description>A rare strain of scathecraw, only found growing in darklight caverns beneath the ashlands. Does not yield as much edible flesh as the regular scathecraw, though it is able to grow in near darkness. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
 		<graphicData>
 			<texPath>Things/Plant/Mashed_Ashlands_DarkshadeScathecrawPlant</texPath>
 		</graphicData>
@@ -297,7 +297,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TramaShrubBase">
 		<defName>Mashed_Ashlands_Plant_DarkshadeTramaShrub</defName>
 		<label>darkshade trama shrub</label>
-		<description>An incredibly rare strain of trama shrub, only found growing deep in the caverns beneath the ashlands. The roots are comparatively smaller than that of the regular trama shrub, though it is able to grow in near darkness. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<description>A rare strain of trama shrub, only found growing in darklight caverns beneath the ashlands. The roots are comparatively smaller than that of the regular trama shrub, though it is able to grow in near darkness. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
 		<statBases>
 			<Beauty>1</Beauty>
 			<BeautyOutdoors>1</BeautyOutdoors>
@@ -323,7 +323,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeDecorativeBase">
 		<defName>Mashed_Ashlands_GiantDarkshadeCoprinus</defName>
 		<label>darkshade coprinus tree</label>
-		<description>A large fungal tree, only found growing deep in the caverns beneath the ashlands. While it offers nothing of practical use, most find it incredibly beautiful, though some find the strange pale glow it emits slightly unsettling. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<description>A large fungal tree, only found growing in darklight caverns beneath the ashlands. While it offers nothing of practical use, most find it incredibly beautiful, though some find the strange pale glow it emits slightly unsettling. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
 		<graphicData>
 			<texPath>Things/Plant/Trees/Mashed_Ashlands_GiantDarkshadeCoprinus</texPath>
 		</graphicData>
@@ -355,7 +355,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_DuskCapBase">
 		<defName>Mashed_Ashlands_DarkshadeDuskCap</defName>
 		<label>darkshade dusk cap tree</label>
-		<description>A large fungal tree, only found growing deep in the caverns beneath the ashlands. While it offers nothing of practical use, most find it incredibly beautiful.</description>
+		<description>A large fungal tree, only found growing in darklight caverns beneath the ashlands. While it offers nothing of practical use, most find it incredibly beautiful.</description>
 		<graphicData>
 			<texPath>Things/Plant/Trees/Mashed_Ashlands_DarkshadeDuskCap</texPath>
 		</graphicData>
@@ -388,7 +388,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_TreeNetchShieldBase">
 		<defName>Mashed_Ashlands_Plant_TreeDarkshadeNetchShield</defName>
 		<label>darkshade netch shield tree</label>
-		<description>A large fungal tree, though not as impressive as the emperor parasol, only found growing deep in the caverns beneath the ashlands. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
+		<description>A large fungal tree, though not as impressive as the emperor parasol, only found growing in darklight caverns beneath the ashlands. Its stem hardens into an almost wood-like material as it matures. While not as durable as normal wood, it is comparatively more fire resistant.</description>
 		<graphicData>
 			<texPath>Things/Plant/Trees/Mashed_Ashlands_TreeDarkshadeNetchShield</texPath>
 		</graphicData>

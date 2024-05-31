@@ -29,6 +29,7 @@
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
+			<li>Mashed_Ashlands_Crystalline</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
 	</ThingDef>

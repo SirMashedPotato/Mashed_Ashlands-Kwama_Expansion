@@ -34,7 +34,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_PaleMushroom</defName>
 		<label>pale mushroom</label>
-		<description>A small edible mushroom, only found growing in the deepest caverns beneath the ashlandss. Its flesh is edible, though most don't consider it very pleasant to eat. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<description>A small edible mushroom, only found growing in the deepest caverns beneath the ashlands. Its flesh is edible, though most don't consider it very pleasant to eat. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>

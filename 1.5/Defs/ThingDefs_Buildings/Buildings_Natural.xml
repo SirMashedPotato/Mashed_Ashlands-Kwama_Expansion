@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>Mashed_Ashlands_KwamaExplorerSkeleton</defName>
 		<label>explorer skeleton</label>
-		<description>The desiccated skeleton of an explorer. Either they were woefully under-prepared, or they have been stripped of almost anything reasonably useful. Though there does seem to be something in their pack.</description>
+		<description>The overgrown skeleton of an explorer. Either they were woefully under-prepared, or they have been stripped of almost anything reasonably useful. Though there does seem to be something in their pack.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Natural/Mashed_Ashlands_KwamaExplorerSkeleton</texPath>
@@ -118,7 +118,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_KwamaEggSacBase">
 		<defName>Mashed_Ashlands_GoldKwamaEggSac</defName>
 		<label>gold kwama egg sac</label>
-		<description>A kwama egg sac that contains eggs made of solid gold. An extremely rare sight.</description>
+		<description>A rare kwama egg sac, containing eggs made of solid gold.</description>
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_DropOnDestroy">
 				<guaranteedDrops>

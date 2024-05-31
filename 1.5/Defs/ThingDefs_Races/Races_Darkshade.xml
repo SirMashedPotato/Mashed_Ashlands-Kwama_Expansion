@@ -89,7 +89,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_NetchThingBase">
 		<defName>Mashed_Ashlands_NetchDarkshade</defName>
 		<label>darkshade netch</label>
-		<description>A rare subspecies of netch that can only be found in darkshade caverns deep underneath the ashlands. Despite their size, darkshade netch are somehow able to nimply navigate through the tight tunnels, and dense foliage, of darkshade groves.</description>
+		<description>A rare subspecies of netch, only found in darklight caverns beneath the ashlands. Despite their size, darkshade netch are somehow able to nimply navigate through the tight tunnels, and dense foliage, of darkshade groves.</description>
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Mashed_Ashlands_NetchJelly</milkDef>
@@ -188,7 +188,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_NixOxThingBase">
 		<defName>Mashed_Ashlands_NixOxDarkshade</defName>
 		<label>darkshade nix-ox</label>
-		<description>A rare subspecies of nix-ox that can only be found in darkshade caverns deep underneath the ashlands. Unlike their cousins, darkshade nix-ox are generally solitary creatures. They can sometimes be found sleeping in sulphuric water, which helps to soften their outer shell, making it easier to shear off.</description>
+		<description>A rare subspecies of nix-ox, only found in darklight caverns beneath the ashlands. Unlike their cousins, darkshade nix-ox are generally solitary creatures. They can sometimes be found sleeping in sulphuric water, which helps to soften their outer shell, making it easier to shear off.</description>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>Mashed_Ashlands_Egg_NixOxDarkshadeFertilized</eggFertilizedDef>
@@ -296,7 +296,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_ShalkThingBase">
 		<defName>Mashed_Ashlands_ShalkDarkshade</defName>
 		<label>darkshade shalk</label>
-		<description>A rare subspecies of the shalk that has evolved a symbiotic bond with a species of darkshade fungus. The shalk protects the mushrooms from being eaten, whilst the mushrooms help the shalk blend into the surroundings. Taming a darkshade shalk will allow one to regularly harvest these mushrooms, though they aren't particularly pleasant to eat.\n\nWhile many would think darkshade shalk pose little threat due to their size, the mandibles of darkshade shalk are coated in a flammable liquid, which can be ignited by their bite.</description>
+		<description>A rare subspecies of the shalk, that has evolved a symbiotic bond with a species of darkshade fungus. The shalk protects the mushrooms from being eaten, whilst the mushrooms help the shalk blend into the surroundings. Taming a darkshade shalk will allow one to regularly harvest these mushrooms, though they aren't particularly pleasant to eat.\n\nWhile many would think darkshade shalk pose little threat due to their size, the mandibles of darkshade shalk are coated in a flammable liquid, which can be ignited by their bite.</description>
 		<statBases>
 			<MarketValue>150</MarketValue>
 		</statBases>

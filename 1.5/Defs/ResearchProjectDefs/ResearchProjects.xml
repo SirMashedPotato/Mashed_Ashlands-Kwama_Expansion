@@ -55,6 +55,7 @@
 				<li>subject_story->the interesting biology of the [thing_plant]</li>
 				<li>subject_gerund->[action_grow] [thing_plant]</li>
 				<!-- things -->
+				<li>thing_plant->pale bryolux</li>
 				<li>thing_plant->pale entoloma</li>
 				<li>thing_plant->pale glowstalk</li>
 				<li>thing_plant->pale mushroom</li>

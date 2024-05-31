@@ -8,13 +8,15 @@
 				<forceCustomCavePlants>true</forceCustomCavePlants>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_Bloatspore>0.2</Mashed_Ashlands_Plant_Bloatspore>
+					<Mashed_Ashlands_Plant_PaleBryolux>0.1</Mashed_Ashlands_Plant_PaleBryolux>
 					<Mashed_Ashlands_Plant_PaleEntoloma>0.1</Mashed_Ashlands_Plant_PaleEntoloma>
 					<Mashed_Ashlands_Plant_PaleMushroom>0.075</Mashed_Ashlands_Plant_PaleMushroom>
 					<Mashed_Ashlands_Plant_PaleGlowstalk>0.05</Mashed_Ashlands_Plant_PaleGlowstalk>
 					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingRussula>
-					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingCoprinus>
-					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantGlowingCoprinus>
+					<Mashed_Ashlands_Plant_GlowingBryolux MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_Plant_GlowingBryolux>
+					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_GlowingRussula>
+					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_GlowingCoprinus>
+					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_GiantGlowingCoprinus>
 				</cavePlants>
 				<dryToReplacers>
 					<li>

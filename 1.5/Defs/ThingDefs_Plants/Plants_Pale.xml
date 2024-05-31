@@ -18,7 +18,7 @@
 			<growDays>3</growDays>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
 			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+				<li>Mashed_Ashlands_AshSowing_Pale</li>
 			</sowResearchPrerequisites>
 			<sowWork>200</sowWork>
 			<purpose>Beauty</purpose>
@@ -53,7 +53,7 @@
 			<harvestedThingDef>RawFungus</harvestedThingDef>
 			<harvestYield>6</harvestYield>
 			<sowResearchPrerequisites>
-				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+				<li>Mashed_Ashlands_AshSowing_Pale</li>
 			</sowResearchPrerequisites>
 			<topWindExposure>0.05</topWindExposure>
 			<growDays>5</growDays>
@@ -84,7 +84,7 @@
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
 			<sowResearchPrerequisites Inherit="False">
-				<li>Mashed_Ashlands_AshSowing_Advanced</li>
+				<li>Mashed_Ashlands_AshSowing_Pale</li>
 			</sowResearchPrerequisites>
 			<sowMinSkill>12</sowMinSkill>
 		</plant>

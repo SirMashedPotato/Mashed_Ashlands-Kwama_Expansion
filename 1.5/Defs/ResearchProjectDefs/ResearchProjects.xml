@@ -4,7 +4,7 @@
 	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
 		<defName>Mashed_Ashlands_AshSowing_Darkshade</defName>
 		<label>darkshade ashland farming</label>
-		<description>Learn how to sow special darkshade plants, only found growing in caverns deep beneath the ashlands.</description>
+		<description>Learn how to sow special darkshade plants, only found growing in darkshade caverns beneath the ashlands.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>3.00</researchViewX>
@@ -32,6 +32,32 @@
 				<li>thing_plant->darkshade coprinus</li>
 				<li>thing_plant->darkshade dusk cap</li>
 				<li>thing_plant->darkshade netch shield</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!-- ==========[Mashed_Ashlands_AshSowing_Pale]==========-->
+	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
+		<defName>Mashed_Ashlands_AshSowing_Pale</defName>
+		<label>pale ashland farming</label>
+		<description>Learn how to sow special pale plants, only found growing in the deepest caverns beneath the ashlands.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<tab>Mashed_ResearchTab_ElderScrolls</tab>
+		<prerequisites>
+			<li>Mashed_Ashlands_AshSowing_Darkshade</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->pale ashland [action_grow]</li>
+				<li>subject_story->[action_grow] [middle_grow] [thing_plant]</li>
+				<li>subject_story->the interesting biology of the [thing_plant]</li>
+				<li>subject_gerund->[action_grow] [thing_plant]</li>
+				<!-- things -->
+				<li>thing_plant->pale entoloma</li>
+				<li>thing_plant->pale glowstalk</li>
+				<li>thing_plant->pale mushroom</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>

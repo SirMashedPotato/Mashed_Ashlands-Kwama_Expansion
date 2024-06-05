@@ -68,6 +68,7 @@
     <Compile Include="Alert\Alert_KwamaNestUnstable.cs" />
     <Compile Include="DefModExtension\RandomMapGenDef.cs" />
     <Compile Include="DefModExtension\UnderBiomeProperties.cs" />
+    <Compile Include="DefOf\EffecterDefOf.cs" />
     <Compile Include="DefOf\JobDefOf.cs" />
     <Compile Include="DefOf\PawnKindDefOf.cs" />
     <Compile Include="DefOf\SoundDefOf.cs" />

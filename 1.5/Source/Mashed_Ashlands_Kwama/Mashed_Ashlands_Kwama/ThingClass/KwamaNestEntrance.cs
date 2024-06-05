@@ -107,7 +107,7 @@ namespace Mashed_Ashlands_Kwama
                 {
                     if (collapseEffecter1 == null)
                     {
-                        collapseEffecter1 = EffecterDefOf.PitGateAboveGroundCollapseStage1.Spawn(this, Map);
+                        collapseEffecter1 = EffecterDefOf.Mashed_Ashlands_KwamaNestAboveGroundCollapseStage1.Spawn(this, Map);
                     }
                 }
                 else if (CollapseStage == 2)
@@ -119,7 +119,7 @@ namespace Mashed_Ashlands_Kwama
                     collapseSustainer.Maintain();
                     if (collapseEffecter2 == null)
                     {
-                        collapseEffecter2 = EffecterDefOf.PitGateAboveGroundCollapseStage2.Spawn(this, Map);
+                        collapseEffecter2 = EffecterDefOf.Mashed_Ashlands_KwamaNestAboveGroundCollapseStage2.Spawn(this, Map);
                     }
                 }
                 collapseEffecter1?.EffectTick(this, this);
@@ -169,7 +169,7 @@ namespace Mashed_Ashlands_Kwama
             }
             Map map = Map;
             base.Destroy(mode);
-            EffecterDefOf.ImpactDustCloud.Spawn(Position, map).Cleanup();
+            EffecterDefOf.Mashed_Ashlands_KwamaNestCollapseDustCloud.Spawn(Position, map).Cleanup();
             Messages.Message("Mashed_Ashlands_Kwama_NestCollapsed".Translate(), new TargetInfo(Position, map), MessageTypeDefOf.NeutralEvent);
         }
 

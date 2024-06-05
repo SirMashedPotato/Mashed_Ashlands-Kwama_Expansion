@@ -116,7 +116,7 @@ namespace Mashed_Ashlands_Kwama
             }
             if (Find.CameraDriver.ZoomRootSize < 20f && CellFinderLoose.TryGetRandomCellWith((IntVec3 c) => c.Standable(map) && Find.CameraDriver.CurrentViewRect.Contains(c), map, 100, out var result))
             {
-                fxQueue.Enqueue(new QueuedCellEffecter(EffecterDefOf.UndercaveMapAmbienceWater, result, 0));
+                fxQueue.Enqueue(new QueuedCellEffecter(RimWorld.EffecterDefOf.UndercaveMapAmbienceWater, result, 0));
             }
         }
 
@@ -149,14 +149,14 @@ namespace Mashed_Ashlands_Kwama
                 {
                     RoofCollapserImmediate.DropRoofInCells(item2, map);
                 }
-                EffecterDefOf.UndercaveCeilingDebris.SpawnMaintained(result, map);
+                RimWorld.EffecterDefOf.UndercaveCeilingDebris.SpawnMaintained(result, map);
             }
             int num = Find.TickManager.TicksGame;
             for (int j = 0; j < numDustEffecters; j++)
             {
                 if (CellFinderLoose.TryGetRandomCellWith((IntVec3 c) => c.GetEdifice(map) == null, map, 100, out var result2))
                 {
-                    fxQueue.Enqueue(new QueuedCellEffecter(EffecterDefOf.UndercaveCeilingDebris, result2, num));
+                    fxQueue.Enqueue(new QueuedCellEffecter(RimWorld.EffecterDefOf.UndercaveCeilingDebris, result2, num));
                     num += FXTriggerDelay.RandomInRange;
                 }
             }

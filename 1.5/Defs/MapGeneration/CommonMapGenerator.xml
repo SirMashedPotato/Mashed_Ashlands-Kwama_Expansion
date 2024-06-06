@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Mashed_Ashlands_StartingKwamaNestEntrance]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_StartingKwamaNestEntrance</defName>
+		<order>600</order>
+		<genStep Class="Mashed_Ashlands_Kwama.GenStep_StartingKwamaNestEntrance">
+			<thingDef>Mashed_Ashlands_KwamaNestEntrance</thingDef>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>5</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<count>1</count>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>5</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>5</radius>
+				</li>
+				<li Class="ScattererValidator_AvoidSpecialThings"/>
+			</validators>
+		</genStep>
+	</GenStepDef>
+</Defs>

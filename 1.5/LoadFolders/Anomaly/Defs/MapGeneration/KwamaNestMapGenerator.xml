@@ -4,7 +4,7 @@
 	<MapGeneratorDef Abstract="True" Name="Mashed_Ashlands_KwamaNestGeneratorBase">
 		<isUnderground>true</isUnderground>
 		<forceCaves>true</forceCaves>
-		<ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+		<ignoreAreaRevealedLetter>false</ignoreAreaRevealedLetter>
 		<disableCallAid>true</disableCallAid>
 		<customMapComponents>
 			<li>Mashed_Ashlands_Kwama.KwamaNestMapComponent</li>

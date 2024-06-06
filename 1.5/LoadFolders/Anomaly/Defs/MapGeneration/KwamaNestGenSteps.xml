@@ -37,6 +37,17 @@
 			</resourceDeposits>
 		</genStep>
 	</GenStepDef>
+	<!-- ==========[Mashed_Ashlands_KwamaNestInsectoidHive]==========-->
+	<GenStepDef>
+		<defName>Mashed_Ashlands_KwamaNestInsectoidHive</defName>
+		<order>207</order>
+		<genStep Class="Mashed_Ashlands_Kwama.GenStep_HiddenInsectoidHive">
+			<resourceDeposits>
+				<li>Hive</li>
+			</resourceDeposits>
+			<chamberCount>3</chamberCount>
+		</genStep>
+	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaNestTerrain]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_KwamaNestTerrain</defName>

@@ -8,6 +8,7 @@ namespace Mashed_Ashlands_Kwama
     public class GenStep_HiddenResourceDeposit : GenStep
     {
         public List<ThingDef> resourceDeposits;
+        public int chamberCount = 1;
 
         public int chamberSize = 90;
         public int validationRadius = 11;
@@ -29,23 +30,26 @@ namespace Mashed_Ashlands_Kwama
             {
                 return;
             }
-            ThingDef resourceDeposit = resourceDeposits.RandomElement();
-            if (AttemptGeneration(map, validationRadius, chamberSize, resourceDeposit))
+            for (int i = 0; i < chamberCount; i++)
             {
-                return;
+                ThingDef resourceDeposit = resourceDeposits.RandomElement();
+                if (AttemptGeneration(map, validationRadius, chamberSize, resourceDeposit))
+                {
+                    continue;
+                }
+                ///try again in case we can still manage a hidden chamber
+                if (AttemptGeneration(map, validationRadiusBackup, chamberSizeBackup, resourceDeposit))
+                {
+                    continue;
+                }
+                ///and again
+                if (AttemptGeneration(map, validationRadiusBackupFinal, chamberSizeBackupFinal, resourceDeposit))
+                {
+                    continue;
+                }
+                ///final resort
+                AttemptGeneration(map, validationRadiusBackupFinalReally, chamberSizeBackupFinalReally, resourceDeposit, true);
             }
-            ///try again in case we can still manage a hidden chamber
-            if (AttemptGeneration(map, validationRadiusBackup, chamberSizeBackup, resourceDeposit))
-            {
-                return;
-            }
-            ///and again
-            if (AttemptGeneration(map, validationRadiusBackupFinal, chamberSizeBackupFinal, resourceDeposit))
-            {
-                return;
-            }
-            ///final resort
-            AttemptGeneration(map, validationRadiusBackupFinalReally, chamberSizeBackupFinalReally, resourceDeposit, true);
         }
 
         public bool AttemptGeneration(Map map, int validationRadius, int chamberSize, ThingDef resourceDeposit, bool forced = false)

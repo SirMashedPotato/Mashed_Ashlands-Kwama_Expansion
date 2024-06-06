@@ -20,7 +20,7 @@
 		<description>Mine 3 raw volcanic ebony. A resource charge is consumed each time ebony is harvested.</description>
 		<jobString>Mining volcanic ebony deposit.</jobString>
 		<products>
-			<Mashed_Ashlands_VolcanicEbony>3</Mashed_Ashlands_VolcanicEbony>
+			<Mashed_Ashlands_VolcanicEbony>6</Mashed_Ashlands_VolcanicEbony>
 		</products>
 	</RecipeDef>
 	<!-- ==========[Mashed_Ashlands_MineGlassDeposit]==========-->
@@ -30,7 +30,7 @@
 		<description>Mine 3 raw volcanic malachite. A resource charge is consumed each time ebony is harvested.</description>
 		<jobString>Mining volcanic malachite deposit.</jobString>
 		<products>
-			<Mashed_Ashlands_VolcanicGlass>3</Mashed_Ashlands_VolcanicGlass>
+			<Mashed_Ashlands_VolcanicGlass>6</Mashed_Ashlands_VolcanicGlass>
 		</products>
 	</RecipeDef>
 </Defs>

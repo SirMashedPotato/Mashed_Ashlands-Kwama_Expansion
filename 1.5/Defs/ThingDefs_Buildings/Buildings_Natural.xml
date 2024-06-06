@@ -185,7 +185,7 @@
 		</recipes>
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_DepositCharges">
-				<chargesRange>30~60</chargesRange>
+				<chargesRange>60~90</chargesRange>
 				<resourceName>volcanic ebony</resourceName>
 			</li>
 		</comps>
@@ -206,7 +206,7 @@
 		</recipes>
 		<comps>
 			<li Class="Mashed_Ashlands.CompProperties_DepositCharges">
-				<chargesRange>30~60</chargesRange>
+				<chargesRange>60~90</chargesRange>
 				<resourceName>volcanic malachite</resourceName>
 			</li>
 		</comps>

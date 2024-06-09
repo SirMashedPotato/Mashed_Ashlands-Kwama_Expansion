@@ -26,7 +26,7 @@ namespace Mashed_Ashlands_Kwama
             yield return Toils_General.WaitWith(TargetIndex.B, DurationTicks, true, true);
             yield return Toils_General.Do(delegate
             {
-                GenSpawn.Spawn(KwamaUtility.GetKwamaEggType(), TargetCell, pawn.Map);
+                GenSpawn.Spawn(KwamaUtility.GetKwamaEggType(), TargetCell, pawn.Map, WipeMode.FullRefund);
             });
             yield break;
         }

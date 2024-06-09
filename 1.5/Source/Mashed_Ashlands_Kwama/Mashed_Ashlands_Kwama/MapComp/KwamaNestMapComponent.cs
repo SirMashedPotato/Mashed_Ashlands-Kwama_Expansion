@@ -209,7 +209,7 @@ namespace Mashed_Ashlands_Kwama
 
         private IntVec3 FindEggSacPlacementCell(Pawn worker)
         {
-            return CellFinder.RandomClosewalkCellNear(worker.Position, worker.Map, 6);
+            return CellFinder.RandomClosewalkCellNear(worker.Position, worker.Map, 6, (IntVec3 x) => x.GetFirstBuilding(map) == null);
         }
 
         public bool QueenDamaged(Thing queen, PawnKindDef warriorKind)

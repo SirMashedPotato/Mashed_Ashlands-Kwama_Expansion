@@ -34,4 +34,24 @@
 			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_Plant_KwamaMoss]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_Plant_BryoluxBase">
+		<defName>Mashed_Ashlands_Plant_KwamaMoss</defName>
+		<label>kwama moss</label>
+		<description>A strange orange moss, that can only be found growing around burrows in kwama nests. It appears to be highly nutritious, as kwama can often be seen feeding on it.</description>
+		<graphicData>
+			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_KwamaMoss</texPath>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<statBases>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<plant>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>1</growDays>
+		</plant>
+	</ThingDef>
 </Defs>

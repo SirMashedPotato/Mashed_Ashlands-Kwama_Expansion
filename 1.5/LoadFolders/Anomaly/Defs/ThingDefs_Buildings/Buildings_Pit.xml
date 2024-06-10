@@ -129,7 +129,7 @@
 		</statBases>
 		<comps>
 			<li Class="Mashed_Ashlands_Kwama.CompProperties_AnimalSpawner">
-				<tickInterval>300</tickInterval>
+				<tickInterval>3000</tickInterval>
 				<disableIfPolluted>true</disableIfPolluted>
 			</li>
 		</comps>

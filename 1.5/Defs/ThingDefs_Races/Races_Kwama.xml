@@ -8,7 +8,6 @@
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
 			<MarketValue>400</MarketValue>
-			<FilthRate>3</FilthRate>
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.27</ArmorRating_Sharp>
 		</statBases>
@@ -156,7 +155,6 @@
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>500</MarketValue>
-			<FilthRate>4</FilthRate>
 			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.36</ArmorRating_Sharp>
 		</statBases>

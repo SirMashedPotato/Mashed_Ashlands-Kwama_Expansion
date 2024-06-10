@@ -20,5 +20,10 @@ namespace Mashed_Ashlands_Kwama
         {
             return map.mapPawns.AllPawnsSpawned.Where(x => x.kindDef == kind && x.Faction == null).ToList();
         }
+
+        public static List<Pawn> AllOfKinds(Map map, List<PawnKindDef> kinds)
+        {
+            return map.mapPawns.AllPawnsSpawned.Where(x => kinds.Contains(x.kindDef) && x.Faction == null).ToList();
+        }
     }
 }

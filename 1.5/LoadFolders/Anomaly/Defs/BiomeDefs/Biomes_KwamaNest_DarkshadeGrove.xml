@@ -48,18 +48,18 @@
 					</li>
 					<li>
 						<kindDef>Mashed_Ashlands_NetchDarkshade</kindDef>
-						<weight>0.6</weight>
+						<weight>0.3</weight>
 						<maxOnMap>3</maxOnMap>
 					</li>
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
 						<weight>0.6</weight>
-						<maxOnMap>8</maxOnMap>
+						<maxOnMap>6</maxOnMap>
 					</li>
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaForager</kindDef>
 						<weight>0.8</weight>
-						<maxOnMap>8</maxOnMap>
+						<maxOnMap>3</maxOnMap>
 					</li>
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaWorker</kindDef>
@@ -69,7 +69,7 @@
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaWarrior</kindDef>
 						<weight>1</weight>
-						<maxOnMap>6</maxOnMap>
+						<maxOnMap>3</maxOnMap>
 					</li>
 				</wildAnimals>
 			</li>

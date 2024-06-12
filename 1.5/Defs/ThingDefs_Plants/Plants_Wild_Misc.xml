@@ -38,7 +38,7 @@
 	<ThingDef ParentName="Mashed_Ashlands_Plant_BryoluxBase">
 		<defName>Mashed_Ashlands_Plant_KwamaMoss</defName>
 		<label>kwama moss</label>
-		<description>A strange orange moss, that can only be found growing around burrows in kwama nests. It appears to be highly nutritious, as kwama can often be seen feeding on it.</description>
+		<description>A strange orange moss, that can only be found growing around burrows in kwama nests. The moss likely originates from deeper in the kwama nest, and is spread through spores carried by travelling kwama. It appears to be highly nutritious, as kwama can often be seen feeding on it.</description>
 		<graphicData>
 			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_KwamaMoss</texPath>
 		</graphicData>
@@ -53,5 +53,11 @@
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<growDays>1</growDays>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(239,97,26,0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

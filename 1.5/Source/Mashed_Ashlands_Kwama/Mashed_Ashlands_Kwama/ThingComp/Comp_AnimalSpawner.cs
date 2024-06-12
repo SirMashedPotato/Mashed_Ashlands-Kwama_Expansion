@@ -25,7 +25,7 @@ namespace Mashed_Ashlands_Kwama
             base.PostSpawnSetup(respawningAfterLoad);
         }
 
-        public override void CompTickLong()
+        public override void CompTick()
         {
             if (parent.IsHashIntervalTick(Props.tickInterval))
             {

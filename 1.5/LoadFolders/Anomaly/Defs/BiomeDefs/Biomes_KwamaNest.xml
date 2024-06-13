@@ -7,6 +7,7 @@
 			<li Class="Mashed_Ashlands.BiomeProperties">
 				<forceCustomCavePlants>true</forceCustomCavePlants>
 				<cavePlants>
+					<Mashed_Ashlands_Plant_KwamaMoss>0.1</Mashed_Ashlands_Plant_KwamaMoss>
 					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
 					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
 					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>

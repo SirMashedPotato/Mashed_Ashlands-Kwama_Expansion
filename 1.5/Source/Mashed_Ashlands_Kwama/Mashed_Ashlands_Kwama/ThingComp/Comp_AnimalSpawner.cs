@@ -22,7 +22,6 @@ namespace Mashed_Ashlands_Kwama
             {
                 for (int i = 0; i < Props.initialSpawnCount; i++)
                 {
-                    Log.Message("1");
                     SpawnAnimals();
                 }
             }
@@ -33,7 +32,6 @@ namespace Mashed_Ashlands_Kwama
         {
             if (parent.IsHashIntervalTick(Props.tickInterval))
             {
-                Log.Message("2");
                 SpawnAnimals();
             }
         }

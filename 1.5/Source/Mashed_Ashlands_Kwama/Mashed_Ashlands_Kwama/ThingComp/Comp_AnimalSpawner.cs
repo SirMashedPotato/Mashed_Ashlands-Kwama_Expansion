@@ -18,9 +18,13 @@ namespace Mashed_Ashlands_Kwama
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            for (int i = 0; i < Props.initialSpawnCount; i++)
+            if (!respawningAfterLoad)
             {
-                SpawnAnimals();
+                for (int i = 0; i < Props.initialSpawnCount; i++)
+                {
+                    Log.Message("1");
+                    SpawnAnimals();
+                }
             }
             base.PostSpawnSetup(respawningAfterLoad);
         }
@@ -29,6 +33,7 @@ namespace Mashed_Ashlands_Kwama
         {
             if (parent.IsHashIntervalTick(Props.tickInterval))
             {
+                Log.Message("2");
                 SpawnAnimals();
             }
         }

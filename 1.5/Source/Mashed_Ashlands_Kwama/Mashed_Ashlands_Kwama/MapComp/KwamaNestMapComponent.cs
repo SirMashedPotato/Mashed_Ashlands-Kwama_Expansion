@@ -194,7 +194,7 @@ namespace Mashed_Ashlands_Kwama
                     if (potentialWorker.CanReach(queen, PathEndMode.Touch, Danger.Deadly, true))
                     {
                         IntVec3 placeCell = FindEggSacPlacementCell(potentialWorker);
-                        if (placeCell != null)
+                        if (placeCell != null && placeCell != potentialWorker.Position)
                         {
                             Job workerJob = JobMaker.MakeJob(JobDefOf.Mashed_Ashlands_MoveEggSac, queen, placeCell);
                             potentialWorker.jobs.StartJob(workerJob, JobCondition.InterruptForced);

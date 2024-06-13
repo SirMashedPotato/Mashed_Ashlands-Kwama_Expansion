@@ -12,7 +12,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Outdoors</need>
-					<offset>0.2</offset>
+					<offset>0.1</offset>
 				</li>
 			</outcomeDoers>
 		</ingestible>

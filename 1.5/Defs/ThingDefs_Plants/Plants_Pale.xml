@@ -71,7 +71,7 @@
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<fertilityMin>1</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawPaleMushroom</harvestedThingDef>
 			<harvestYield>6</harvestYield>
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Pale</li>

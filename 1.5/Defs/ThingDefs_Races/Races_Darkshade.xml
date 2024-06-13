@@ -17,7 +17,7 @@
 				<eggCountRange>1~2</eggCountRange>
 			</li>
 			<li Class="CompProperties_Shearable">
-				<woolDef>RawFungus</woolDef>
+				<woolDef>Mashed_Ashlands_RawDarkshadeMushroom</woolDef>
 				<shearIntervalDays>3</shearIntervalDays>
 				<woolAmount>10</woolAmount>
 			</li>
@@ -309,7 +309,7 @@
 				<eggCountRange>1</eggCountRange>
 			</li>
 			<li Class="CompProperties_Shearable">
-				<woolDef>RawFungus</woolDef>
+				<woolDef>Mashed_Ashlands_RawDarkshadeMushroom</woolDef>
 				<shearIntervalDays>4</shearIntervalDays>
 				<woolAmount>10</woolAmount>
 			</li>

@@ -116,7 +116,7 @@
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<fertilityMin>1</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>Mashed_Ashlands_RawAshFungus</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawDarkshadeButtercake</harvestedThingDef>
 			<harvestYield>8</harvestYield>
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Darkshade</li>
@@ -157,7 +157,7 @@
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<fertilityMin>1</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<harvestedThingDef>Mashed_Ashlands_RawDarkshadeMushroom</harvestedThingDef>
 			<harvestYield>10</harvestYield>
 			<sowResearchPrerequisites>
 				<li>Mashed_Ashlands_AshSowing_Darkshade</li>
@@ -260,6 +260,7 @@
 			<growMinGlow>-0.01</growMinGlow>
 			<growOptimalGlow>0.5</growOptimalGlow>
 			<harvestYield>6</harvestYield>
+			<harvestedThingDef>Mashed_Ashlands_RawDarkshadeScathecraw</harvestedThingDef>
 			<sowResearchPrerequisites Inherit="False">
 				<li>Mashed_Ashlands_AshSowing_Darkshade</li>
 			</sowResearchPrerequisites>
@@ -287,6 +288,7 @@
 		</graphicData>
 		<plant>
 			<harvestYield>4</harvestYield>
+			<harvestedThingDef>Mashed_Ashlands_RawDarkshadeTramaRoot</harvestedThingDef>
 			<sowResearchPrerequisites Inherit="False">
 				<li>Mashed_Ashlands_AshSowing_Darkshade</li>
 			</sowResearchPrerequisites>

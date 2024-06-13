@@ -1,0 +1,40 @@
+<Defs>
+	<!-- ==========[Mashed_Ashlands_SeedDarkshadeScathecraw]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
+		<defName>Mashed_Ashlands_SeedDarkshadeScathecraw</defName>
+		<label>darkshade scathecraw seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedDarkshadeScathecraw</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_DarkshadeScathecraw</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_DarkshadeScathecraw</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ==========[Mashed_Ashlands_SeedDarkshadeTramaShrub]==========-->
+	<ThingDef ParentName="Mashed_Ashlands_SeedRoughBase">
+		<defName>Mashed_Ashlands_SeedDarkshadeTramaShrub</defName>
+		<label>darkshade trama seeds</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedDarkshadeTramaShrub</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Mashed_Ashlands_Plant_DarkshadeTramaShrub</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Mashed_Ashlands_Plant_DarkshadeTramaShrub</li>
+				</sources>
+				<priority>20</priority>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

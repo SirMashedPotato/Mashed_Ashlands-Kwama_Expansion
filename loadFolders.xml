@@ -14,5 +14,10 @@
 		<!-- VE_Achievements -->
 		<li IfModActive="vanillaexpanded.achievements">LoadFolders/VE_AchievementsTextures</li>
 		<li IfModActive="vanillaexpanded.achievements">1.5/LoadFolders/VE_Achievements</li>
+		<!-- SeedsPleaseLite -->
+		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">LoadFolders/SeedsPleaseLiteTextures</li>
+		<li IfModActive="owlchemist.seedspleaselite,evyatar108.seedspleaseliteredux">1.5/LoadFolders/SeedsPleaseLite</li>
+		<!-- MorrowRim Sound Patch -->
+		<li IfModActive="sirmashedpotato.morrowrim.soundpatch">1.5/LoadFolders/MorrowRim_SoundPatch</li>
 	</v1.5>
 </loadFolders>

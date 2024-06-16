@@ -6,6 +6,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<uiIconForStackCount>-1</uiIconForStackCount>
+		<rotatable>false</rotatable>
 		<statBases>
 			<MarketValue>26</MarketValue>
 		</statBases>

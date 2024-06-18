@@ -36,7 +36,7 @@
 		<label>darkshade trama root</label>
 		<description>Raw darkshade trama root. Often brewed into a calming tea, though it can be used as animal feed when necessary.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_TramaRoot</texPath>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_DarkshadeTramaRoot</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.3</MarketValue>

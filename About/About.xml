@@ -23,5 +23,6 @@
 	<loadAfter>
 		<li>Ludeon.RimWorld.Anomaly</li>
 		<li>SirMashedPotato.Ashlands</li>
+		<li>sirmashedpotato.ashlands.darkshadeexpansion</li>
 	</loadAfter>
 </ModMetaData>

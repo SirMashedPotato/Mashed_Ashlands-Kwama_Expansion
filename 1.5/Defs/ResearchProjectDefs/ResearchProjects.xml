@@ -1,40 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_AshSowing_Darkshade]==========-->
-	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
-		<defName>Mashed_Ashlands_AshSowing_Darkshade</defName>
-		<label>darkshade ashland farming</label>
-		<description>Learn how to sow special darkshade plants, only found growing in darkshade caverns beneath the ashlands.</description>
-		<baseCost>500</baseCost>
-		<techLevel>Neolithic</techLevel>
-		<researchViewX>3.00</researchViewX>
-		<researchViewY>0.00</researchViewY>
-		<tab>Mashed_ResearchTab_ElderScrolls</tab>
-		<prerequisites>
-			<li>Mashed_Ashlands_AshSowing_Advanced</li>
-		</prerequisites>
-		<generalRules>
-			<rulesStrings>
-				<li>subject->darkshade ashland [action_grow]</li>
-				<li>subject_story->[action_grow] [middle_grow] [thing_plant]</li>
-				<li>subject_story->the interesting biology of the [thing_plant]</li>
-				<li>subject_gerund->[action_grow] [thing_plant]</li>
-				<!-- things -->
-				<li>thing_plant->darkshade bryolux</li>
-				<li>thing_plant->darkshade buttercake</li>
-				<li>thing_plant->darkshade entoloma</li>
-				<li>thing_plant->darkshade glowstalk</li>
-				<li>thing_plant->darkshade mushroom</li>
-				<li>thing_plant->darkshade parasol bush</li>
-				<li>thing_plant->darkshade reed</li>
-				<li>thing_plant->darkshade scathecraw</li>
-				<li>thing_plant->darkshade trama</li>
-				<li>thing_plant->darkshade coprinus</li>
-				<li>thing_plant->darkshade dusk cap</li>
-				<li>thing_plant->darkshade netch shield</li>
-			</rulesStrings>
-		</generalRules>
-	</ResearchProjectDef>
 	<!-- ==========[Mashed_Ashlands_AshSowing_Pale]==========-->
 	<ResearchProjectDef ParentName="Mashed_Ashlands_ResearchBase">
 		<defName>Mashed_Ashlands_AshSowing_Pale</defName>
@@ -46,7 +11,7 @@
 		<researchViewY>0.00</researchViewY>
 		<tab>Mashed_ResearchTab_ElderScrolls</tab>
 		<prerequisites>
-			<li>Mashed_Ashlands_AshSowing_Darkshade</li>
+			<li>Mashed_Ashlands_AshSowing_Advanced</li>
 		</prerequisites>
 		<generalRules>
 			<rulesStrings>

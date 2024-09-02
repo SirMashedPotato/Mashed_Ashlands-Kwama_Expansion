@@ -39,10 +39,10 @@
 			<li Class="Mashed_Ashlands_Kwama.RandomMapGenDef">
 				<mapGenerators>
 					<li>Mashed_Ashlands_KwamaNest</li>
-					<li>Mashed_Ashlands_DarkshadeKwamaNest</li>
-					<li>Mashed_Ashlands_DarkshadeFloodedKwamaNest</li>
-					<li>Mashed_Ashlands_DarkshadeGroveKwamaNest</li>
-					<li>Mashed_Ashlands_DarkshadeThermalKwamaNest</li>
+					<li MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">Mashed_Ashlands_DarkshadeKwamaNest</li>
+					<li MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">Mashed_Ashlands_DarkshadeFloodedKwamaNest</li>
+					<li MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">Mashed_Ashlands_DarkshadeGroveKwamaNest</li>
+					<li MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">Mashed_Ashlands_DarkshadeThermalKwamaNest</li>
 					<li>Mashed_Ashlands_DeepKwamaNest</li>
 					<li>Mashed_Ashlands_FloodedKwamaNest</li>
 					<li>Mashed_Ashlands_ThermalKwamaNest</li>

@@ -1,46 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_RawDarkshadeButtercake]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
-		<defName>Mashed_Ashlands_RawDarkshadeButtercake</defName>
-		<label>darkshade buttercake</label>
-		<description>Raw darkshade buttercake. Perfectly edible, and rather tasty.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawDarkshadeButtercake</texPath>
-		</graphicData>
-		<ingestible>
-			<foodType>VegetableOrFruit</foodType>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>30</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_RawDarkshadeMushroom]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
-		<defName>Mashed_Ashlands_RawDarkshadeMushroom</defName>
-		<label>darkshade mushroom</label>
-		<description>Raw darkshade mushroom. Disgusting and, not very pleasant to eat.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/Mashed_Ashlands_RawDarkshadeMushroom</texPath>
-		</graphicData>
-		<ingestible>
-			<foodType>Fungus</foodType>
-		</ingestible>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
-			</mergeCompatibilityTags>
-		</ingredient>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>30</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_RawPaleMushroom]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_PlantFoodRawBase">
 		<defName>Mashed_Ashlands_RawPaleMushroom</defName>

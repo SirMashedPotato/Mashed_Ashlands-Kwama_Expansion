@@ -3,8 +3,6 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_TorchbugLamp_Base"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 		<value>
-			<li>Mashed_Ashlands_RawDarkshadeButtercake</li>
-			<li>Mashed_Ashlands_RawDarkshadeMushroom</li>
 			<li>Mashed_Ashlands_RawPaleMushroom</li>
 		</value>
 	</Operation>

@@ -40,7 +40,7 @@
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_DarkshadeKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase" MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">
 		<defName>Mashed_Ashlands_DarkshadeKwamaNest</defName>
 		<label>darkshade kwama nest</label>
 		<pocketMapProperties>
@@ -48,7 +48,7 @@
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_DarkshadeGroveKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase" MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">
 		<defName>Mashed_Ashlands_DarkshadeGroveKwamaNest</defName>
 		<label>darkshade grove kwama nest</label>
 		<pocketMapProperties>
@@ -56,7 +56,7 @@
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_DarkshadeFloodedKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase" MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">
 		<defName>Mashed_Ashlands_DarkshadeFloodedKwamaNest</defName>
 		<label>flooded darkshade kwama nest</label>
 		<pocketMapProperties>
@@ -64,7 +64,7 @@
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_DarkshadeThermalKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase" MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">
 		<defName>Mashed_Ashlands_DarkshadeThermalKwamaNest</defName>
 		<label>thermal darkshade kwama nest</label>
 		<pocketMapProperties>

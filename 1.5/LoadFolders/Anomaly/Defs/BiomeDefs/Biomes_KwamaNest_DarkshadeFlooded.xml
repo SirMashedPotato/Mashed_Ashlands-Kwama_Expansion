@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<BiomeDef ParentName="Mashed_Ashlands_KwamaNestBase">
+	<BiomeDef ParentName="Mashed_Ashlands_KwamaNestBase" MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">
 		<defName>Mashed_Ashlands_DarkshadeFloodedKwamaNest</defName>
 		<label>flooded darkshade kwama nest</label>
 		<plantDensity>1.2</plantDensity>

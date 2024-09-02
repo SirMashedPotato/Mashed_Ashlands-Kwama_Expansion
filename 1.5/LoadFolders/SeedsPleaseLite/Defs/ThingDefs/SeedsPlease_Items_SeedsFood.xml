@@ -1,42 +1,4 @@
 <Defs>
-	<!-- ==========[Mashed_Ashlands_SeedDarkshadeButtercake]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase">
-		<defName>Mashed_Ashlands_SeedDarkshadeButtercake</defName>
-		<label>darlshade buttercake spores</label>
-		<graphicData>
-			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedDarkshadeButtercake</texPath>
-		</graphicData>
-		<descriptionHyperlinks>
-			<ThingDef>Mashed_Ashlands_Plant_DarkshadeButtercake</ThingDef>
-		</descriptionHyperlinks>
-		<modExtensions>
-			<li Class="SeedsPleaseLite.Seed">
-				<sources>
-					<li>Mashed_Ashlands_Plant_DarkshadeButtercake</li>
-				</sources>
-				<priority>20</priority>
-			</li>
-		</modExtensions>
-	</ThingDef>
-	<!-- ==========[Mashed_Ashlands_SeedDarkshadeMushroom]==========-->
-	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase">
-		<defName>Mashed_Ashlands_SeedDarkshadeMushroom</defName>
-		<label>darkshade mushroom spores</label>
-		<graphicData>
-			<texPath>Things/Item/Resource/Seed/Mashed_Ashlands_SeedDarkshadeMushroom</texPath>
-		</graphicData>
-		<descriptionHyperlinks>
-			<ThingDef>Mashed_Ashlands_Plant_DarkshadeMushroom</ThingDef>
-		</descriptionHyperlinks>
-		<modExtensions>
-			<li Class="SeedsPleaseLite.Seed">
-				<sources>
-					<li>Mashed_Ashlands_Plant_DarkshadeMushroom</li>
-				</sources>
-				<priority>20</priority>
-			</li>
-		</modExtensions>
-	</ThingDef>
 	<!-- ==========[Mashed_Ashlands_SeedPaleMushroom]==========-->
 	<ThingDef ParentName="Mashed_Ashlands_SeedFoodBase">
 		<defName>Mashed_Ashlands_SeedPaleMushroom</defName>

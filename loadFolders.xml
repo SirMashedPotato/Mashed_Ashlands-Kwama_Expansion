@@ -3,8 +3,6 @@
 	<v1.5>
 		<li>Common</li>
 		<li>1.5</li>
-		<!-- Ideology -->
-		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/LoadFolders/Ideology</li>
 		<!-- Anomaly -->
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/LoadFolders/Anomaly</li>
 		<li IfModNotActive="Ludeon.RimWorld.Anomaly">1.5/LoadFolders/AnomalyNot</li>

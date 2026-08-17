@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3205496436
+CRC: 3057714962
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 18079d729edab773ee78c881914cd4b6
+    Hash: 777283e8960e8bacfd021b3d51a7998a
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 18079d729edab773ee78c881914cd4b6
+    Hash: 777283e8960e8bacfd021b3d51a7998a
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -47,7 +47,6 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Building/Misc/Mashed_Ashlands_KwamaEggLamp.png
 - Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Plant/FoodPlants/Mashed_Ashlands_PaleMushroomPlant/Mashed_Ashlands_PaleMushroom_a.png
 - Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Plant/Groundcovers_Misc/Mashed_Ashlands_PaleBryolux/Mashed_Ashlands_PaleBryolux_b.png
-- Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Building/Natural/Mashed_Ashlands_EbonyDepositLarge/Mashed_Ashlands_EbonyDepositLarge.png
 - Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Building/Misc/Mashed_Ashlands_KwamaEggTorch.png
 - Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_PaleEntoloma/Mashed_Ashlands_PaleEntoloma_d.png
 - Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWarrior/Mashed_Ashlands_KwamaWarrior_north.png
@@ -55,5 +54,4 @@ Assets:
 - Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaQueen/Mashed_Ashlands_KwamaQueen_north.png
 - Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWarrior/Mashed_Ashlands_Dessicated_KwamaWarrior_south.png
 - Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Pawn/Animal/Mashed_Ashlands_KwamaWarrior/Mashed_Ashlands_KwamaWarrior_south.png
-- Assets/Data/sirmashedpotato.ashlands.kwama/Textures/Things/Building/Natural/Mashed_Ashlands_GlassDepositLarge/Mashed_Ashlands_GlassDepositLarge.png
 Dependencies: []

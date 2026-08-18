@@ -1,47 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<BiomeDef ParentName="Mashed_Ashlands_KwamaNestBase">
+	<!--
+	<BiomeDef ParentName="Mashed_Ashlands_UndergroundKwamaNestBase">
 		<defName>Mashed_Ashlands_KwamaNest</defName>
 		<label>kwama nest</label>
+		<description>An intricate network of tunnels and chambers, excavated by kwama workers, and home to a kwama nest. The orange glow of kwama egg sacs illuminates the darkness, which can be harvested without repercussion.\n\nAt the heart of this cave system is the kwama queen, who will periodically lay egg sacs. If any workers hear her call, they will collect the egg sac from her, and place it in the tunnels. Otherwise the queen will simply place the egg sac nearby. If the queen is threatened, she will call for her warriors to defend her. And if she is killed, her workers will enter a panicked state, and begin collapsing the cave system.</description>
 		<modExtensions>
-			<li Class="Mashed_Ashlands.BiomeProperties">
-				<forceCustomCavePlants>true</forceCustomCavePlants>
-				<cavePlants>
-					<Mashed_Ashlands_Plant_KwamaMoss>0.1</Mashed_Ashlands_Plant_KwamaMoss>
-					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
-					<Mashed_Ashlands_Plant_LuminousRussula>0.2</Mashed_Ashlands_Plant_LuminousRussula>
-					<Mashed_Ashlands_Plant_VioletCoprinus>0.2</Mashed_Ashlands_Plant_VioletCoprinus>
-					<Mashed_Ashlands_Plant_MuckSponge>0.05</Mashed_Ashlands_Plant_MuckSponge>
-					<Mashed_Ashlands_Plant_TreeKwamacap>0.25</Mashed_Ashlands_Plant_TreeKwamacap>
-					<!-- Polluted plants -->
-					<Mashed_Ashlands_Plant_GlowingRussula MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingRussula>
-					<Mashed_Ashlands_Plant_GlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.3</Mashed_Ashlands_Plant_GlowingCoprinus>
-					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
-					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantGlowingCoprinus>
-				</cavePlants>
-				<dryToReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_RichAshGravel</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Soil</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSoil</replacedTerrain>
-					</li>
-				</dryToReplacers>
-				<increasePollutedFertility>true</increasePollutedFertility>
-				<otherTerrainDef>Mashed_Ashlands_RichAshGravel</otherTerrainDef>
-				<otherTerrainThreshold>0.25</otherTerrainThreshold>
-				<waterTerrainDef>WaterShallow</waterTerrainDef>
-				<waterThreshold>0.6</waterThreshold>
-			</li>
 			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
 				<wildAnimals>
-					<li>
-						<kindDef>Rat</kindDef>
-						<weight>0.2</weight>
-						<maxOnMap>3</maxOnMap>
-					</li>
 					<li>
 						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
 						<weight>0.6</weight>
@@ -65,5 +31,6 @@
 				</wildAnimals>
 			</li>
 		</modExtensions>
-	</BiomeDef>
+	</BiomeDef
+	-->
 </Defs>

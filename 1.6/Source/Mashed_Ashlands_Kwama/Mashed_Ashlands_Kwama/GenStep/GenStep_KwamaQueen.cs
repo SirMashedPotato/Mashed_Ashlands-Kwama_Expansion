@@ -16,7 +16,7 @@ namespace Mashed_Ashlands_Kwama
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            KwamaNestExit nestExit = (KwamaNestExit)map.listerThings.ThingsOfDef(ThingDefOf.Mashed_Ashlands_KwamaNestExit).First();
+            CaveExit nestExit = (CaveExit)map.listerThings.ThingsOfDef(RimWorld.ThingDefOf.CaveExit).First();
             CellFinder.TryFindRandomCell(map, (IntVec3 c) => c.Standable(map) 
             && (c.GetRoom(map) == null || c.GetRoom(map).CellCount > minRoomSize)
             && !c.InHorDistOf(nestExit.Position, minSpawnDistFromNestExit) 

@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<BiomeDef ParentName="Mashed_Ashlands_KwamaNestBase">
-		<defName>Mashed_Ashlands_FloodedKwamaNest</defName>
+	<BiomeDef ParentName="Mashed_Ashlands_AshlandsUndergroundBase">
+		<defName>Mashed_Ashlands_UndergroundKwamaNest_Flooded</defName>
 		<label>flooded kwama nest</label>
-		<plantDensity>1</plantDensity>
 		<modExtensions>
-			<li Class="Mashed_Ashlands.BiomeProperties">
-				<forceCustomCavePlants>true</forceCustomCavePlants>
+			<li Class="Mashed_Ashlands.BiomeCaveProperties">
+				<caveGravelReplacer>MarshyTerrain</caveGravelReplacer>
+				<gravelThreshold>0.05</gravelThreshold>
+				<!--<caveWaterReplacer>Mashed_Ashlands_ShallowMarsh</caveWaterReplacer>-->
+				<waterThreshold>0.4</waterThreshold>
 				<cavePlants>
 					<Mashed_Ashlands_Plant_Chokevine>0.2</Mashed_Ashlands_Plant_Chokevine>
 					<Mashed_Ashlands_Plant_Bloatspore>0.1</Mashed_Ashlands_Plant_Bloatspore>
@@ -21,56 +23,8 @@
 					<Mashed_Ashlands_Plant_WasteSponge MayRequire="Ludeon.RimWorld.Biotech">0.05</Mashed_Ashlands_Plant_WasteSponge>
 					<Mashed_Ashlands_GiantGlowingCoprinus MayRequire="Ludeon.RimWorld.Biotech">0.1</Mashed_Ashlands_GiantGlowingCoprinus>
 				</cavePlants>
-				<dryToReplacers>
-					<li>
-						<originalTerrain>Gravel</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_RichAshGravel</replacedTerrain>
-					</li>
-					<li>
-						<originalTerrain>Soil</originalTerrain>
-						<replacedTerrain>Mashed_Ashlands_AshSoil</replacedTerrain>
-					</li>
-				</dryToReplacers>
-				<increasePollutedFertility>true</increasePollutedFertility>
-				<otherTerrainDef>MarshyTerrain</otherTerrainDef>
-				<otherTerrainThreshold>0.05</otherTerrainThreshold>
-				<waterTerrainDef>Mashed_Ashlands_ShallowMarsh</waterTerrainDef>
-				<waterThreshold>0.4</waterThreshold>
-			</li>
-			<li Class="Mashed_Ashlands_Kwama.UnderBiomeProperties">
-				<wildAnimals>
-					<li>
-						<kindDef>Rat</kindDef>
-						<weight>0.2</weight>
-						<maxOnMap>3</maxOnMap>
-					</li>
-					<li>
-						<kindDef>Mashed_Ashlands_Mudcrab</kindDef>
-						<weight>0.3</weight>
-						<maxOnMap>6</maxOnMap>
-					</li>
-					<li>
-						<kindDef>Mashed_Ashlands_KwamaScrib</kindDef>
-						<weight>0.6</weight>
-						<maxOnMap>6</maxOnMap>
-					</li>
-					<li>
-						<kindDef>Mashed_Ashlands_KwamaForager</kindDef>
-						<weight>0.8</weight>
-						<maxOnMap>3</maxOnMap>
-					</li>
-					<li>
-						<kindDef>Mashed_Ashlands_KwamaWorker</kindDef>
-						<weight>1</weight>
-						<maxOnMap>6</maxOnMap>
-					</li>
-					<li>
-						<kindDef>Mashed_Ashlands_KwamaWarrior</kindDef>
-						<weight>1</weight>
-						<maxOnMap>3</maxOnMap>
-					</li>
-				</wildAnimals>	
 			</li>
 		</modExtensions>
+		<plantDensity>1</plantDensity>
 	</BiomeDef>
 </Defs>

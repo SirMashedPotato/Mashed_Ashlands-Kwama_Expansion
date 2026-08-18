@@ -1,16 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_KwamaNestTunnels]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaNestTunnels</defName>
-		<order>11</order>
-		<genStep Class="GenStep_Undercaves">
-			<baseWidth>3</baseWidth>
-			<branchChance>0.1</branchChance>
-			<minTunnelWidth>1.6</minTunnelWidth>
-			<widthOffsetPerCell>0.0001</widthOffsetPerCell>
-		</genStep>
-	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaNestChambers]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_KwamaNestChambers</defName>
@@ -20,72 +9,11 @@
 			<chamberCountRange>3~6</chamberCountRange>
 		</genStep>
 	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestExit]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_FindKwamaNestExit</defName>
-		<order>206</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_FindKwamaNestExit"/>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestResourceDepositLarge]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaNestResourceDepositLarge</defName>
-		<order>207</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_HiddenResourceDeposit">
-			<resourceDeposits>
-				<li>Mashed_Ashlands_EbonyDepositLarge</li>
-				<li>Mashed_Ashlands_GlassDepositLarge</li>
-			</resourceDeposits>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestInsectoidHive]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaNestInsectoidHive</defName>
-		<order>207</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_HiddenInsectoidHive">
-			<resourceDeposits>
-				<li>Hive</li>
-			</resourceDeposits>
-			<chamberCount>3</chamberCount>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestTerrain]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaNestTerrain</defName>
-		<order>211</order>
-		<genStep Class="Mashed_Ashlands_Kwama.GenStep_NestTerrain"/>
-	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaQueen]==========-->
 	<GenStepDef>
 		<defName>Mashed_Ashlands_KwamaQueen</defName>
 		<order>600</order>
 		<genStep Class="Mashed_Ashlands_Kwama.GenStep_KwamaQueen"/>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_KwamaNestExplorer]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_KwamaNestExplorer</defName>
-		<order>610</order>
-		<genStep Class="GenStep_ScatterThings">
-			<thingDef>Mashed_Ashlands_KwamaExplorerSkeleton</thingDef>
-			<spotMustBeStandable>true</spotMustBeStandable>
-			<count>1</count>
-		</genStep>
-	</GenStepDef>
-	<!-- ==========[Mashed_Ashlands_NestKwamaEggSacs]==========-->
-	<GenStepDef>
-		<defName>Mashed_Ashlands_NestKwamaEggSacs</defName>
-		<order>612</order>
-		<genStep Class="GenStep_ScatterThings">
-			<thingDef>Mashed_Ashlands_KwamaEggSac</thingDef>
-			<spotMustBeStandable>true</spotMustBeStandable>
-			<countPer10kCellsRange>60~90</countPer10kCellsRange>
-			<minSpacing>3</minSpacing>
-			<validators>
-				<li Class="ScattererValidator_Buildable">
-					<radius>1</radius>
-					<affordance>Heavy</affordance>
-				</li>
-			</validators>
-		</genStep>
 	</GenStepDef>
 	<!-- ==========[Mashed_Ashlands_KwamaBurrow]==========-->
 	<GenStepDef>

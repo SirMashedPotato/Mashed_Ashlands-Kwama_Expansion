@@ -18,7 +18,7 @@ namespace Mashed_Ashlands_Kwama
             for (int i = 0; i < chamberCount; i++)
             {
                 int chamberSize = chamberSizeRange.RandomInRange;
-                CellFinder.TryFindRandomCell(map, (IntVec3 c) => c.DistanceToEdge(map) > 10, out IntVec3 result);
+                CellFinder.TryFindRandomCell(map, c => c.DistanceToEdge(map) > 10, out IntVec3 result);
                 List<IntVec3> list = GridShapeMaker.IrregularLump(result, map, chamberSize);
                 MapGenFloatGrid caves = MapGenerator.Caves;
                 foreach (IntVec3 item in list)

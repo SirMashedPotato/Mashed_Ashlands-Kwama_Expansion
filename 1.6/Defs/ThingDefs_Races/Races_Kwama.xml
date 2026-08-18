@@ -10,6 +10,7 @@
 			<MarketValue>500</MarketValue>
 			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.36</ArmorRating_Sharp>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -79,7 +80,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Mashed_Ashlands_KwamaChitin</leatherDef>
 			<trainability>Advanced</trainability>
-			<wildness>0.9</wildness>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>
 				<li>
@@ -165,6 +165,7 @@
 			<ArmorRating_Sharp>0.36</ArmorRating_Sharp>
 			<ToxicResistance>0.5</ToxicResistance>
 			<ToxicEnvironmentResistance>0</ToxicEnvironmentResistance>
+			<Wildness>1</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -209,7 +210,6 @@
 			<lifeExpectancy>100</lifeExpectancy>
 			<trainability>None</trainability>
 			<leatherDef>Mashed_Ashlands_KwamaChitin</leatherDef>
-			<wildness>1</wildness>
 			<lifeStageAges>
 				<li>
 					<def>EusocialInsectAdult</def>

@@ -1,98 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ==========[Mashed_Ashlands_KwamaNestGeneratorBase]==========-->
-	<MapGeneratorDef Abstract="True" Name="Mashed_Ashlands_KwamaNestGeneratorBase">
-		<isUnderground>true</isUnderground>
-		<forceCaves>true</forceCaves>
-		<ignoreAreaRevealedLetter>false</ignoreAreaRevealedLetter>
-		<disableCallAid>true</disableCallAid>
+	<!-- ==========[Mashed_Ashlands_KwamaNestBase]==========-->
+	<MapGeneratorDef ParentName="Mashed_Ashlands_UndercaveBase"  Name="Mashed_Ashlands_UndercaveKwamaNestBase" Abstract="True">
 		<customMapComponents>
 			<li>Mashed_Ashlands_Kwama.KwamaNestMapComponent</li>
 		</customMapComponents>
 		<genSteps>
-			<li>ElevationFertility</li>
-			<li>Undercave_RocksFromGrid</li>
-			<li>Mashed_Ashlands_KwamaNestTunnels</li>
 			<li>Mashed_Ashlands_KwamaNestChambers</li>
-			<li>Mashed_Ashlands_FindKwamaNestExit</li>
-			<li>Mashed_Ashlands_KwamaNestResourceDepositLarge</li>
-			<li>Mashed_Ashlands_KwamaNestInsectoidHive</li>
-			<li>Terrain</li>
-			<li>Mashed_Ashlands_KwamaNestTerrain</li>
-			<li>RockChunks</li>
 			<li>Mashed_Ashlands_KwamaQueen</li>
-			<li>Mashed_Ashlands_KwamaNestExplorer</li>
 			<li>Mashed_Ashlands_KwamaBurrow</li>
-			<li>Mashed_Ashlands_NestKwamaEggSacs</li>
-			<li>Plants</li>
-			<li>Fog</li>
+			<li>Mashed_Ashlands_Undercave_KwamaEggs</li>
 		</genSteps>
-		<pocketMapProperties>
-			<temperature>15</temperature>
-		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_KwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+	<MapGeneratorDef ParentName="Mashed_Ashlands_UndercaveKwamaNestBase">
 		<defName>Mashed_Ashlands_KwamaNest</defName>
 		<label>kwama nest</label>
 		<pocketMapProperties>
-			<biome>Mashed_Ashlands_KwamaNest</biome>
-		</pocketMapProperties>
-	</MapGeneratorDef>
-	<!-- ==========[Mashed_Ashlands_DarkshadeKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase" MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">
-		<defName>Mashed_Ashlands_DarkshadeKwamaNest</defName>
-		<label>darkshade kwama nest</label>
-		<pocketMapProperties>
-			<biome>Mashed_Ashlands_DarkshadeKwamaNest</biome>
-		</pocketMapProperties>
-	</MapGeneratorDef>
-	<!-- ==========[Mashed_Ashlands_DarkshadeGroveKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase" MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">
-		<defName>Mashed_Ashlands_DarkshadeGroveKwamaNest</defName>
-		<label>darkshade grove kwama nest</label>
-		<pocketMapProperties>
-			<biome>Mashed_Ashlands_DarkshadeGroveKwamaNest</biome>
-		</pocketMapProperties>
-	</MapGeneratorDef>
-	<!-- ==========[Mashed_Ashlands_DarkshadeFloodedKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase" MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">
-		<defName>Mashed_Ashlands_DarkshadeFloodedKwamaNest</defName>
-		<label>flooded darkshade kwama nest</label>
-		<pocketMapProperties>
-			<biome>Mashed_Ashlands_DarkshadeFloodedKwamaNest</biome>
-		</pocketMapProperties>
-	</MapGeneratorDef>
-	<!-- ==========[Mashed_Ashlands_DarkshadeThermalKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase" MayRequire="sirmashedpotato.ashlands.darkshadeexpansion">
-		<defName>Mashed_Ashlands_DarkshadeThermalKwamaNest</defName>
-		<label>thermal darkshade kwama nest</label>
-		<pocketMapProperties>
-			<biome>Mashed_Ashlands_DarkshadeThermalKwamaNest</biome>
+			<biome>Mashed_Ashlands_UndergroundKwamaNest</biome>
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_DeepKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+	<MapGeneratorDef ParentName="Mashed_Ashlands_UndercaveKwamaNestBase">
 		<defName>Mashed_Ashlands_DeepKwamaNest</defName>
 		<label>kwama deepnest</label>
 		<pocketMapProperties>
-			<biome>Mashed_Ashlands_DeepKwamaNest</biome>
+			<biome>Mashed_Ashlands_UndergroundKwamaNest_Deep</biome>
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_FloodedKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+	<MapGeneratorDef ParentName="Mashed_Ashlands_UndercaveKwamaNestBase">
 		<defName>Mashed_Ashlands_FloodedKwamaNest</defName>
 		<label>flooded kwama nest</label>
 		<pocketMapProperties>
-			<biome>Mashed_Ashlands_FloodedKwamaNest</biome>
+			<biome>Mashed_Ashlands_UndergroundKwamaNest_Flooded</biome>
 		</pocketMapProperties>
 	</MapGeneratorDef>
 	<!-- ==========[Mashed_Ashlands_ThermalKwamaNest]==========-->
-	<MapGeneratorDef ParentName="Mashed_Ashlands_KwamaNestGeneratorBase">
+	<MapGeneratorDef ParentName="Mashed_Ashlands_UndercaveKwamaNestBase">
 		<defName>Mashed_Ashlands_ThermalKwamaNest</defName>
 		<label>thermal kwama nest</label>
 		<pocketMapProperties>
-			<biome>Mashed_Ashlands_ThermalKwamaNest</biome>
+			<biome>Mashed_Ashlands_UndergroundKwamaNest_Thermal</biome>
 		</pocketMapProperties>
 	</MapGeneratorDef>
 </Defs>

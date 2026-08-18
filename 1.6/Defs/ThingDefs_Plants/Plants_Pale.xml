@@ -6,7 +6,7 @@
 		<label>pale bryolux</label>
 		<description>A pale moss, only found growing in darklight caverns beneath the ashlands. It is sticky, with tangled fibers, which slows anyone walking over it.</description>
 		<graphicData>
-			<texPath>Things/Plant/Groundcovers/Mashed_Ashlands_PaleBryolux</texPath>
+			<texPath>Things/Plant/Groundcovers_Misc/Mashed_Ashlands_PaleBryolux</texPath>
 		</graphicData>
 		<plant>
 			<growOptimalGlow>0</growOptimalGlow>
@@ -31,7 +31,7 @@
 			<BeautyOutdoors>10</BeautyOutdoors>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mushrooms/Mashed_Ashlands_PaleEntoloma</texPath>
+			<texPath>Things/Plant/Groundcovers_Mushrooms/Mashed_Ashlands_PaleEntoloma</texPath>
 		</graphicData>
 		<plant>
 			<growMinGlow>-0.01</growMinGlow>
@@ -55,14 +55,14 @@
 	<ThingDef ParentName="Mashed_Ashlands_PlantBase">
 		<defName>Mashed_Ashlands_Plant_PaleMushroom</defName>
 		<label>pale mushroom</label>
-		<description>A small edible mushroom, only found growing in the deepest caverns beneath the ashlands. Its flesh is edible, though most don't consider it very pleasant to eat. While it can only be found growing naturally underground, with enough care it can be grown almost anywhere.</description>
+		<description>A small edible mushroom, only found growing in the deepest caverns beneath the ashlands. Its flesh is edible, though most don't consider it very pleasant to eat.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
 			<Mashed_Ashlands_AshResistance>0.6</Mashed_Ashlands_AshResistance>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_PaleMushroomPlant</texPath>
+			<texPath>Things/Plant/FoodPlants/Mashed_Ashlands_PaleMushroomPlant</texPath>
 		</graphicData>
 		<pathCost>14</pathCost>
 		<plant>
@@ -99,7 +99,7 @@
 		<label>pale glowstalk</label>
 		<description>A rare strain of glowstalk, that is only found growing in the deepest caverns beneath the ashlands. It emits a faint pale light, that can be crucial in navigating the suffocatingly dark caverns.</description>
 		<graphicData>
-			<texPath>Things/Plant/Mashed_Ashlands_PaleGlowstalk</texPath>
+			<texPath>Things/Plant/Misc/Mashed_Ashlands_PaleGlowstalk</texPath>
 		</graphicData>
 		<plant>
 			<growMinGlow>0</growMinGlow>
